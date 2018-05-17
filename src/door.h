@@ -15,11 +15,12 @@
 
 
 typedef struct {
-	volatile bool toggle_mode;
-	volatile bool toggled, is_active;
-	volatile uint8_t active_high;
+	bool toggle_mode;
+	bool toggled;
+	bool is_active;
+	uint8_t active_high;
 	const uint8_t pin;
-	const uint8_t port;
+	volatile uint8_t* port;
 } Door;
 
 

@@ -1,0 +1,511 @@
+GAS LISTING /tmp/ccKjzSfr.s 			page 1
+
+
+   1               		.file	"interrupts.cpp"
+   2               	__SP_H__ = 0x3e
+   3               	__SP_L__ = 0x3d
+   4               	__SREG__ = 0x3f
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+   7               		.stabs	"/mnt/c/Users/dmh/Documents/AVR/ER-Firmware/ER-Firmware/src/",100,0,4,.Ltext0
+   8               		.stabs	"interrupts.cpp",100,0,4,.Ltext0
+   9               		.text
+  10               	.Ltext0:
+  11               		.stabs	"gcc2_compiled.",60,0,0,0
+  12               		.stabs	"__uint24:t(0,1)=@s24;r(0,1);0;077777777;",128,0,0,0
+  13               		.stabs	"__int24:t(0,2)=@s24;r(0,2);040000000;037777777;",128,0,0,0
+  14               		.stabs	"__builtin_va_list:t(0,3)=*(0,4)=(0,4)",128,0,0,0
+  15               		.stabs	"complex long double:t(0,5)=R3;8;0;",128,0,0,0
+  16               		.stabs	"complex double:t(0,6)=R3;8;0;",128,0,0,0
+  17               		.stabs	"complex float:t(0,7)=R3;8;0;",128,0,0,0
+  18               		.stabs	"complex int:t(0,8)=s4real:(0,9)=r(0,9);-32768;32767;,0,16;imag:(0,9),16,16;;",128,0,0,0
+  19               		.stabs	"long long unsigned int:t(0,10)=@s64;r(0,10);0;01777777777777777777777;",128,0,0,0
+  20               		.stabs	"long unsigned int:t(0,11)=@s32;r(0,11);0;037777777777;",128,0,0,0
+  21               		.stabs	"unsigned int:t(0,12)=r(0,12);0;0177777;",128,0,0,0
+  22               		.stabs	"unsigned char:t(0,13)=@s8;r(0,13);0;255;",128,0,0,0
+  23               		.stabs	"long long int:t(0,14)=@s64;r(0,14);01000000000000000000000;00777777777777777777777;",128,0
+  24               		.stabs	"long int:t(0,15)=@s32;r(0,15);020000000000;017777777777;",128,0,0,0
+  25               		.stabs	"int:t(0,9)",128,0,0,0
+  26               		.stabs	"signed char:t(0,16)=@s8;r(0,16);-128;127;",128,0,0,0
+  27               		.stabs	"char:t(0,17)=@s8;r(0,17);0;255;",128,0,0,0
+  28               		.stabs	"signed:t(0,9)",128,0,0,0
+  29               		.stabs	"__int128:t(0,18)=@s128;r(0,18);02000000000000000000000000000000000000000000;01777777777777
+  30               		.stabs	"__int128 unsigned:t(0,19)=@s128;r(0,19);0;03777777777777777777777777777777777777777777;",1
+  31               		.stabs	"unsigned long:t(0,11)",128,0,0,0
+  32               		.stabs	"long long unsigned:t(0,10)",128,0,0,0
+  33               		.stabs	"short int:t(0,20)=r(0,20);-32768;32767;",128,0,0,0
+  34               		.stabs	"short unsigned int:t(0,21)=r(0,21);0;0177777;",128,0,0,0
+  35               		.stabs	"unsigned short:t(0,21)",128,0,0,0
+  36               		.stabs	"float:t(0,22)=r(0,9);4;0;",128,0,0,0
+  37               		.stabs	"double:t(0,23)=r(0,9);4;0;",128,0,0,0
+  38               		.stabs	"long double:t(0,24)=r(0,9);4;0;",128,0,0,0
+  39               		.stabs	"short _Fract:t(0,25)=r(0,9);1;0;",128,0,0,0
+  40               		.stabs	"long _Fract:t(0,26)=r(0,9);4;0;",128,0,0,0
+  41               		.stabs	"long long _Fract:t(0,27)=r(0,9);8;0;",128,0,0,0
+  42               		.stabs	"unsigned short _Fract:t(0,28)=r(0,9);1;0;",128,0,0,0
+  43               		.stabs	"unsigned _Fract:t(0,29)=r(0,9);2;0;",128,0,0,0
+  44               		.stabs	"unsigned long _Fract:t(0,30)=r(0,9);4;0;",128,0,0,0
+  45               		.stabs	"unsigned long long _Fract:t(0,31)=r(0,9);8;0;",128,0,0,0
+  46               		.stabs	"_Sat short _Fract:t(0,32)=r(0,9);1;0;",128,0,0,0
+  47               		.stabs	"_Sat _Fract:t(0,33)=r(0,9);2;0;",128,0,0,0
+  48               		.stabs	"_Sat long _Fract:t(0,34)=r(0,9);4;0;",128,0,0,0
+  49               		.stabs	"_Sat long long _Fract:t(0,35)=r(0,9);8;0;",128,0,0,0
+  50               		.stabs	"_Sat unsigned short _Fract:t(0,36)=r(0,9);1;0;",128,0,0,0
+  51               		.stabs	"_Sat unsigned _Fract:t(0,37)=r(0,9);2;0;",128,0,0,0
+  52               		.stabs	"_Sat unsigned long _Fract:t(0,38)=r(0,9);4;0;",128,0,0,0
+  53               		.stabs	"_Sat unsigned long long _Fract:t(0,39)=r(0,9);8;0;",128,0,0,0
+  54               		.stabs	"short _Accum:t(0,40)=r(0,9);2;0;",128,0,0,0
+  55               		.stabs	"long _Accum:t(0,41)=r(0,9);8;0;",128,0,0,0
+  56               		.stabs	"long long _Accum:t(0,42)=r(0,9);8;0;",128,0,0,0
+  57               		.stabs	"unsigned short _Accum:t(0,43)=r(0,9);2;0;",128,0,0,0
+GAS LISTING /tmp/ccKjzSfr.s 			page 2
+
+
+  58               		.stabs	"unsigned _Accum:t(0,44)=r(0,9);4;0;",128,0,0,0
+  59               		.stabs	"unsigned long _Accum:t(0,45)=r(0,9);8;0;",128,0,0,0
+  60               		.stabs	"unsigned long long _Accum:t(0,46)=r(0,9);8;0;",128,0,0,0
+  61               		.stabs	"_Sat short _Accum:t(0,47)=r(0,9);2;0;",128,0,0,0
+  62               		.stabs	"_Sat _Accum:t(0,48)=r(0,9);4;0;",128,0,0,0
+  63               		.stabs	"_Sat long _Accum:t(0,49)=r(0,9);8;0;",128,0,0,0
+  64               		.stabs	"_Sat long long _Accum:t(0,50)=r(0,9);8;0;",128,0,0,0
+  65               		.stabs	"_Sat unsigned short _Accum:t(0,51)=r(0,9);2;0;",128,0,0,0
+  66               		.stabs	"_Sat unsigned _Accum:t(0,52)=r(0,9);4;0;",128,0,0,0
+  67               		.stabs	"_Sat unsigned long _Accum:t(0,53)=r(0,9);8;0;",128,0,0,0
+  68               		.stabs	"_Sat unsigned long long _Accum:t(0,54)=r(0,9);8;0;",128,0,0,0
+  69               		.stabs	"void:t(0,4)",128,0,0,0
+  70               		.stabs	"wchar_t:t(0,55)=r(0,55);-32768;32767;",128,0,0,0
+  71               		.stabs	"char16_t:t(0,56)=r(0,56);0;0177777;",128,0,0,0
+  72               		.stabs	"char32_t:t(0,57)=@s32;r(0,57);0;037777777777;",128,0,0,0
+  73               		.stabs	"bool:t(0,58)=@s8;-16;",128,0,0,0
+  74               		.stabs	"__vtbl_ptr_type:t(0,59)=*(0,60)=f(0,9)",128,0,0,0
+  75               		.stabs	"decltype(nullptr):t(0,61)=(0,61)",128,0,0,0
+  76               		.stabs	"int8_t:t(0,62)=(0,16)",128,0,125,0
+  77               		.stabs	"uint8_t:t(0,63)=(0,13)",128,0,126,0
+  78               		.stabs	"int16_t:t(0,64)=(0,9)",128,0,127,0
+  79               		.stabs	"uint16_t:t(0,65)=(0,12)",128,0,128,0
+  80               		.stabs	"int32_t:t(0,66)=(0,15)",128,0,129,0
+  81               		.stabs	"uint32_t:t(0,67)=(0,11)",128,0,130,0
+  82               		.stabs	"int64_t:t(0,68)=(0,14)",128,0,132,0
+  83               		.stabs	"uint64_t:t(0,69)=(0,10)",128,0,133,0
+  84               		.stabs	"intptr_t:t(0,70)=(0,64)",128,0,146,0
+  85               		.stabs	"uintptr_t:t(0,71)=(0,65)",128,0,151,0
+  86               		.stabs	"int_least8_t:t(0,72)=(0,62)",128,0,163,0
+  87               		.stabs	"uint_least8_t:t(0,73)=(0,63)",128,0,168,0
+  88               		.stabs	"int_least16_t:t(0,74)=(0,64)",128,0,173,0
+  89               		.stabs	"uint_least16_t:t(0,75)=(0,65)",128,0,178,0
+  90               		.stabs	"int_least32_t:t(0,76)=(0,66)",128,0,183,0
+  91               		.stabs	"uint_least32_t:t(0,77)=(0,67)",128,0,188,0
+  92               		.stabs	"int_least64_t:t(0,78)=(0,68)",128,0,196,0
+  93               		.stabs	"uint_least64_t:t(0,79)=(0,69)",128,0,203,0
+  94               		.stabs	"int_fast8_t:t(0,80)=(0,62)",128,0,217,0
+  95               		.stabs	"uint_fast8_t:t(0,81)=(0,63)",128,0,222,0
+  96               		.stabs	"int_fast16_t:t(0,82)=(0,64)",128,0,227,0
+  97               		.stabs	"uint_fast16_t:t(0,83)=(0,65)",128,0,232,0
+  98               		.stabs	"int_fast32_t:t(0,84)=(0,66)",128,0,237,0
+  99               		.stabs	"uint_fast32_t:t(0,85)=(0,67)",128,0,242,0
+ 100               		.stabs	"int_fast64_t:t(0,86)=(0,68)",128,0,250,0
+ 101               		.stabs	"uint_fast64_t:t(0,87)=(0,69)",128,0,257,0
+ 102               		.stabs	"intmax_t:t(0,88)=(0,68)",128,0,277,0
+ 103               		.stabs	"uintmax_t:t(0,89)=(0,69)",128,0,282,0
+ 104               		.stabs	"int_farptr_t:t(0,90)=(0,66)",128,0,77,0
+ 105               		.stabs	"uint_farptr_t:t(0,91)=(0,67)",128,0,81,0
+ 106               		.stabs	"size_t:t(0,92)=(0,12)",128,0,216,0
+ 107               		.stabs	"._0:Tt(0,93)=s3low:(0,13),0,8;high:(0,13),8,8;extended:(0,13),16,8;;",128,0,240,0
+ 108               		.stabs	"__fuse_t:t(0,93)",128,0,244,0
+ 109               		.stabs	"._1:Tt(0,94)=s7toggle_mode:(0,58),0,8;toggled:(0,58),8,8;is_active:(0,58),16,8;active_high
+ 110               		.stabs	"Door:t(0,94)",128,0,24,0
+ 111               		.stabs	"ui8:t(0,98)=(0,63)",128,0,261,0
+ 112               		.stabs	"byte:t(0,99)=(0,63)",128,0,262,0
+ 113               		.stabs	"._2:Tt(0,100)=s3mode:(0,101)=B(0,58),0,8;prev_values:(0,102)=B(0,98),8,8;retracting:(0,101
+ 114               		.stabs	"Inputs:t(0,100)",128,0,270,0
+GAS LISTING /tmp/ccKjzSfr.s 			page 3
+
+
+ 115               		.stabs	"DoorMode:t(0,103)=@s8;eModeDependent:0,ModeIndependent:1,;",128,0,288,0
+ 116               		.stabs	"OutputMode:t(0,104)=@s8;eActiveLow:0,ActiveHigh:1,;",128,0,294,0
+ 117               		.stabs	"ToggleMode:t(0,105)=@s8;eToggleOff:0,ToggleOn:1,;",128,0,300,0
+ 118               		.stabs	"RotaryPositions:t(0,106)=@s8;eposition0:0,position1:1,position2:2,position3:3,position4:4,
+ 119               		.stabs	"DelayTime:t(0,107)=@s8;edelay_1s:1,delay_2s:2,delay_3s:3,delay_5s:5,delay_7s:7,delay_10s:1
+ 120               		.stabs	"__vector_14:F(0,4)",36,0,63,__vector_14
+ 121               	.global	__vector_14
+ 122               		.type	__vector_14, @function
+ 123               	__vector_14:
+ 124               		.stabd	46,0,0
+   1:interrupts.cpp **** /*
+   2:interrupts.cpp **** *  interrupts.c -> Interrupt service routines
+   3:interrupts.cpp **** *
+   4:interrupts.cpp **** *  Created: 1/23/2013 11:55:43 AM
+   5:interrupts.cpp **** *  Modified: 8/4/2015 3:48 PM
+   6:interrupts.cpp **** *  Author: DMH
+   7:interrupts.cpp **** */
+   8:interrupts.cpp **** 
+   9:interrupts.cpp **** #include "interrupts.h"
+  10:interrupts.cpp **** #include "timers.h"
+  11:interrupts.cpp **** #include "main.h"
+  12:interrupts.cpp **** 
+  13:interrupts.cpp **** volatile unsigned long timer0_millis = 0;
+  14:interrupts.cpp **** volatile uint8_t timer0_fract = 0;
+  15:interrupts.cpp **** volatile uint16_t counter_dr1=0, counter_dr2=0;
+  16:interrupts.cpp **** 
+  17:interrupts.cpp **** /**
+  18:interrupts.cpp ****  * Timer1A Compare Interrupt - Handles the independent operation 
+  19:interrupts.cpp ****  */
+  20:interrupts.cpp **** ISR ( TIMER1_COMPA_vect ) 
+  21:interrupts.cpp **** {
+  22:interrupts.cpp **** #if (!EExER) // Disabled for EExER
+  23:interrupts.cpp **** 
+  24:interrupts.cpp **** 	unsigned long t;
+  25:interrupts.cpp **** 	if(dr1.is_active && !dr1.toggle_mode) // Check Door 1
+  26:interrupts.cpp **** 	{
+  27:interrupts.cpp **** 		if(bit_is_clear(INPUT_PIN_PORT, DR1_BUTTON)){
+  28:interrupts.cpp **** 			 counter_dr1 = 0; // Door1 Button is still pressed, reset the counter
+  29:interrupts.cpp **** 		}
+  30:interrupts.cpp **** 		else if( ++counter_dr1 > ((t=getTime(DR1_OUT))*10) ) // When the counter is >= time1, turn off do
+  31:interrupts.cpp **** 		{
+  32:interrupts.cpp **** 			activateDoor1(false);
+  33:interrupts.cpp **** 			dr1.is_active = false;
+  34:interrupts.cpp **** 			//dr1.toggled = false;
+  35:interrupts.cpp **** 			counter_dr1 = 0; // reset the counter for the next go round
+  36:interrupts.cpp **** 		}
+  37:interrupts.cpp **** 		nop;
+  38:interrupts.cpp **** 	}
+  39:interrupts.cpp **** 
+  40:interrupts.cpp **** 	// Check Door 2
+  41:interrupts.cpp **** 	if(dr2.is_active && !dr2.toggle_mode)
+  42:interrupts.cpp **** 	{
+  43:interrupts.cpp **** 		if(bit_is_clear(INPUT_PIN_PORT, DR2_BUTTON)) {
+  44:interrupts.cpp **** 			counter_dr2=0; // Door2 Button is still pressed, reset the counter
+  45:interrupts.cpp **** 		}
+  46:interrupts.cpp **** 		else if( ++counter_dr2 > ((t=getTime(DR2_OUT))*10) ) // When the counter is >= time2, turn off do
+  47:interrupts.cpp **** 		{
+GAS LISTING /tmp/ccKjzSfr.s 			page 4
+
+
+  48:interrupts.cpp **** 			activateDoor2(false);
+  49:interrupts.cpp **** 			dr2.is_active = false;
+  50:interrupts.cpp **** 			//dr2.toggled = false;
+  51:interrupts.cpp **** 			counter_dr2 = 0; // reset the counter for the next go round
+  52:interrupts.cpp **** 		}
+  53:interrupts.cpp **** 		nop;
+  54:interrupts.cpp **** 	}
+  55:interrupts.cpp **** #endif
+  56:interrupts.cpp **** }
+  57:interrupts.cpp **** 
+  58:interrupts.cpp **** /**
+  59:interrupts.cpp ****  *  \brief Timer0 overflow interrupt - Increments the global millis variable.
+  60:interrupts.cpp ****  *  
+  61:interrupts.cpp ****  *  \param [in] TIMER0_OVF_vect Timer0 Overflow Interrupt Vector.
+  62:interrupts.cpp **** */
+  63:interrupts.cpp **** ISR(TIMER0_OVF_vect)
+  64:interrupts.cpp **** {
+ 125               		.stabn	68,0,64,.LM0-.LFBB1
+ 126               	.LM0:
+ 127               	.LFBB1:
+ 128 0000 1F92      		push r1
+ 129 0002 0F92      		push r0
+ 130 0004 0FB6      		in r0,__SREG__
+ 131 0006 0F92      		push r0
+ 132 0008 1124      		clr __zero_reg__
+ 133 000a 2F93      		push r18
+ 134 000c 3F93      		push r19
+ 135 000e 8F93      		push r24
+ 136 0010 9F93      		push r25
+ 137 0012 AF93      		push r26
+ 138 0014 BF93      		push r27
+ 139               	/* prologue: Signal */
+ 140               	/* frame size = 0 */
+ 141               	/* stack size = 9 */
+ 142               	.L__stack_usage = 9
+  65:interrupts.cpp **** 	unsigned long m = timer0_millis;
+ 143               		.stabn	68,0,65,.LM1-.LFBB1
+ 144               	.LM1:
+ 145 0016 8091 0000 		lds r24,timer0_millis
+ 146 001a 9091 0000 		lds r25,timer0_millis+1
+ 147 001e A091 0000 		lds r26,timer0_millis+2
+ 148 0022 B091 0000 		lds r27,timer0_millis+3
+  66:interrupts.cpp **** 	ui8 f = timer0_fract;
+ 149               		.stabn	68,0,66,.LM2-.LFBB1
+ 150               	.LM2:
+ 151 0026 3091 0000 		lds r19,timer0_fract
+  67:interrupts.cpp **** 
+  68:interrupts.cpp **** 	m += MILLIS_INC;
+  69:interrupts.cpp **** 	f += FRACT_INC;
+ 152               		.stabn	68,0,69,.LM3-.LFBB1
+ 153               	.LM3:
+ 154 002a 26E0      		ldi r18,lo8(6)
+ 155 002c 230F      		add r18,r19
+  70:interrupts.cpp **** 
+  71:interrupts.cpp **** 	if (f >= FRACT_MAX)
+ 156               		.stabn	68,0,71,.LM4-.LFBB1
+ 157               	.LM4:
+GAS LISTING /tmp/ccKjzSfr.s 			page 5
+
+
+ 158 002e 2D37      		cpi r18,lo8(125)
+ 159 0030 00F4      		brsh .L2
+  68:interrupts.cpp **** 	f += FRACT_INC;
+ 160               		.stabn	68,0,68,.LM5-.LFBB1
+ 161               	.LM5:
+ 162 0032 0296      		adiw r24,2
+ 163 0034 A11D      		adc r26,__zero_reg__
+ 164 0036 B11D      		adc r27,__zero_reg__
+ 165 0038 00C0      		rjmp .L3
+ 166               	.L2:
+  72:interrupts.cpp **** 	{
+  73:interrupts.cpp **** 		f -= FRACT_MAX;
+ 167               		.stabn	68,0,73,.LM6-.LFBB1
+ 168               	.LM6:
+ 169 003a 29E8      		ldi r18,lo8(-119)
+ 170 003c 230F      		add r18,r19
+  74:interrupts.cpp **** 		m += 1;
+ 171               		.stabn	68,0,74,.LM7-.LFBB1
+ 172               	.LM7:
+ 173 003e 0396      		adiw r24,3
+ 174 0040 A11D      		adc r26,__zero_reg__
+ 175 0042 B11D      		adc r27,__zero_reg__
+ 176               	.L3:
+  75:interrupts.cpp **** 	}
+  76:interrupts.cpp **** 	timer0_fract = f;
+ 177               		.stabn	68,0,76,.LM8-.LFBB1
+ 178               	.LM8:
+ 179 0044 2093 0000 		sts timer0_fract,r18
+  77:interrupts.cpp **** 	timer0_millis = m;
+ 180               		.stabn	68,0,77,.LM9-.LFBB1
+ 181               	.LM9:
+ 182 0048 8093 0000 		sts timer0_millis,r24
+ 183 004c 9093 0000 		sts timer0_millis+1,r25
+ 184 0050 A093 0000 		sts timer0_millis+2,r26
+ 185 0054 B093 0000 		sts timer0_millis+3,r27
+ 186               	/* epilogue start */
+  78:interrupts.cpp **** }
+ 187               		.stabn	68,0,78,.LM10-.LFBB1
+ 188               	.LM10:
+ 189 0058 BF91      		pop r27
+ 190 005a AF91      		pop r26
+ 191 005c 9F91      		pop r25
+ 192 005e 8F91      		pop r24
+ 193 0060 3F91      		pop r19
+ 194 0062 2F91      		pop r18
+ 195 0064 0F90      		pop r0
+ 196 0066 0FBE      		out __SREG__,r0
+ 197 0068 0F90      		pop r0
+ 198 006a 1F90      		pop r1
+ 199 006c 1895      		reti
+ 200               		.size	__vector_14, .-__vector_14
+ 201               	.Lscope1:
+ 202               		.stabs	"",36,0,0,.Lscope1-.LFBB1
+ 203               		.stabd	78,0,0
+ 204               		.stabs	"__vector_5:F(0,4)",36,0,87,__vector_5
+ 205               	.global	__vector_5
+ 206               		.type	__vector_5, @function
+GAS LISTING /tmp/ccKjzSfr.s 			page 6
+
+
+ 207               	__vector_5:
+ 208               		.stabd	46,0,0
+  79:interrupts.cpp **** 
+  80:interrupts.cpp **** /**
+  81:interrupts.cpp ****  *  \brief Interrupt Handler For PCINT23:16 (PIND)
+  82:interrupts.cpp ****  *  
+  83:interrupts.cpp ****  *  \param [in] PIND Pin Change Interrupt 2 Vector
+  84:interrupts.cpp ****  *  
+  85:interrupts.cpp ****  *  \details This interrupt signal routine is called when any of the DIP settings input pins are ch
+  86:interrupts.cpp ****  */
+  87:interrupts.cpp **** ISR(PCINT2_vect)
+  88:interrupts.cpp **** {
+ 209               		.stabn	68,0,88,.LM11-.LFBB2
+ 210               	.LM11:
+ 211               	.LFBB2:
+ 212 006e 1F92      		push r1
+ 213 0070 0F92      		push r0
+ 214 0072 0FB6      		in r0,__SREG__
+ 215 0074 0F92      		push r0
+ 216 0076 1124      		clr __zero_reg__
+ 217               	/* prologue: Signal */
+ 218               	/* frame size = 0 */
+ 219               	/* stack size = 3 */
+ 220               	.L__stack_usage = 3
+ 221               	/* epilogue start */
+  89:interrupts.cpp **** // the EExER build disables this setting
+  90:interrupts.cpp **** #if (!EExER)
+  91:interrupts.cpp **** 	uint8_t reg = (INPUT_PIN_PORT^dip_switch.prev_values); // The set bits in 'reg' correspond to a pi
+  92:interrupts.cpp **** 
+  93:interrupts.cpp **** 	if(bit_get(reg, MODE_PIN)) /* Operating Mode Changed */
+  94:interrupts.cpp **** 	{
+  95:interrupts.cpp **** 		dip_switch.mode = (bit_get(INPUT_PIN_PORT, MODE_PIN)>0) ? DEPENDENT : INDEPENDENT; // Set the new
+  96:interrupts.cpp **** 		if(dip_switch.mode==INDEPENDENT) /* Went from dependent -> independent */
+  97:interrupts.cpp **** 		{
+  98:interrupts.cpp **** 			if(doorActive(&dr1) || doorActive(&dr2)) // Just inactivate all the doors
+  99:interrupts.cpp **** 			{
+ 100:interrupts.cpp **** 				doorPinWrite(&dr1, false);
+ 101:interrupts.cpp **** 				doorPinWrite(&dr2, false);
+ 102:interrupts.cpp **** 				cbi(RELAY_PORT, RELAY1_PIN);
+ 103:interrupts.cpp **** 				cbi(RELAY_PORT, RELAY2_PIN);
+ 104:interrupts.cpp **** 				door_timer(true); // Reset the timer
+ 105:interrupts.cpp **** 			}
+ 106:interrupts.cpp **** 		} else /* Went from independent -> dependent, check and stop any active doors */
+ 107:interrupts.cpp **** 			{
+ 108:interrupts.cpp **** 				if(doorActive(&dr1))
+ 109:interrupts.cpp **** 				{
+ 110:interrupts.cpp **** 					doorPinWrite(&dr1, false);
+ 111:interrupts.cpp **** 					cbi(RELAY_PORT,RELAY1_PIN);
+ 112:interrupts.cpp **** 					dr1.toggled = false;
+ 113:interrupts.cpp **** 				}
+ 114:interrupts.cpp **** 
+ 115:interrupts.cpp **** 				if(doorActive(&dr2))
+ 116:interrupts.cpp **** 				{
+ 117:interrupts.cpp **** 					doorPinWrite(&dr2, false);
+ 118:interrupts.cpp **** 					cbi(RELAY_PORT,RELAY2_PIN);
+ 119:interrupts.cpp **** 					dr2.toggled = false;
+ 120:interrupts.cpp **** 				}
+GAS LISTING /tmp/ccKjzSfr.s 			page 7
+
+
+ 121:interrupts.cpp **** 			}
+ 122:interrupts.cpp **** 			bit_write(dip_switch.mode, dip_switch.prev_values, 1);
+ 123:interrupts.cpp **** 		}
+ 124:interrupts.cpp **** 
+ 125:interrupts.cpp **** 		if(bit_get(reg, ACTIVE_MODE1_PIN)) 	/* Door 1 Active Mode Changed */
+ 126:interrupts.cpp **** 		{
+ 127:interrupts.cpp **** 			dr1.active_high = (bit_get(INPUT_PIN_PORT, ACTIVE_MODE1_PIN)) ? ACTIVE_HIGH:ACTIVE_LOW; // Set t
+ 128:interrupts.cpp **** 			(bit_get(INPUT_PIN_PORT, ACTIVE_MODE1_PIN)>0) ? sbi(dip_switch.prev_values, ACTIVE_MODE1_PIN) : 
+ 129:interrupts.cpp **** 			doorPinWrite(&dr1, ((dr1.is_active||dr1.toggled||dip_switch.retracting) ? true : false) ); // Ch
+ 130:interrupts.cpp **** 		}
+ 131:interrupts.cpp **** 
+ 132:interrupts.cpp **** 		if(bit_get(reg, ACTIVE_MODE2_PIN)) /* Door 2 Active Mode Changed */
+ 133:interrupts.cpp **** 		{
+ 134:interrupts.cpp **** 			dr2.active_high = (bit_get(INPUT_PIN_PORT, ACTIVE_MODE2_PIN)) ? ACTIVE_HIGH:ACTIVE_LOW; // Set t
+ 135:interrupts.cpp **** 			(bit_get(INPUT_PIN_PORT, ACTIVE_MODE2_PIN)) ? sbi(dip_switch.prev_values, ACTIVE_MODE2_PIN) : cb
+ 136:interrupts.cpp **** 			doorPinWrite(&dr2, ((dr2.is_active || dr2.toggled||dip_switch.retracting) ? true : false) ); // 
+ 137:interrupts.cpp **** 		}
+ 138:interrupts.cpp **** 
+ 139:interrupts.cpp **** 		if(bit_get(reg, TOGGLE1_PIN)) /* Door 1 Toggle Mode Changed */
+ 140:interrupts.cpp **** 		{
+ 141:interrupts.cpp **** 			dr1.toggle_mode = bit_get(INPUT_PIN_PORT, TOGGLE1_PIN) ? false:true; // Set the door 1 toggle va
+ 142:interrupts.cpp **** 			dr1.toggle_mode ? cbi(dip_switch.prev_values, TOGGLE1_PIN) : sbi(dip_switch.prev_values, TOGGLE1
+ 143:interrupts.cpp **** 			if( (dr1.toggled || dr1.is_active) && dr1.toggle_mode==false ) // Toggle mode changed to off and
+ 144:interrupts.cpp **** 			{
+ 145:interrupts.cpp **** 				doorPinWrite(&dr1, false);
+ 146:interrupts.cpp **** 				cbi(RELAY_PORT, RELAY1_PIN);
+ 147:interrupts.cpp **** 				dr1.toggled = false;
+ 148:interrupts.cpp **** 				dr1.is_active = false;
+ 149:interrupts.cpp **** 				if(dip_switch.mode==DEPENDENT)
+ 150:interrupts.cpp **** 				{
+ 151:interrupts.cpp **** 					doorPinWrite(&dr2,false);
+ 152:interrupts.cpp **** 					cbi(RELAY_PORT,RELAY2_PIN);
+ 153:interrupts.cpp **** 					dr2.toggled = false;
+ 154:interrupts.cpp **** 					dr2.is_active = false;
+ 155:interrupts.cpp **** 				}
+ 156:interrupts.cpp **** 			} else /* Toggle mode changed to ON */
+ 157:interrupts.cpp **** 			{
+ 158:interrupts.cpp **** 				if(dr1.is_active)
+ 159:interrupts.cpp **** 				{
+ 160:interrupts.cpp **** 					doorPinWrite(&dr1, false);
+ 161:interrupts.cpp **** 					cbi(RELAY_PORT, RELAY1_PIN);
+ 162:interrupts.cpp **** 					dr1.toggled = false;
+ 163:interrupts.cpp **** 					dr1.is_active = false;
+ 164:interrupts.cpp **** 				}
+ 165:interrupts.cpp **** 			}
+ 166:interrupts.cpp **** 		}
+ 167:interrupts.cpp **** 
+ 168:interrupts.cpp **** 		if(bit_get(reg, TOGGLE2_PIN)) /* Door 2 Toggle Mode Changed */
+ 169:interrupts.cpp **** 		{
+ 170:interrupts.cpp **** 			dr2.toggle_mode = bit_get(INPUT_PIN_PORT, TOGGLE2_PIN) ? false : true; // Set the door 2 toggle 
+ 171:interrupts.cpp **** 			dr2.toggle_mode ? cbi(dip_switch.prev_values, TOGGLE2_PIN) : sbi(dip_switch.prev_values, TOGGLE2
+ 172:interrupts.cpp **** 
+ 173:interrupts.cpp **** 			if( (dr2.toggled || dr2.is_active) && dip_switch.mode == INDEPENDENT) /* Check for any active ou
+ 174:interrupts.cpp **** 			{
+ 175:interrupts.cpp **** 				doorPinWrite(&dr2, false);
+ 176:interrupts.cpp **** 				cbi(RELAY_PORT, RELAY2_PIN);
+ 177:interrupts.cpp **** 				dr2.toggled = false;
+GAS LISTING /tmp/ccKjzSfr.s 			page 8
+
+
+ 178:interrupts.cpp **** 				dr2.is_active = false;
+ 179:interrupts.cpp **** 			}
+ 180:interrupts.cpp **** 		}
+ 181:interrupts.cpp **** #endif /* EExER */
+ 182:interrupts.cpp **** }
+ 222               		.stabn	68,0,182,.LM12-.LFBB2
+ 223               	.LM12:
+ 224 0078 0F90      		pop r0
+ 225 007a 0FBE      		out __SREG__,r0
+ 226 007c 0F90      		pop r0
+ 227 007e 1F90      		pop r1
+ 228 0080 1895      		reti
+ 229               		.size	__vector_5, .-__vector_5
+ 230               	.Lscope2:
+ 231               		.stabs	"",36,0,0,.Lscope2-.LFBB2
+ 232               		.stabd	78,0,0
+ 233               	.global	__vector_9
+ 234               		.type	__vector_9, @function
+ 235               	__vector_9:
+ 236 0082 1F92      		push r1
+ 237 0084 0F92      		push r0
+ 238 0086 0FB6      		in r0,__SREG__
+ 239 0088 0F92      		push r0
+ 240 008a 1124      		clr __zero_reg__
+ 241               	/* prologue: Signal */
+ 242               	/* frame size = 0 */
+ 243               	/* stack size = 3 */
+ 244               	.L__stack_usage = 3
+ 245               	/* epilogue start */
+ 246 008c 0F90      		pop r0
+ 247 008e 0FBE      		out __SREG__,r0
+ 248 0090 0F90      		pop r0
+ 249 0092 1F90      		pop r1
+ 250 0094 1895      		reti
+ 251               		.size	__vector_9, .-__vector_9
+ 252               	.global	counter_dr2
+ 253               		.section .bss
+ 254               		.type	counter_dr2, @object
+ 255               		.size	counter_dr2, 2
+ 256               	counter_dr2:
+ 257 0000 0000      		.zero	2
+ 258               	.global	counter_dr1
+ 259               		.type	counter_dr1, @object
+ 260               		.size	counter_dr1, 2
+ 261               	counter_dr1:
+ 262 0002 0000      		.zero	2
+ 263               	.global	timer0_fract
+ 264               		.type	timer0_fract, @object
+ 265               		.size	timer0_fract, 1
+ 266               	timer0_fract:
+ 267 0004 00        		.zero	1
+ 268               	.global	timer0_millis
+ 269               		.type	timer0_millis, @object
+ 270               		.size	timer0_millis, 4
+ 271               	timer0_millis:
+ 272 0005 0000 0000 		.zero	4
+ 273               		.stabs	"timer0_millis:G(0,108)=B(0,11)",32,0,13,0
+GAS LISTING /tmp/ccKjzSfr.s 			page 9
+
+
+ 274               		.stabs	"timer0_fract:G(0,97)",32,0,14,0
+ 275               		.stabs	"counter_dr1:G(0,109)=B(0,65)",32,0,15,0
+ 276               		.stabs	"counter_dr2:G(0,109)",32,0,15,0
+ 277               		.text
+ 278               		.stabs	"",100,0,0,.Letext0
+ 279               	.Letext0:
+ 280               		.ident	"GCC: (GNU) 5.4.0"
+ 281               	.global __do_clear_bss
+GAS LISTING /tmp/ccKjzSfr.s 			page 10
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 interrupts.cpp
+     /tmp/ccKjzSfr.s:2      *ABS*:000000000000003e __SP_H__
+     /tmp/ccKjzSfr.s:3      *ABS*:000000000000003d __SP_L__
+     /tmp/ccKjzSfr.s:4      *ABS*:000000000000003f __SREG__
+     /tmp/ccKjzSfr.s:5      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/ccKjzSfr.s:6      *ABS*:0000000000000001 __zero_reg__
+     /tmp/ccKjzSfr.s:123    .text:0000000000000000 __vector_14
+     /tmp/ccKjzSfr.s:271    .bss:0000000000000005 timer0_millis
+     /tmp/ccKjzSfr.s:266    .bss:0000000000000004 timer0_fract
+     /tmp/ccKjzSfr.s:207    .text:000000000000006e __vector_5
+     /tmp/ccKjzSfr.s:235    .text:0000000000000082 __vector_9
+     /tmp/ccKjzSfr.s:256    .bss:0000000000000000 counter_dr2
+     /tmp/ccKjzSfr.s:261    .bss:0000000000000002 counter_dr1
+
+UNDEFINED SYMBOLS
+__do_clear_bss

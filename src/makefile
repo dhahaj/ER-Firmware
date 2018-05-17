@@ -90,11 +90,14 @@ PROJECTNAME=ER-Firmware
 # Use .cc, .cpp or .C suffix for C++ files, use .S 
 # (NOT .s !!!) for assembly source code files.
 # PRJSRC=main.c myclass.cpp lowlevelstuff.S
-PRJSRC=main.c interrupts.c timers.c
+PRJSRC=Main.cpp interrupts.cpp timers.c
 
 # additional includes (e.g. -I/path/to/mydir)
 # INC=-I/path/to/include
-INC=-Isrc
+#INC=-Isrc -I"C:\Program Files (x86)\Arduino\hardware\arduino\avr\cores\arduino" -I"C:\Users\dmh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.1.5\variants\tinyX8"
+#INC=-I"/mnt/c/Program\ File\ (x86)/Arduino/hardware/avr/cores/arduino" -I"/mnt/c/Users/dmh/AppData/Local/Arduino15/packages/ATTinyCore/hardware/avr/1.1.5/variants/tinyX8"
+INC=-I/mnt/c/Program\ Files\ \(x86\)/Arduino/hardware/arduino/avr/cores/arduino -I/mnt/c/Users/dmh/AppData/Local/Arduino15/packages/ATTinyCore/hardware/avr/1.1.5/variants/tinyX8
+#C:\Program Files (x86)\Arduino\hardware\arduino\avr\cores\arduino" -I"C:\Users\dmh\AppData\Local\Arduino15\packages\ATTinyCore\hardware\avr\1.1.5\variants\tinyX8"
 
 # libraries to link in (e.g. -lmylib)
 LIBS=
@@ -103,7 +106,7 @@ LIBS=
 # use s (size opt), 1, 2, 3 or 0 (off)
 OPTLEVEL=s
 
-EExER=EExER=0
+EExER=EExER=1
 
 #####      AVR Dude 'writeflash' options       #####
 #####  If you are using the avrdude program
@@ -124,7 +127,6 @@ AVRDUDE_PROGRAMMERID=usbtiny
 # hardware programmer is attached
 AVRDUDE_PORT=COM3
 
-
 ####################################################
 #####                Config Done               #####
 #####                                          #####
@@ -142,19 +144,21 @@ AVRDUDE_PORT=COM3
 HEXFORMAT=ihex
 
 # compiler
-CFLAGS=-I. $(INC) -g -mmcu=$(MCU) -O$(OPTLEVEL) -std=c99 \
+CFLAGS=-I. $(INC) -g -mmcu=$(MCU) -O$(OPTLEVEL)  \
 	-D$(EExER) -DF_CPU=8000000 \
 	-fpack-struct -fshort-enums             \
 	-funsigned-bitfields -funsigned-char    \
-	-Wall -Wstrict-prototypes               \
-	-Wa,-ahlms=$(firstword                  \
+	-Wall -Wa,-ahlms=$(firstword                  \
 	$(filter %.lst, $(<:.c=.lst)))
 
+# \\ -Wstrict-prototypes	-std=c99
+	
+	
 # c++ specific flags
-CPPFLAGS=-fno-exceptions               \
-	-Wa,-ahlms=$(firstword         \
-	$(filter %.lst, $(<:.cpp=.lst))\
-	$(filter %.lst, $(<:.cc=.lst)) \
+CPPFLAGS=-fno-exceptions -std=gnu++0x  \
+	-Wa,-ahlms=$(firstword          \
+	$(filter %.lst, $(<:.cpp=.lst)) \
+	$(filter %.lst, $(<:.cc=.lst))  \
 	$(filter %.lst, $(<:.C=.lst)))
 
 # assembler

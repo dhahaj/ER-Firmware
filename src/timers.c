@@ -12,6 +12,9 @@
 #include "interrupts.h"
 #include "door.h"
 
+volatile unsigned long timer0_millis;
+volatile uint8_t timer0_fract;
+
 // Array holding the 4-bit timing selection values (in seconds), Stored in PGM Memory
 const ui8 PROGMEM timing_values_PGM[] = {
 	1,	// 0
@@ -58,20 +61,20 @@ unsigned long door_timer(bool reset)
 {
 	if(reset) 	// Reset the Door Timer and return
 	{
-		ATOMIC_BLOCK(ATOMIC_RESTORESTATE)
-		{
+		// ATOMIC_BLOCK(ATOMIC_RESTORESTATE)
+		// {
 			timer0_millis = 0;
 			timer0_fract = 0;
-		}
+		// }
 		return 0;
 	}
 
 	// Else, Return the time since last reset
 	unsigned long t;
-	ATOMIC_BLOCK(ATOMIC_RESTORESTATE)
-	{
+	// ATOMIC_BLOCK(ATOMIC_RESTORESTATE)
+	// {
 		t = timer0_millis;
-	}
+	// }
 	return t;
 }
 

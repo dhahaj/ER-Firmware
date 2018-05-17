@@ -1,0 +1,2711 @@
+GAS LISTING /tmp/ccyIUKZe.s 			page 1
+
+
+   1               		.file	"Main.cpp"
+   2               	__SP_H__ = 0x3e
+   3               	__SP_L__ = 0x3d
+   4               	__SREG__ = 0x3f
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+   7               		.stabs	"/mnt/c/Users/dmh/Documents/AVR/ER-Firmware/ER-Firmware/src/",100,0,4,.Ltext0
+   8               		.stabs	"Main.cpp",100,0,4,.Ltext0
+   9               		.text
+  10               	.Ltext0:
+  11               		.stabs	"gcc2_compiled.",60,0,0,0
+  12               		.stabs	"__uint24:t(0,1)=@s24;r(0,1);0;077777777;",128,0,0,0
+  13               		.stabs	"__int24:t(0,2)=@s24;r(0,2);040000000;037777777;",128,0,0,0
+  14               		.stabs	"__builtin_va_list:t(0,3)=*(0,4)=(0,4)",128,0,0,0
+  15               		.stabs	"complex long double:t(0,5)=R3;8;0;",128,0,0,0
+  16               		.stabs	"complex double:t(0,6)=R3;8;0;",128,0,0,0
+  17               		.stabs	"complex float:t(0,7)=R3;8;0;",128,0,0,0
+  18               		.stabs	"complex int:t(0,8)=s4real:(0,9)=r(0,9);-32768;32767;,0,16;imag:(0,9),16,16;;",128,0,0,0
+  19               		.stabs	"long long unsigned int:t(0,10)=@s64;r(0,10);0;01777777777777777777777;",128,0,0,0
+  20               		.stabs	"long unsigned int:t(0,11)=@s32;r(0,11);0;037777777777;",128,0,0,0
+  21               		.stabs	"unsigned int:t(0,12)=r(0,12);0;0177777;",128,0,0,0
+  22               		.stabs	"unsigned char:t(0,13)=@s8;r(0,13);0;255;",128,0,0,0
+  23               		.stabs	"long long int:t(0,14)=@s64;r(0,14);01000000000000000000000;00777777777777777777777;",128,0
+  24               		.stabs	"long int:t(0,15)=@s32;r(0,15);020000000000;017777777777;",128,0,0,0
+  25               		.stabs	"int:t(0,9)",128,0,0,0
+  26               		.stabs	"signed char:t(0,16)=@s8;r(0,16);-128;127;",128,0,0,0
+  27               		.stabs	"char:t(0,17)=@s8;r(0,17);0;255;",128,0,0,0
+  28               		.stabs	"signed:t(0,9)",128,0,0,0
+  29               		.stabs	"__int128:t(0,18)=@s128;r(0,18);02000000000000000000000000000000000000000000;01777777777777
+  30               		.stabs	"__int128 unsigned:t(0,19)=@s128;r(0,19);0;03777777777777777777777777777777777777777777;",1
+  31               		.stabs	"unsigned long:t(0,11)",128,0,0,0
+  32               		.stabs	"long long unsigned:t(0,10)",128,0,0,0
+  33               		.stabs	"short int:t(0,20)=r(0,20);-32768;32767;",128,0,0,0
+  34               		.stabs	"short unsigned int:t(0,21)=r(0,21);0;0177777;",128,0,0,0
+  35               		.stabs	"unsigned short:t(0,21)",128,0,0,0
+  36               		.stabs	"float:t(0,22)=r(0,9);4;0;",128,0,0,0
+  37               		.stabs	"double:t(0,23)=r(0,9);4;0;",128,0,0,0
+  38               		.stabs	"long double:t(0,24)=r(0,9);4;0;",128,0,0,0
+  39               		.stabs	"short _Fract:t(0,25)=r(0,9);1;0;",128,0,0,0
+  40               		.stabs	"long _Fract:t(0,26)=r(0,9);4;0;",128,0,0,0
+  41               		.stabs	"long long _Fract:t(0,27)=r(0,9);8;0;",128,0,0,0
+  42               		.stabs	"unsigned short _Fract:t(0,28)=r(0,9);1;0;",128,0,0,0
+  43               		.stabs	"unsigned _Fract:t(0,29)=r(0,9);2;0;",128,0,0,0
+  44               		.stabs	"unsigned long _Fract:t(0,30)=r(0,9);4;0;",128,0,0,0
+  45               		.stabs	"unsigned long long _Fract:t(0,31)=r(0,9);8;0;",128,0,0,0
+  46               		.stabs	"_Sat short _Fract:t(0,32)=r(0,9);1;0;",128,0,0,0
+  47               		.stabs	"_Sat _Fract:t(0,33)=r(0,9);2;0;",128,0,0,0
+  48               		.stabs	"_Sat long _Fract:t(0,34)=r(0,9);4;0;",128,0,0,0
+  49               		.stabs	"_Sat long long _Fract:t(0,35)=r(0,9);8;0;",128,0,0,0
+  50               		.stabs	"_Sat unsigned short _Fract:t(0,36)=r(0,9);1;0;",128,0,0,0
+  51               		.stabs	"_Sat unsigned _Fract:t(0,37)=r(0,9);2;0;",128,0,0,0
+  52               		.stabs	"_Sat unsigned long _Fract:t(0,38)=r(0,9);4;0;",128,0,0,0
+  53               		.stabs	"_Sat unsigned long long _Fract:t(0,39)=r(0,9);8;0;",128,0,0,0
+  54               		.stabs	"short _Accum:t(0,40)=r(0,9);2;0;",128,0,0,0
+  55               		.stabs	"long _Accum:t(0,41)=r(0,9);8;0;",128,0,0,0
+  56               		.stabs	"long long _Accum:t(0,42)=r(0,9);8;0;",128,0,0,0
+  57               		.stabs	"unsigned short _Accum:t(0,43)=r(0,9);2;0;",128,0,0,0
+GAS LISTING /tmp/ccyIUKZe.s 			page 2
+
+
+  58               		.stabs	"unsigned _Accum:t(0,44)=r(0,9);4;0;",128,0,0,0
+  59               		.stabs	"unsigned long _Accum:t(0,45)=r(0,9);8;0;",128,0,0,0
+  60               		.stabs	"unsigned long long _Accum:t(0,46)=r(0,9);8;0;",128,0,0,0
+  61               		.stabs	"_Sat short _Accum:t(0,47)=r(0,9);2;0;",128,0,0,0
+  62               		.stabs	"_Sat _Accum:t(0,48)=r(0,9);4;0;",128,0,0,0
+  63               		.stabs	"_Sat long _Accum:t(0,49)=r(0,9);8;0;",128,0,0,0
+  64               		.stabs	"_Sat long long _Accum:t(0,50)=r(0,9);8;0;",128,0,0,0
+  65               		.stabs	"_Sat unsigned short _Accum:t(0,51)=r(0,9);2;0;",128,0,0,0
+  66               		.stabs	"_Sat unsigned _Accum:t(0,52)=r(0,9);4;0;",128,0,0,0
+  67               		.stabs	"_Sat unsigned long _Accum:t(0,53)=r(0,9);8;0;",128,0,0,0
+  68               		.stabs	"_Sat unsigned long long _Accum:t(0,54)=r(0,9);8;0;",128,0,0,0
+  69               		.stabs	"void:t(0,4)",128,0,0,0
+  70               		.stabs	"wchar_t:t(0,55)=r(0,55);-32768;32767;",128,0,0,0
+  71               		.stabs	"char16_t:t(0,56)=r(0,56);0;0177777;",128,0,0,0
+  72               		.stabs	"char32_t:t(0,57)=@s32;r(0,57);0;037777777777;",128,0,0,0
+  73               		.stabs	"bool:t(0,58)=@s8;-16;",128,0,0,0
+  74               		.stabs	"__vtbl_ptr_type:t(0,59)=*(0,60)=f(0,9)",128,0,0,0
+  75               		.stabs	"decltype(nullptr):t(0,61)=(0,61)",128,0,0,0
+  76               		.stabs	"int8_t:t(0,62)=(0,16)",128,0,125,0
+  77               		.stabs	"uint8_t:t(0,63)=(0,13)",128,0,126,0
+  78               		.stabs	"int16_t:t(0,64)=(0,9)",128,0,127,0
+  79               		.stabs	"uint16_t:t(0,65)=(0,12)",128,0,128,0
+  80               		.stabs	"int32_t:t(0,66)=(0,15)",128,0,129,0
+  81               		.stabs	"uint32_t:t(0,67)=(0,11)",128,0,130,0
+  82               		.stabs	"int64_t:t(0,68)=(0,14)",128,0,132,0
+  83               		.stabs	"uint64_t:t(0,69)=(0,10)",128,0,133,0
+  84               		.stabs	"intptr_t:t(0,70)=(0,64)",128,0,146,0
+  85               		.stabs	"uintptr_t:t(0,71)=(0,65)",128,0,151,0
+  86               		.stabs	"int_least8_t:t(0,72)=(0,62)",128,0,163,0
+  87               		.stabs	"uint_least8_t:t(0,73)=(0,63)",128,0,168,0
+  88               		.stabs	"int_least16_t:t(0,74)=(0,64)",128,0,173,0
+  89               		.stabs	"uint_least16_t:t(0,75)=(0,65)",128,0,178,0
+  90               		.stabs	"int_least32_t:t(0,76)=(0,66)",128,0,183,0
+  91               		.stabs	"uint_least32_t:t(0,77)=(0,67)",128,0,188,0
+  92               		.stabs	"int_least64_t:t(0,78)=(0,68)",128,0,196,0
+  93               		.stabs	"uint_least64_t:t(0,79)=(0,69)",128,0,203,0
+  94               		.stabs	"int_fast8_t:t(0,80)=(0,62)",128,0,217,0
+  95               		.stabs	"uint_fast8_t:t(0,81)=(0,63)",128,0,222,0
+  96               		.stabs	"int_fast16_t:t(0,82)=(0,64)",128,0,227,0
+  97               		.stabs	"uint_fast16_t:t(0,83)=(0,65)",128,0,232,0
+  98               		.stabs	"int_fast32_t:t(0,84)=(0,66)",128,0,237,0
+  99               		.stabs	"uint_fast32_t:t(0,85)=(0,67)",128,0,242,0
+ 100               		.stabs	"int_fast64_t:t(0,86)=(0,68)",128,0,250,0
+ 101               		.stabs	"uint_fast64_t:t(0,87)=(0,69)",128,0,257,0
+ 102               		.stabs	"intmax_t:t(0,88)=(0,68)",128,0,277,0
+ 103               		.stabs	"uintmax_t:t(0,89)=(0,69)",128,0,282,0
+ 104               		.stabs	"int_farptr_t:t(0,90)=(0,66)",128,0,77,0
+ 105               		.stabs	"uint_farptr_t:t(0,91)=(0,67)",128,0,81,0
+ 106               		.stabs	"._0:Tt(0,92)=s3low:(0,13),0,8;high:(0,13),8,8;extended:(0,13),16,8;;",128,0,240,0
+ 107               		.stabs	"__fuse_t:t(0,92)",128,0,244,0
+ 108               		.stabs	"size_t:t(0,93)=(0,12)",128,0,216,0
+ 109               		.stabs	"._1:Tt(0,94)=s7toggle_mode:(0,58),0,8;toggled:(0,58),8,8;is_active:(0,58),16,8;active_high
+ 110               		.stabs	"Door:t(0,94)",128,0,24,0
+ 111               		.stabs	"ui8:t(0,98)=(0,63)",128,0,261,0
+ 112               		.stabs	"byte:t(0,99)=(0,63)",128,0,262,0
+ 113               		.stabs	"._2:Tt(0,100)=s3mode:(0,101)=B(0,58),0,8;prev_values:(0,102)=B(0,98),8,8;retracting:(0,101
+ 114               		.stabs	"Inputs:t(0,100)",128,0,270,0
+GAS LISTING /tmp/ccyIUKZe.s 			page 3
+
+
+ 115               		.stabs	"DoorMode:t(0,103)=@s8;eModeDependent:0,ModeIndependent:1,;",128,0,288,0
+ 116               		.stabs	"OutputMode:t(0,104)=@s8;eActiveLow:0,ActiveHigh:1,;",128,0,294,0
+ 117               		.stabs	"ToggleMode:t(0,105)=@s8;eToggleOff:0,ToggleOn:1,;",128,0,300,0
+ 118               		.stabs	"RotaryPositions:t(0,106)=@s8;eposition0:0,position1:1,position2:2,position3:3,position4:4,
+ 119               		.stabs	"DelayTime:t(0,107)=@s8;edelay_1s:1,delay_2s:2,delay_3s:3,delay_5s:5,delay_7s:7,delay_10s:1
+ 120               		.stabs	"._3:Tt(0,108)=s4quot:(0,9),0,16;rem:(0,9),16,16;;",128,0,70,0
+ 121               		.stabs	"div_t:t(0,108)",128,0,73,0
+ 122               		.stabs	"._4:Tt(0,109)=s8quot:(0,15),0,32;rem:(0,15),32,32;;",128,0,76,0
+ 123               		.stabs	"ldiv_t:t(0,109)",128,0,79,0
+ 124               		.stabs	"__compar_fn_t:t(0,110)=(0,111)=*(0,112)=f(0,9)",128,0,82,0
+ 125               		.stabs	"word:t(0,113)=(0,12)",128,0,121,0
+ 126               		.stabs	"boolean:t(0,114)=(0,58)",128,0,125,0
+ 127               		.stabs	"String:Tt(0,115)=s6buffer:/1(0,116)=*(0,17),0,16;capacity:/1(0,12),16,16;len:/1(0,12),32,1
+ 128               		.stabs	"StringSumHelper:Tt(0,134)=s6!1,020,(0,115);__base_ctor ::(0,204)=#(0,134),(0,4),(0,205)=*(
+ 129               		.stabs	"__gnuc_va_list:t(0,215)=(0,3)",128,0,40,0
+ 130               		.stabs	"va_list:t(0,216)=(0,215)",128,0,98,0
+ 131               		.stabs	"__file:Tt(0,217)=s14buf:(0,116),0,16;unget:(0,13),16,8;flags:(0,63),24,8;size:(0,9),32,16;
+ 132               		.stabs	"FILE:t(0,223)=(0,217)",128,0,277,0
+ 133               		.stabs	"fpos_t:t(0,224)=(0,14)",128,0,950,0
+ 134               		.stabs	"LookaheadMode:t(0,225)=@s8;eSKIP_ALL:0,SKIP_NONE:1,SKIP_WHITESPACE:2,;",128,0,41,0
+ 135               		.stabs	"Stream::MultiTarget:Tt(0,226)=s6str:(0,122),0,16;len:(0,93),16,16;index:(0,93),32,16;;",12
+ 136               		.stabs	"tx_buffer_index_t:t(0,227)=(0,63)",128,0,59,0
+ 137               		.stabs	"rx_buffer_index_t:t(0,228)=(0,63)",128,0,64,0
+ 138               		.stabs	"ptrdiff_t:t(0,229)=(0,9)",128,0,149,0
+ 139               		.stabs	"._5:Tt(0,230)=s12__max_align_ll:(0,14),0,64;__max_align_ld:(0,24),64,32;;",128,0,426,0
+ 140               		.stabs	"max_align_t:t(0,230)",128,0,429,0
+ 141               		.stabs	"nullptr_t:t(0,231)=(0,61)",128,0,436,0
+ 142               		.stabs	"u8:t(0,232)=(0,13)",128,0,29,0
+ 143               		.stabs	"u16:t(0,233)=(0,21)",128,0,30,0
+ 144               		.stabs	"u32:t(0,234)=(0,11)",128,0,31,0
+ 145               		.stabs	"Stream:Tt(0,235)=s12!1,020,(0,236)=xsPrint:;_timeout:/1(0,11),32,32;_startMillis:/1(0,11),
+ 146               		.stabs	"_ZL9init_doorPK4Door.isra.0:f(0,4)",36,0,182,_ZL9init_doorPK4Door.isra.0
+ 147               		.stabs	"ISRA.26:P(0,95)",64,0,0,24
+ 148               		.stabs	"ISRA.27:P(0,95)",64,0,0,22
+ 149               		.type	_ZL9init_doorPK4Door.isra.0, @function
+ 150               	_ZL9init_doorPK4Door.isra.0:
+ 151               		.stabd	46,0,0
+   1:Main.cpp      **** /*
+   2:Main.cpp      **** *  Revision 5.2
+   3:Main.cpp      **** *  main.c -> Main code for the ER Controller, with optional EExER builds.
+   4:Main.cpp      **** *
+   5:Main.cpp      **** *  Created: 1/23/2013 11:51 AM
+   6:Main.cpp      **** *  Modified: 8/4/2015 3:48 PM
+   7:Main.cpp      **** *  Author: DMH
+   8:Main.cpp      **** *
+   9:Main.cpp      **** */
+  10:Main.cpp      **** 
+  11:Main.cpp      **** #include <avr/io.h>
+  12:Main.cpp      **** #include <util/delay.h>
+  13:Main.cpp      **** #include <avr/wdt.h>
+  14:Main.cpp      **** #include <util/atomic.h>
+  15:Main.cpp      **** #include <avr/interrupt.h>
+  16:Main.cpp      **** #include <avr/portpins.h>
+  17:Main.cpp      **** #include <avr/sfr_defs.h>
+  18:Main.cpp      **** #include "main.h"
+  19:Main.cpp      **** #include "timers.h"
+  20:Main.cpp      **** #include "interrupts.h"
+GAS LISTING /tmp/ccyIUKZe.s 			page 4
+
+
+  21:Main.cpp      **** // #include "digital.h"
+  22:Main.cpp      **** #include <Arduino.h>
+  23:Main.cpp      **** #include "door.h"
+  24:Main.cpp      **** /*
+  25:Main.cpp      ****  *	Determine if EExER is defined to enable it by the preprocessor
+  26:Main.cpp      ****  */
+  27:Main.cpp      **** #ifdef EExER
+  28:Main.cpp      **** 	#if (!EExER)
+  29:Main.cpp      **** 		#pragma message("Building the standard ER firmware.")
+  30:Main.cpp      **** 	#else
+  31:Main.cpp      **** 		#pragma message("Building the EExER firmware.")
+  32:Main.cpp      **** 	#endif
+  33:Main.cpp      **** #else
+  34:Main.cpp      **** 	#error "EExER is not defined! Add it to the compiler symbols."
+  35:Main.cpp      **** #endif
+  36:Main.cpp      **** 
+  37:Main.cpp      **** static void avr_init(void);
+  38:Main.cpp      **** static void init_door(const Door *dr);
+  39:Main.cpp      **** 
+  40:Main.cpp      **** Door dr1 = {false, false, false, ACTIVE_HIGH, DR1_OUT, &PORTB};
+  41:Main.cpp      **** Door dr2 = {false, false, false, ACTIVE_HIGH, DR2_OUT, &PORTB};
+  42:Main.cpp      **** Inputs dip_switch = {DEPENDENT, 0x00, false};
+  43:Main.cpp      **** 
+  44:Main.cpp      **** // Settings  m_settings;
+  45:Main.cpp      **** // Delay     m_delay;
+  46:Main.cpp      **** //Doors doors;// = new Doors(1,2);
+  47:Main.cpp      **** 
+  48:Main.cpp      **** /*
+  49:Main.cpp      ****  * Name         : main
+  50:Main.cpp      ****  *
+  51:Main.cpp      ****  * Description  : 
+  52:Main.cpp      ****  * 
+  53:Main.cpp      ****  */
+  54:Main.cpp      **** int main(void)
+  55:Main.cpp      **** {
+  56:Main.cpp      **** 	avr_init();
+  57:Main.cpp      **** 
+  58:Main.cpp      **** 	#if (!EExER)
+  59:Main.cpp      **** 	volatile bool dr1BtnReleased=true, dr2BtnReleased=true; // Not needed for std ER builds.
+  60:Main.cpp      **** 	#endif
+  61:Main.cpp      **** 
+  62:Main.cpp      **** 	/**
+  63:Main.cpp      **** 	**	MAIN LOOP
+  64:Main.cpp      **** 	**/
+  65:Main.cpp      **** 	for(;;)
+  66:Main.cpp      **** 	{
+  67:Main.cpp      **** 
+  68:Main.cpp      **** 	#if (EExER) /* EExER  */
+  69:Main.cpp      **** 		if( buttonPressed(&INPUT_PIN_PORT, DR2_BUTTON) || buttonPressed(&INPUT_PIN_PORT, DR1_BUTTON) ) de
+  70:Main.cpp      **** 	#else /* ER */
+  71:Main.cpp      **** 
+  72:Main.cpp      **** 		/**********************/
+  73:Main.cpp      **** 		/**	DEPENDENT MODE	**/
+  74:Main.cpp      **** 		/**********************/
+  75:Main.cpp      **** 		if(dip_switch.mode==DEPENDENT) {
+  76:Main.cpp      **** 			if( buttonPressed(&INPUT_PIN_PORT, DR2_BUTTON) || buttonPressed(&INPUT_PIN_PORT, DR1_BUTTON)) de
+  77:Main.cpp      **** 		}
+GAS LISTING /tmp/ccyIUKZe.s 			page 5
+
+
+  78:Main.cpp      **** 
+  79:Main.cpp      **** 		/**********************/
+  80:Main.cpp      **** 		/**	INDEPENDENT MODE **/
+  81:Main.cpp      **** 		/**********************/
+  82:Main.cpp      **** 		else {
+  83:Main.cpp      **** 
+  84:Main.cpp      **** 			/**** DOOR 1 ****/
+  85:Main.cpp      **** 			if( buttonPressed(&INPUT_PIN_PORT, DR1_BUTTON) && !dr1.is_active ) /*	Monitor the Door 1 input *
+  86:Main.cpp      **** 			{
+  87:Main.cpp      **** 				if( dr1.toggle_mode && dr1BtnReleased) /* Toggle if in toggle mode && button has been released 
+  88:Main.cpp      **** 				{
+  89:Main.cpp      **** 					dr1BtnReleased = false; /* Change the previous button state off */
+  90:Main.cpp      **** 					dr1.toggled = !dr1.toggled;
+  91:Main.cpp      **** 					activateDoor1(dr1.toggled);
+  92:Main.cpp      **** 				}
+  93:Main.cpp      **** 
+  94:Main.cpp      **** 				else if(!dr1.is_active && !dr1.toggle_mode) /* Activate door if not in toggle mode */ 
+  95:Main.cpp      **** 				{
+  96:Main.cpp      **** 					dr1.is_active = true;
+  97:Main.cpp      **** 					activateDoor1(true);
+  98:Main.cpp      **** 				}
+  99:Main.cpp      **** 			} else dr1BtnReleased=true;
+ 100:Main.cpp      **** 
+ 101:Main.cpp      **** 			/**** DOOR 2 ****/
+ 102:Main.cpp      **** 			if( buttonPressed(&INPUT_PIN_PORT, DR2_BUTTON) && !dr2.is_active) /* Monitor the Door 2 input */
+ 103:Main.cpp      **** 			{
+ 104:Main.cpp      **** 				if(dr2.toggle_mode && dr2BtnReleased) /* Toggle if in toggle mode && button has been released *
+ 105:Main.cpp      **** 				{
+ 106:Main.cpp      **** 					dr2BtnReleased = false; /* Change the previous button state off */
+ 107:Main.cpp      **** 					dr2.toggled = !dr2.toggled;
+ 108:Main.cpp      **** 					activateDoor2(dr2.toggled);
+ 109:Main.cpp      **** 				}
+ 110:Main.cpp      **** 				/* Activate door if not in toggle mode */
+ 111:Main.cpp      **** 				else if(dr2BtnReleased)
+ 112:Main.cpp      **** 				{
+ 113:Main.cpp      **** 					dr2.is_active = true;
+ 114:Main.cpp      **** 					activateDoor2(true);
+ 115:Main.cpp      **** 				}
+ 116:Main.cpp      **** 			} else dr2BtnReleased=true;
+ 117:Main.cpp      **** 		}
+ 118:Main.cpp      **** 
+ 119:Main.cpp      **** 		 /* Check for any changed DIP settings */
+ 120:Main.cpp      **** 		if( dip_switch.prev_values != (INPUT_PIN_PORT & INPUT_MASK) )
+ 121:Main.cpp      **** 			readDip();
+ 122:Main.cpp      **** 	#endif /* EExER */
+ 123:Main.cpp      **** 		wdt_reset();
+ 124:Main.cpp      **** 	}
+ 125:Main.cpp      **** 	return 0;
+ 126:Main.cpp      **** }
+ 127:Main.cpp      **** 
+ 128:Main.cpp      **** /*
+ 129:Main.cpp      ****  * Name         : avr_init
+ 130:Main.cpp      ****  *
+ 131:Main.cpp      ****  * Synopsis     : void avr_init(void)
+ 132:Main.cpp      ****  *
+ 133:Main.cpp      ****  * Description  : Initializes the I/O Ports, Configures the Interrupts and Timers
+ 134:Main.cpp      ****  * 
+GAS LISTING /tmp/ccyIUKZe.s 			page 6
+
+
+ 135:Main.cpp      ****  */
+ 136:Main.cpp      **** static void avr_init(void)
+ 137:Main.cpp      **** {
+ 138:Main.cpp      **** 	// pinMode(B, DR1_OUT, OUTPUT);
+ 139:Main.cpp      **** 	// pinMode(B, DR2_OUT, OUTPUT);
+ 140:Main.cpp      ****  	// pinMode(A, RELAY1_PIN, OUTPUT);
+ 141:Main.cpp      ****  	// pinMode(A, RELAY2_PIN, OUTPUT);
+ 142:Main.cpp      ****  	// pinMode(C, DS1_PIN, OUTPUT);
+ 143:Main.cpp      ****  	// pinMode(C, DS2_PIN, OUTPUT);
+ 144:Main.cpp      **** 	OUTPUT_DDR = (BIT(DR1_OUT)|BIT(DR2_OUT)); // Initialize output port
+ 145:Main.cpp      ****  	RELAY_DDR |= BIT(RELAY1_PIN) | BIT(RELAY2_PIN);
+ 146:Main.cpp      ****  	DS_DDR = ( BIT(DS1_PIN) | BIT(DS2_PIN) );	// PC0 & PC1 set as outputs for DS switches
+ 147:Main.cpp      **** 
+ 148:Main.cpp      ****  	wdt_reset();
+ 149:Main.cpp      ****  	wdt_enable(WDTO_2S); // Enable Watchdog Timer @ 2 second time-out
+ 150:Main.cpp      **** 
+ 151:Main.cpp      ****  	sbi(PCICR, PCIE2); // Enable Pin Change Interrupt 2
+ 152:Main.cpp      ****  	PCMSK2 = BIT(PCINT16)|BIT(PCINT17)|BIT(PCINT20)|BIT(PCINT23)|BIT(PCINT22);
+ 153:Main.cpp      **** 
+ 154:Main.cpp      ****  	TCCR0A |= BIT(CS01)|BIT(CS00); // Initialize timer0 with a prescaler of 64
+ 155:Main.cpp      ****  	sbi(TIMSK0, TOIE0); 	// enable timer 0 overflow interrupt
+ 156:Main.cpp      **** 
+ 157:Main.cpp      ****  	TCCR1B |= (1 << WGM12 ); // Configure timer 1 for CTC mode
+ 158:Main.cpp      ****  	TIMSK1 |= BIT(OCIE1A); // Enable Output Compare Interrupt Channel A
+ 159:Main.cpp      **** 
+ 160:Main.cpp      ****  	sei(); // Turn on interrupts
+ 161:Main.cpp      **** 
+ 162:Main.cpp      ****  	OCR1A = 1562; // Set CTC compare value to 0.2Hz at 1 MHz AVR clock , with a prescaler of 64
+ 163:Main.cpp      ****  	TCCR1B |= ((1 << CS10 ) | (1 << CS11 )); // Start timer at Fcpu /64
+ 164:Main.cpp      **** 
+ 165:Main.cpp      **** 	#if (!EExER)
+ 166:Main.cpp      ****  	readDip();
+ 167:Main.cpp      **** 	#endif // EExER
+ 168:Main.cpp      **** 	init_door(&dr1);
+ 169:Main.cpp      **** 	init_door(&dr2);
+ 170:Main.cpp      **** }
+ 171:Main.cpp      **** 
+ 172:Main.cpp      **** /*
+ 173:Main.cpp      ****  * Name         : init_door
+ 174:Main.cpp      ****  *
+ 175:Main.cpp      ****  * Synopsis     : void init_door(const Door *dr)
+ 176:Main.cpp      ****  *
+ 177:Main.cpp      ****  * Arguments    : const Door  *dr : Pointer to a Door object.
+ 178:Main.cpp      ****  *
+ 179:Main.cpp      ****  * Description  : Initializes the door outputs
+ 180:Main.cpp      ****  * 
+ 181:Main.cpp      ****  */
+ 182:Main.cpp      **** static void init_door(const Door *dr)
+ 152               		.stabn	68,0,182,.LM0-.LFBB1
+ 153               	.LM0:
+ 154               	.LFBB1:
+ 155               	/* prologue: function */
+ 156               	/* frame size = 0 */
+ 157               	/* stack size = 0 */
+ 158               	.L__stack_usage = 0
+ 159               	.LBB20:
+ 160               	.LBB21:
+GAS LISTING /tmp/ccyIUKZe.s 			page 7
+
+
+ 183:Main.cpp      **** {
+ 184:Main.cpp      **** 	bit_write(!(*dr).active_high, OUTPUT_PORT, BIT((*dr).pin));
+ 161               		.stabn	68,0,184,.LM1-.LFBB1
+ 162               	.LM1:
+ 163 0000 25B1      		in r18,0x5
+ 164               	.LBE21:
+ 165               	.LBE20:
+ 166 0002 8111      		cpse r24,__zero_reg__
+ 167 0004 00C0      		rjmp .L2
+ 168               	.LBB23:
+ 169               	.LBB22:
+ 170 0006 81E0      		ldi r24,lo8(1)
+ 171 0008 90E0      		ldi r25,0
+ 172 000a 00C0      		rjmp 2f
+ 173               		1:
+ 174 000c 880F      		lsl r24
+ 175               		2:
+ 176 000e 6A95      		dec r22
+ 177 0010 02F4      		brpl 1b
+ 178 0012 822B      		or r24,r18
+ 179 0014 00C0      		rjmp .L4
+ 180               	.L2:
+ 181               	.LBE22:
+ 182               	.LBE23:
+ 183 0016 81E0      		ldi r24,lo8(1)
+ 184 0018 90E0      		ldi r25,0
+ 185 001a 00C0      		rjmp 2f
+ 186               		1:
+ 187 001c 880F      		lsl r24
+ 188               		2:
+ 189 001e 6A95      		dec r22
+ 190 0020 02F4      		brpl 1b
+ 191 0022 8095      		com r24
+ 192 0024 8223      		and r24,r18
+ 193               	.L4:
+ 194 0026 85B9      		out 0x5,r24
+ 195 0028 0895      		ret
+ 196               		.size	_ZL9init_doorPK4Door.isra.0, .-_ZL9init_doorPK4Door.isra.0
+ 197               	.Lscope1:
+ 198               		.stabs	"",36,0,0,.Lscope1-.LFBB1
+ 199               		.stabd	78,0,0
+ 200               		.stabs	"doorPinWrite:F(0,4)",36,0,200,doorPinWrite
+ 201               		.stabs	"door:P(0,265)=*(0,266)=k(0,94)",64,0,200,30
+ 202               		.stabs	"activate:P(0,58)",64,0,200,22
+ 203               	.global	doorPinWrite
+ 204               		.type	doorPinWrite, @function
+ 205               	doorPinWrite:
+ 206               		.stabd	46,0,0
+ 185:Main.cpp      **** 	// uint8_t pin = (*dr).pin;
+ 186:Main.cpp      **** 	// digitalWrite(B, pin, !(*dr).active_high);
+ 187:Main.cpp      **** }
+ 188:Main.cpp      **** 
+ 189:Main.cpp      **** /*
+ 190:Main.cpp      ****  * Name         : doorPinWrite
+ 191:Main.cpp      ****  *
+ 192:Main.cpp      ****  * Synopsis     : void doorPinWrite(const Door *door, bool activate)
+ 193:Main.cpp      ****  *
+GAS LISTING /tmp/ccyIUKZe.s 			page 8
+
+
+ 194:Main.cpp      ****  * Arguments    : const Door *door : Pointer to a Door object.
+ 195:Main.cpp      ****  *                bool  activate : Set or clear the output.
+ 196:Main.cpp      ****  *
+ 197:Main.cpp      ****  * Description  : Sets or clears the output pin for a door.
+ 198:Main.cpp      ****  * 
+ 199:Main.cpp      ****  */
+ 200:Main.cpp      **** void doorPinWrite(const Door *door, bool activate)
+ 201:Main.cpp      **** {
+ 207               		.stabn	68,0,201,.LM2-.LFBB2
+ 208               	.LM2:
+ 209               	.LFBB2:
+ 210               	/* prologue: function */
+ 211               	/* frame size = 0 */
+ 212               	/* stack size = 0 */
+ 213               	.L__stack_usage = 0
+ 214 002a FC01      		movw r30,r24
+ 202:Main.cpp      **** 	uint8_t mode, outputMode;
+ 203:Main.cpp      **** 	outputMode = (*door).active_high; // Fetch the configured output mode of the door (Active High/Low
+ 215               		.stabn	68,0,203,.LM3-.LFBB2
+ 216               	.LM3:
+ 217 002c 9381      		ldd r25,Z+3
+ 218 002e 9170      		andi r25,lo8(1)
+ 204:Main.cpp      **** 	mode = (activate) ? bit_get(outputMode, 0) : !bit_get(outputMode, 0); // Compare the configured va
+ 219               		.stabn	68,0,204,.LM4-.LFBB2
+ 220               	.LM4:
+ 221 0030 6111      		cpse r22,__zero_reg__
+ 222 0032 00C0      		rjmp .L8
+ 223 0034 21E0      		ldi r18,lo8(1)
+ 224 0036 9227      		eor r25,r18
+ 225               	.L8:
+ 226 0038 3481      		ldd r19,Z+4
+ 227               	.LBB26:
+ 228               	.LBB27:
+ 205:Main.cpp      **** 	bit_write(mode, OUTPUT_PORT, BIT((*door).pin)); // write the masked port value to the outputs
+ 229               		.stabn	68,0,205,.LM5-.LFBB2
+ 230               	.LM5:
+ 231 003a 25B1      		in r18,0x5
+ 232               	.LBE27:
+ 233               	.LBE26:
+ 234 003c 9923      		tst r25
+ 235 003e 01F0      		breq .L9
+ 236               	.LBB29:
+ 237               	.LBB28:
+ 238               		.stabn	68,0,205,.LM6-.LFBB2
+ 239               	.LM6:
+ 240 0040 81E0      		ldi r24,lo8(1)
+ 241 0042 90E0      		ldi r25,0
+ 242 0044 00C0      		rjmp 2f
+ 243               		1:
+ 244 0046 880F      		lsl r24
+ 245               		2:
+ 246 0048 3A95      		dec r19
+ 247 004a 02F4      		brpl 1b
+ 248 004c 822B      		or r24,r18
+ 249 004e 00C0      		rjmp .L11
+ 250               	.L9:
+ 251               	.LBE28:
+GAS LISTING /tmp/ccyIUKZe.s 			page 9
+
+
+ 252               	.LBE29:
+ 253               		.stabn	68,0,205,.LM7-.LFBB2
+ 254               	.LM7:
+ 255 0050 81E0      		ldi r24,lo8(1)
+ 256 0052 90E0      		ldi r25,0
+ 257 0054 00C0      		rjmp 2f
+ 258               		1:
+ 259 0056 880F      		lsl r24
+ 260               		2:
+ 261 0058 3A95      		dec r19
+ 262 005a 02F4      		brpl 1b
+ 263 005c 8095      		com r24
+ 264 005e 8223      		and r24,r18
+ 265               	.L11:
+ 266 0060 85B9      		out 0x5,r24
+ 267 0062 0895      		ret
+ 268               		.size	doorPinWrite, .-doorPinWrite
+ 269               		.stabs	"mode:r(0,63)",64,0,202,25
+ 270               		.stabs	"outputMode:r(0,63)",64,0,202,25
+ 271               		.stabn	192,0,0,.LFBB2-.LFBB2
+ 272               		.stabn	224,0,0,.Lscope2-.LFBB2
+ 273               	.Lscope2:
+ 274               		.stabs	"",36,0,0,.Lscope2-.LFBB2
+ 275               		.stabd	78,0,0
+ 276               		.stabs	"readDip:F(0,4)",36,0,216,readDip
+ 277               	.global	readDip
+ 278               		.type	readDip, @function
+ 279               	readDip:
+ 280               		.stabd	46,0,0
+ 206:Main.cpp      **** }
+ 207:Main.cpp      **** 
+ 208:Main.cpp      **** /*
+ 209:Main.cpp      ****  * Name         : readDip
+ 210:Main.cpp      ****  *
+ 211:Main.cpp      ****  * Synopsis     : void readDip(void)
+ 212:Main.cpp      ****  *
+ 213:Main.cpp      ****  * Description  : Read the DIP switches from the Input Port. Note EExER builds has no need for this
+ 214:Main.cpp      ****  * 
+ 215:Main.cpp      ****  */
+ 216:Main.cpp      **** void readDip(void)
+ 217:Main.cpp      **** {
+ 281               		.stabn	68,0,217,.LM8-.LFBB3
+ 282               	.LM8:
+ 283               	.LFBB3:
+ 284               	/* prologue: function */
+ 285               	/* frame size = 0 */
+ 286               	/* stack size = 0 */
+ 287               	.L__stack_usage = 0
+ 218:Main.cpp      **** 	dip_switch.prev_values = INPUT_PIN_PORT & INPUT_MASK; // Read the port
+ 288               		.stabn	68,0,218,.LM9-.LFBB3
+ 289               	.LM9:
+ 290 0064 89B1      		in r24,0x9
+ 291 0066 8F7D      		andi r24,lo8(-33)
+ 292 0068 E0E0      		ldi r30,lo8(dip_switch)
+ 293 006a F0E0      		ldi r31,hi8(dip_switch)
+ 294 006c 8183      		std Z+1,r24
+ 219:Main.cpp      **** 	dip_switch.mode = bit_is_set(dip_switch.prev_values, MODE_PIN) ? DEPENDENT : INDEPENDENT;
+GAS LISTING /tmp/ccyIUKZe.s 			page 10
+
+
+ 295               		.stabn	68,0,219,.LM10-.LFBB3
+ 296               	.LM10:
+ 297 006e 8181      		ldd r24,Z+1
+ 298 0070 8170      		andi r24,lo8(1)
+ 299 0072 8083      		st Z,r24
+ 220:Main.cpp      **** 	dr1.toggle_mode = bit_is_set(dip_switch.prev_values, TOGGLE1_PIN) ? false : true;
+ 300               		.stabn	68,0,220,.LM11-.LFBB3
+ 301               	.LM11:
+ 302 0074 8181      		ldd r24,Z+1
+ 303 0076 A0E0      		ldi r26,lo8(dr1)
+ 304 0078 B0E0      		ldi r27,hi8(dr1)
+ 305 007a 91E0      		ldi r25,lo8(1)
+ 306 007c 8695      		lsr r24
+ 307 007e 8170      		andi r24,1
+ 308 0080 8927      		eor r24,r25
+ 309 0082 8C93      		st X,r24
+ 221:Main.cpp      **** 	dr2.toggle_mode = bit_is_set(dip_switch.prev_values,TOGGLE2_PIN) ? false : true;
+ 310               		.stabn	68,0,221,.LM12-.LFBB3
+ 311               	.LM12:
+ 312 0084 8181      		ldd r24,Z+1
+ 313 0086 E0E0      		ldi r30,lo8(dr2)
+ 314 0088 F0E0      		ldi r31,hi8(dr2)
+ 315 008a 86FB      		bst r24,6
+ 316 008c 8827      		clr r24
+ 317 008e 80F9      		bld r24,0
+ 318 0090 9827      		eor r25,r24
+ 319 0092 9083      		st Z,r25
+ 222:Main.cpp      **** 	dr1.active_high = (bit_get(INPUT_PIN_PORT, ACTIVE_MODE1_PIN)) ? ACTIVE_HIGH : ACTIVE_LOW;
+ 320               		.stabn	68,0,222,.LM13-.LFBB3
+ 321               	.LM13:
+ 322 0094 89B1      		in r24,0x9
+ 323 0096 8295      		swap r24
+ 324 0098 8170      		andi r24,1
+ 325 009a 1396      		adiw r26,3
+ 326 009c 8C93      		st X,r24
+ 223:Main.cpp      **** 	dr2.active_high = (bit_get(INPUT_PIN_PORT, ACTIVE_MODE2_PIN)) ? ACTIVE_HIGH : ACTIVE_LOW;
+ 327               		.stabn	68,0,223,.LM14-.LFBB3
+ 328               	.LM14:
+ 329 009e 89B1      		in r24,0x9
+ 330 00a0 881F      		rol r24
+ 331 00a2 8827      		clr r24
+ 332 00a4 881F      		rol r24
+ 333 00a6 8383      		std Z+3,r24
+ 334 00a8 0895      		ret
+ 335               		.size	readDip, .-readDip
+ 336               	.Lscope3:
+ 337               		.stabs	"",36,0,0,.Lscope3-.LFBB3
+ 338               		.stabd	78,0,0
+ 339               	.global	__mulsi3
+ 340               		.stabs	"dependentRetract:F(0,4)",36,0,352,dependentRetract
+ 341               	.global	dependentRetract
+ 342               		.type	dependentRetract, @function
+ 343               	dependentRetract:
+ 344               		.stabd	46,0,0
+ 224:Main.cpp      **** }
+ 225:Main.cpp      **** 
+ 226:Main.cpp      **** /*
+GAS LISTING /tmp/ccyIUKZe.s 			page 11
+
+
+ 227:Main.cpp      ****  * Name         : activateDoor1
+ 228:Main.cpp      ****  *
+ 229:Main.cpp      ****  * Synopsis     : void activateDoor1(bool activate)
+ 230:Main.cpp      ****  *
+ 231:Main.cpp      ****  * Arguments    : bool  activate : Should Door 1 be activated? If so, we activate
+ 232:Main.cpp      ****  *                                 the door output for the amount of time set by the 
+ 233:Main.cpp      ****  *                                 timing selection switch, and also monitor the other 
+ 234:Main.cpp      ****  *                                 door input in the case that it was pressed while we 
+ 235:Main.cpp      ****  *                                 we're inside this loop.
+ 236:Main.cpp      ****  *
+ 237:Main.cpp      ****  * Description  : Method for door 1 independent operation.
+ 238:Main.cpp      ****  * 
+ 239:Main.cpp      ****  */
+ 240:Main.cpp      **** void activateDoor1(bool activate)
+ 241:Main.cpp      **** {
+ 242:Main.cpp      **** 	if(!activate) /* Turn door 1 output OFF */
+ 243:Main.cpp      **** 	{
+ 244:Main.cpp      **** 		doorPinWrite(&dr1, false);
+ 245:Main.cpp      **** 		cbi(RELAY_PORT, RELAY1_PIN);
+ 246:Main.cpp      **** 	} else /* Turn door 1 output ON */
+ 247:Main.cpp      **** 	{
+ 248:Main.cpp      **** 		doorPinWrite(&dr1, true);
+ 249:Main.cpp      **** 		bool dr2BtnPressed = false;
+ 250:Main.cpp      **** 		bool btn_toggled = bit_is_clear(INPUT_PIN_PORT, DR2_BUTTON); /* This variable is used to avoid to
+ 251:Main.cpp      **** 
+ 252:Main.cpp      **** 		door_timer(true); /* reset the timer */
+ 253:Main.cpp      **** 
+ 254:Main.cpp      **** 		/* Monitor the door2 input while we wait for the signal delay to expire */
+ 255:Main.cpp      **** 		while( (door_timer(false) ) <= SIG_DELAY)
+ 256:Main.cpp      **** 		{
+ 257:Main.cpp      **** 			if( !dr2.is_active && !dr2BtnPressed && bit_is_clear(INPUT_PIN_PORT, DR2_BUTTON) )
+ 258:Main.cpp      **** 				dr2BtnPressed = true;
+ 259:Main.cpp      **** 			wdt_reset();
+ 260:Main.cpp      **** 		}
+ 261:Main.cpp      **** 
+ 262:Main.cpp      **** 		sbi(RELAY_PORT, RELAY1_PIN); /* Activate relay 1 */
+ 263:Main.cpp      **** 
+ 264:Main.cpp      **** 		if(dr2BtnPressed && !btn_toggled) /* Activate Door 2 if button was pressed and isn't active */
+ 265:Main.cpp      **** 		{
+ 266:Main.cpp      **** 			if(dr2.toggle_mode && !dr2.toggled) /* See if door 2 toggle mode is selected */ {
+ 267:Main.cpp      **** 				bool b = !doorActive(&dr2); /* Read the pin state */
+ 268:Main.cpp      **** 				activateDoor2(b);
+ 269:Main.cpp      **** 				dr2.toggled = b;
+ 270:Main.cpp      **** 			} else if(!dr2.toggle_mode) {
+ 271:Main.cpp      **** 				bool active = dr2.is_active;
+ 272:Main.cpp      **** 				if(!active)
+ 273:Main.cpp      **** 					activateDoor2(dr2.is_active);
+ 274:Main.cpp      **** 			}
+ 275:Main.cpp      **** 		}
+ 276:Main.cpp      **** 	}
+ 277:Main.cpp      **** 	wdt_reset();
+ 278:Main.cpp      **** }
+ 279:Main.cpp      **** 
+ 280:Main.cpp      **** /*
+ 281:Main.cpp      ****  * Name         : activateDoor2
+ 282:Main.cpp      ****  *
+ 283:Main.cpp      ****  * Synopsis     : void activateDoor2(bool activate)
+GAS LISTING /tmp/ccyIUKZe.s 			page 12
+
+
+ 284:Main.cpp      ****  *
+ 285:Main.cpp      ****  * Arguments    : bool  activate : Should Door 2 be activated? If so, we activate the 
+ 286:Main.cpp      ****  *                                 door output for the amount of time set by the timing 
+ 287:Main.cpp      ****  *                                 selection switch, and also monitor the other door input 
+ 288:Main.cpp      ****  *                                 in the case that it was pressed while we were inside this loop.
+ 289:Main.cpp      ****  *
+ 290:Main.cpp      ****  * Description  : Method for door 2 independent operation.
+ 291:Main.cpp      ****  * 
+ 292:Main.cpp      ****  */
+ 293:Main.cpp      **** void activateDoor2(bool activate)
+ 294:Main.cpp      **** {
+ 295:Main.cpp      **** 	/* Turn OFF door 2 output */
+ 296:Main.cpp      **** 	if(activate==false) {
+ 297:Main.cpp      **** 		doorPinWrite(&dr2, false);
+ 298:Main.cpp      **** 		cbi(RELAY_PORT, RELAY2_PIN);
+ 299:Main.cpp      **** 	}
+ 300:Main.cpp      **** 	/* Turn ON door 2 output */
+ 301:Main.cpp      **** 	else {
+ 302:Main.cpp      **** 		doorPinWrite(&dr2, true);
+ 303:Main.cpp      **** 		bool btn_pressed = false;
+ 304:Main.cpp      **** 
+ 305:Main.cpp      **** 		/* This variable is used to avoid toggling door1 output if the button is being held */
+ 306:Main.cpp      **** 		bool btn_toggled = bit_is_clear(INPUT_PIN_PORT, DR1_BUTTON);
+ 307:Main.cpp      **** 
+ 308:Main.cpp      **** 		 /* reset the timer */
+ 309:Main.cpp      **** 		door_timer(true);
+ 310:Main.cpp      **** 
+ 311:Main.cpp      **** 		/* Monitor input 1 while waiting for the signal delay to expire */
+ 312:Main.cpp      **** 		while((door_timer(false)) <= SIG_DELAY) {
+ 313:Main.cpp      **** 			if(bit_is_clear(INPUT_PIN_PORT, DR1_BUTTON) && !dr1.is_active && !btn_pressed) {
+ 314:Main.cpp      **** 				btn_pressed = true;
+ 315:Main.cpp      **** 			}
+ 316:Main.cpp      **** 			wdt_reset();
+ 317:Main.cpp      **** 		}
+ 318:Main.cpp      **** 
+ 319:Main.cpp      **** 		/* Activate relay 2 */
+ 320:Main.cpp      **** 		sbi(RELAY_PORT,RELAY2_PIN);
+ 321:Main.cpp      **** 
+ 322:Main.cpp      **** 		/* Activate door 2 if the button was pressed and isn't active */
+ 323:Main.cpp      **** 		if(btn_pressed && !btn_toggled)
+ 324:Main.cpp      **** 		{
+ 325:Main.cpp      **** 			if(dr1.toggle_mode && !dr1.toggled)
+ 326:Main.cpp      **** 			{
+ 327:Main.cpp      **** 				bool active = !doorActive(&dr1);
+ 328:Main.cpp      **** 				activateDoor1(active);
+ 329:Main.cpp      **** 				dr1.toggled = active;
+ 330:Main.cpp      **** 			}
+ 331:Main.cpp      **** 
+ 332:Main.cpp      **** 			/* Not in toggle mode */
+ 333:Main.cpp      **** 			else if(!dr1.toggle_mode)
+ 334:Main.cpp      **** 			{
+ 335:Main.cpp      **** 				bool active = !dr1.is_active;
+ 336:Main.cpp      **** 				dr1.is_active = active;
+ 337:Main.cpp      **** 				activateDoor1(active);
+ 338:Main.cpp      **** 			}
+ 339:Main.cpp      **** 		}
+ 340:Main.cpp      **** 	}
+GAS LISTING /tmp/ccyIUKZe.s 			page 13
+
+
+ 341:Main.cpp      **** 	wdt_reset(); // Reset the watchdog timer
+ 342:Main.cpp      **** }
+ 343:Main.cpp      **** 
+ 344:Main.cpp      **** /*
+ 345:Main.cpp      ****  * Name         : dependentRetract
+ 346:Main.cpp      ****  *
+ 347:Main.cpp      ****  * Synopsis     : void dependentRetract(void)
+ 348:Main.cpp      ****  *
+ 349:Main.cpp      ****  * Description  : Method for handling dependent operation.
+ 350:Main.cpp      ****  * 
+ 351:Main.cpp      ****  */
+ 352:Main.cpp      **** void dependentRetract(void)
+ 353:Main.cpp      **** {
+ 345               		.stabn	68,0,353,.LM15-.LFBB4
+ 346               	.LM15:
+ 347               	.LFBB4:
+ 348 00aa CF92      		push r12
+ 349 00ac DF92      		push r13
+ 350 00ae EF92      		push r14
+ 351 00b0 FF92      		push r15
+ 352 00b2 CF93      		push r28
+ 353               	/* prologue: function */
+ 354               	/* frame size = 0 */
+ 355               	/* stack size = 5 */
+ 356               	.L__stack_usage = 5
+ 357               	.LBB30:
+ 354:Main.cpp      **** 	/**	In Toggle Mode **/
+ 355:Main.cpp      **** 	if(dr1.toggle_mode)
+ 358               		.stabn	68,0,355,.LM16-.LFBB4
+ 359               	.LM16:
+ 360 00b4 8091 0000 		lds r24,dr1
+ 361 00b8 8823      		tst r24
+ 362 00ba 01F0      		breq .L14
+ 356:Main.cpp      **** 	{
+ 357:Main.cpp      **** 		if(dr1.toggled) // Outputs currently toggled, so toggle them off
+ 363               		.stabn	68,0,357,.LM17-.LFBB4
+ 364               	.LM17:
+ 365 00bc 8091 0000 		lds r24,dr1+1
+ 366 00c0 8823      		tst r24
+ 367 00c2 01F0      		breq .L15
+ 358:Main.cpp      **** 		{
+ 359:Main.cpp      **** 			doorPinWrite(&dr1,false); // Door 1 off
+ 368               		.stabn	68,0,359,.LM18-.LFBB4
+ 369               	.LM18:
+ 370 00c4 60E0      		ldi r22,0
+ 371 00c6 80E0      		ldi r24,lo8(dr1)
+ 372 00c8 90E0      		ldi r25,hi8(dr1)
+ 373 00ca 00D0      		rcall doorPinWrite
+ 360:Main.cpp      **** 			doorPinWrite(&dr2,false); // Door 2 off
+ 374               		.stabn	68,0,360,.LM19-.LFBB4
+ 375               	.LM19:
+ 376 00cc 60E0      		ldi r22,0
+ 377 00ce 80E0      		ldi r24,lo8(dr2)
+ 378 00d0 90E0      		ldi r25,hi8(dr2)
+ 379 00d2 00D0      		rcall doorPinWrite
+ 361:Main.cpp      **** 			cbi(RELAY_PORT, RELAY1_PIN); // Turn off door signal outputs
+ 380               		.stabn	68,0,361,.LM20-.LFBB4
+GAS LISTING /tmp/ccyIUKZe.s 			page 14
+
+
+ 381               	.LM20:
+ 382 00d4 7098      		cbi 0xe,0
+ 362:Main.cpp      **** 			cbi(RELAY_PORT, RELAY2_PIN);
+ 383               		.stabn	68,0,362,.LM21-.LFBB4
+ 384               	.LM21:
+ 385 00d6 7198      		cbi 0xe,1
+ 363:Main.cpp      **** 			dr1.toggled = false;
+ 386               		.stabn	68,0,363,.LM22-.LFBB4
+ 387               	.LM22:
+ 388 00d8 1092 0000 		sts dr1+1,__zero_reg__
+ 364:Main.cpp      **** 			dr2.toggled = false;
+ 389               		.stabn	68,0,364,.LM23-.LFBB4
+ 390               	.LM23:
+ 391 00dc 1092 0000 		sts dr2+1,__zero_reg__
+ 392 00e0 00C0      		rjmp .L16
+ 393               	.L15:
+ 365:Main.cpp      **** 		} else /* Doors not toggled, toggle them now */ {
+ 366:Main.cpp      **** 			doorPinWrite(&dr1, true); // Door 1 Active
+ 394               		.stabn	68,0,366,.LM24-.LFBB4
+ 395               	.LM24:
+ 396 00e2 61E0      		ldi r22,lo8(1)
+ 397 00e4 80E0      		ldi r24,lo8(dr1)
+ 398 00e6 90E0      		ldi r25,hi8(dr1)
+ 399 00e8 00D0      		rcall doorPinWrite
+ 367:Main.cpp      **** 			dr1.toggled = true;
+ 400               		.stabn	68,0,367,.LM25-.LFBB4
+ 401               	.LM25:
+ 402 00ea C1E0      		ldi r28,lo8(1)
+ 403 00ec C093 0000 		sts dr1+1,r28
+ 404               	.LBB31:
+ 405               	.LBB32:
+ 406               		.stabs	"/usr/lib/avr/include/util/delay.h",132,0,0,.Ltext1
+ 407               	.Ltext1:
+   1:/usr/lib/avr/include/util/delay.h **** /* Copyright (c) 2002, Marek Michalkiewicz
+   2:/usr/lib/avr/include/util/delay.h ****    Copyright (c) 2004,2005,2007 Joerg Wunsch
+   3:/usr/lib/avr/include/util/delay.h ****    Copyright (c) 2007  Florin-Viorel Petrov
+   4:/usr/lib/avr/include/util/delay.h ****    All rights reserved.
+   5:/usr/lib/avr/include/util/delay.h **** 
+   6:/usr/lib/avr/include/util/delay.h ****    Redistribution and use in source and binary forms, with or without
+   7:/usr/lib/avr/include/util/delay.h ****    modification, are permitted provided that the following conditions are met:
+   8:/usr/lib/avr/include/util/delay.h **** 
+   9:/usr/lib/avr/include/util/delay.h ****    * Redistributions of source code must retain the above copyright
+  10:/usr/lib/avr/include/util/delay.h ****      notice, this list of conditions and the following disclaimer.
+  11:/usr/lib/avr/include/util/delay.h **** 
+  12:/usr/lib/avr/include/util/delay.h ****    * Redistributions in binary form must reproduce the above copyright
+  13:/usr/lib/avr/include/util/delay.h ****      notice, this list of conditions and the following disclaimer in
+  14:/usr/lib/avr/include/util/delay.h ****      the documentation and/or other materials provided with the
+  15:/usr/lib/avr/include/util/delay.h ****      distribution.
+  16:/usr/lib/avr/include/util/delay.h **** 
+  17:/usr/lib/avr/include/util/delay.h ****    * Neither the name of the copyright holders nor the names of
+  18:/usr/lib/avr/include/util/delay.h ****      contributors may be used to endorse or promote products derived
+  19:/usr/lib/avr/include/util/delay.h ****      from this software without specific prior written permission.
+  20:/usr/lib/avr/include/util/delay.h **** 
+  21:/usr/lib/avr/include/util/delay.h ****   THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+  22:/usr/lib/avr/include/util/delay.h ****   AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+  23:/usr/lib/avr/include/util/delay.h ****   IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+  24:/usr/lib/avr/include/util/delay.h ****   ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
+GAS LISTING /tmp/ccyIUKZe.s 			page 15
+
+
+  25:/usr/lib/avr/include/util/delay.h ****   LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+  26:/usr/lib/avr/include/util/delay.h ****   CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+  27:/usr/lib/avr/include/util/delay.h ****   SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+  28:/usr/lib/avr/include/util/delay.h ****   INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+  29:/usr/lib/avr/include/util/delay.h ****   CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+  30:/usr/lib/avr/include/util/delay.h ****   ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+  31:/usr/lib/avr/include/util/delay.h ****   POSSIBILITY OF SUCH DAMAGE. */
+  32:/usr/lib/avr/include/util/delay.h **** 
+  33:/usr/lib/avr/include/util/delay.h **** /* $Id$ */
+  34:/usr/lib/avr/include/util/delay.h **** 
+  35:/usr/lib/avr/include/util/delay.h **** #ifndef _UTIL_DELAY_H_
+  36:/usr/lib/avr/include/util/delay.h **** #define _UTIL_DELAY_H_ 1
+  37:/usr/lib/avr/include/util/delay.h **** 
+  38:/usr/lib/avr/include/util/delay.h **** #ifndef __DOXYGEN__
+  39:/usr/lib/avr/include/util/delay.h **** #  ifndef __HAS_DELAY_CYCLES
+  40:/usr/lib/avr/include/util/delay.h **** #    define __HAS_DELAY_CYCLES 1
+  41:/usr/lib/avr/include/util/delay.h **** #  endif
+  42:/usr/lib/avr/include/util/delay.h **** #endif  /* __DOXYGEN__ */
+  43:/usr/lib/avr/include/util/delay.h **** 
+  44:/usr/lib/avr/include/util/delay.h **** #include <inttypes.h>
+  45:/usr/lib/avr/include/util/delay.h **** #include <util/delay_basic.h>
+  46:/usr/lib/avr/include/util/delay.h **** #include <math.h>
+  47:/usr/lib/avr/include/util/delay.h **** 
+  48:/usr/lib/avr/include/util/delay.h **** /** \file */
+  49:/usr/lib/avr/include/util/delay.h **** /** \defgroup util_delay <util/delay.h>: Convenience functions for busy-wait delay loops
+  50:/usr/lib/avr/include/util/delay.h ****     \code
+  51:/usr/lib/avr/include/util/delay.h ****     #define F_CPU 1000000UL  // 1 MHz
+  52:/usr/lib/avr/include/util/delay.h ****     //#define F_CPU 14.7456E6
+  53:/usr/lib/avr/include/util/delay.h ****     #include <util/delay.h>
+  54:/usr/lib/avr/include/util/delay.h ****     \endcode
+  55:/usr/lib/avr/include/util/delay.h **** 
+  56:/usr/lib/avr/include/util/delay.h ****     \note As an alternative method, it is possible to pass the
+  57:/usr/lib/avr/include/util/delay.h ****     F_CPU macro down to the compiler from the Makefile.
+  58:/usr/lib/avr/include/util/delay.h ****     Obviously, in that case, no \c \#define statement should be
+  59:/usr/lib/avr/include/util/delay.h ****     used.
+  60:/usr/lib/avr/include/util/delay.h **** 
+  61:/usr/lib/avr/include/util/delay.h ****     The functions in this header file are wrappers around the basic
+  62:/usr/lib/avr/include/util/delay.h ****     busy-wait functions from <util/delay_basic.h>.  They are meant as
+  63:/usr/lib/avr/include/util/delay.h ****     convenience functions where actual time values can be specified
+  64:/usr/lib/avr/include/util/delay.h ****     rather than a number of cycles to wait for.  The idea behind is
+  65:/usr/lib/avr/include/util/delay.h ****     that compile-time constant expressions will be eliminated by
+  66:/usr/lib/avr/include/util/delay.h ****     compiler optimization so floating-point expressions can be used
+  67:/usr/lib/avr/include/util/delay.h ****     to calculate the number of delay cycles needed based on the CPU
+  68:/usr/lib/avr/include/util/delay.h ****     frequency passed by the macro F_CPU.
+  69:/usr/lib/avr/include/util/delay.h **** 
+  70:/usr/lib/avr/include/util/delay.h ****     \note In order for these functions to work as intended, compiler
+  71:/usr/lib/avr/include/util/delay.h ****     optimizations <em>must</em> be enabled, and the delay time
+  72:/usr/lib/avr/include/util/delay.h ****     <em>must</em> be an expression that is a known constant at
+  73:/usr/lib/avr/include/util/delay.h ****     compile-time.  If these requirements are not met, the resulting
+  74:/usr/lib/avr/include/util/delay.h ****     delay will be much longer (and basically unpredictable), and
+  75:/usr/lib/avr/include/util/delay.h ****     applications that otherwise do not use floating-point calculations
+  76:/usr/lib/avr/include/util/delay.h ****     will experience severe code bloat by the floating-point library
+  77:/usr/lib/avr/include/util/delay.h ****     routines linked into the application.
+  78:/usr/lib/avr/include/util/delay.h **** 
+  79:/usr/lib/avr/include/util/delay.h ****     The functions available allow the specification of microsecond, and
+  80:/usr/lib/avr/include/util/delay.h ****     millisecond delays directly, using the application-supplied macro
+  81:/usr/lib/avr/include/util/delay.h ****     F_CPU as the CPU clock frequency (in Hertz).
+GAS LISTING /tmp/ccyIUKZe.s 			page 16
+
+
+  82:/usr/lib/avr/include/util/delay.h **** 
+  83:/usr/lib/avr/include/util/delay.h **** */
+  84:/usr/lib/avr/include/util/delay.h **** 
+  85:/usr/lib/avr/include/util/delay.h **** #if !defined(__DOXYGEN__)
+  86:/usr/lib/avr/include/util/delay.h **** static __inline__ void _delay_us(double __us) __attribute__((__always_inline__));
+  87:/usr/lib/avr/include/util/delay.h **** static __inline__ void _delay_ms(double __ms) __attribute__((__always_inline__));
+  88:/usr/lib/avr/include/util/delay.h **** #endif
+  89:/usr/lib/avr/include/util/delay.h **** 
+  90:/usr/lib/avr/include/util/delay.h **** #ifndef F_CPU
+  91:/usr/lib/avr/include/util/delay.h **** /* prevent compiler error by supplying a default */
+  92:/usr/lib/avr/include/util/delay.h **** # warning "F_CPU not defined for <util/delay.h>"
+  93:/usr/lib/avr/include/util/delay.h **** /** \ingroup util_delay
+  94:/usr/lib/avr/include/util/delay.h ****     \def F_CPU
+  95:/usr/lib/avr/include/util/delay.h ****     \brief CPU frequency in Hz
+  96:/usr/lib/avr/include/util/delay.h **** 
+  97:/usr/lib/avr/include/util/delay.h ****     The macro F_CPU specifies the CPU frequency to be considered by
+  98:/usr/lib/avr/include/util/delay.h ****     the delay macros.  This macro is normally supplied by the
+  99:/usr/lib/avr/include/util/delay.h ****     environment (e.g. from within a project header, or the project's
+ 100:/usr/lib/avr/include/util/delay.h ****     Makefile).  The value 1 MHz here is only provided as a "vanilla"
+ 101:/usr/lib/avr/include/util/delay.h ****     fallback if no such user-provided definition could be found.
+ 102:/usr/lib/avr/include/util/delay.h **** 
+ 103:/usr/lib/avr/include/util/delay.h ****     In terms of the delay functions, the CPU frequency can be given as
+ 104:/usr/lib/avr/include/util/delay.h ****     a floating-point constant (e.g. 3.6864E6 for 3.6864 MHz).
+ 105:/usr/lib/avr/include/util/delay.h ****     However, the macros in <util/setbaud.h> require it to be an
+ 106:/usr/lib/avr/include/util/delay.h ****     integer value.
+ 107:/usr/lib/avr/include/util/delay.h ****  */
+ 108:/usr/lib/avr/include/util/delay.h **** # define F_CPU 1000000UL
+ 109:/usr/lib/avr/include/util/delay.h **** #endif
+ 110:/usr/lib/avr/include/util/delay.h **** 
+ 111:/usr/lib/avr/include/util/delay.h **** #ifndef __OPTIMIZE__
+ 112:/usr/lib/avr/include/util/delay.h **** # warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+ 113:/usr/lib/avr/include/util/delay.h **** #endif
+ 114:/usr/lib/avr/include/util/delay.h **** 
+ 115:/usr/lib/avr/include/util/delay.h **** #if __HAS_DELAY_CYCLES && defined(__OPTIMIZE__) && \
+ 116:/usr/lib/avr/include/util/delay.h ****   !defined(__DELAY_BACKWARD_COMPATIBLE__) &&	   \
+ 117:/usr/lib/avr/include/util/delay.h ****   __STDC_HOSTED__
+ 118:/usr/lib/avr/include/util/delay.h **** #  include <math.h>
+ 119:/usr/lib/avr/include/util/delay.h **** #endif
+ 120:/usr/lib/avr/include/util/delay.h **** 
+ 121:/usr/lib/avr/include/util/delay.h **** /**
+ 122:/usr/lib/avr/include/util/delay.h ****    \ingroup util_delay
+ 123:/usr/lib/avr/include/util/delay.h **** 
+ 124:/usr/lib/avr/include/util/delay.h ****    Perform a delay of \c __ms milliseconds, using _delay_loop_2().
+ 125:/usr/lib/avr/include/util/delay.h **** 
+ 126:/usr/lib/avr/include/util/delay.h ****    The macro F_CPU is supposed to be defined to a
+ 127:/usr/lib/avr/include/util/delay.h ****    constant defining the CPU clock frequency (in Hertz).
+ 128:/usr/lib/avr/include/util/delay.h **** 
+ 129:/usr/lib/avr/include/util/delay.h ****    The maximal possible delay is 262.14 ms / F_CPU in MHz.
+ 130:/usr/lib/avr/include/util/delay.h **** 
+ 131:/usr/lib/avr/include/util/delay.h ****    When the user request delay which exceed the maximum possible one,
+ 132:/usr/lib/avr/include/util/delay.h ****    _delay_ms() provides a decreased resolution functionality. In this
+ 133:/usr/lib/avr/include/util/delay.h ****    mode _delay_ms() will work with a resolution of 1/10 ms, providing
+ 134:/usr/lib/avr/include/util/delay.h ****    delays up to 6.5535 seconds (independent from CPU frequency).  The
+ 135:/usr/lib/avr/include/util/delay.h ****    user will not be informed about decreased resolution.
+ 136:/usr/lib/avr/include/util/delay.h **** 
+ 137:/usr/lib/avr/include/util/delay.h ****    If the avr-gcc toolchain has __builtin_avr_delay_cycles()
+ 138:/usr/lib/avr/include/util/delay.h ****    support, maximal possible delay is 4294967.295 ms/ F_CPU in MHz. For
+GAS LISTING /tmp/ccyIUKZe.s 			page 17
+
+
+ 139:/usr/lib/avr/include/util/delay.h ****    values greater than the maximal possible delay, overflows results in
+ 140:/usr/lib/avr/include/util/delay.h ****    no delay i.e., 0ms.
+ 141:/usr/lib/avr/include/util/delay.h **** 
+ 142:/usr/lib/avr/include/util/delay.h ****    Conversion of \c __ms into clock cycles may not always result in
+ 143:/usr/lib/avr/include/util/delay.h ****    integer.  By default, the clock cycles rounded up to next
+ 144:/usr/lib/avr/include/util/delay.h ****    integer. This ensures that the user gets at least \c __ms
+ 145:/usr/lib/avr/include/util/delay.h ****    microseconds of delay.
+ 146:/usr/lib/avr/include/util/delay.h **** 
+ 147:/usr/lib/avr/include/util/delay.h ****    Alternatively, by defining the macro \c __DELAY_ROUND_DOWN__, or
+ 148:/usr/lib/avr/include/util/delay.h ****    \c __DELAY_ROUND_CLOSEST__, before including this header file, the
+ 149:/usr/lib/avr/include/util/delay.h ****    algorithm can be made to round down, or round to closest integer,
+ 150:/usr/lib/avr/include/util/delay.h ****    respectively.
+ 151:/usr/lib/avr/include/util/delay.h **** 
+ 152:/usr/lib/avr/include/util/delay.h ****    \note
+ 153:/usr/lib/avr/include/util/delay.h **** 
+ 154:/usr/lib/avr/include/util/delay.h ****    The implementation of _delay_ms() based on
+ 155:/usr/lib/avr/include/util/delay.h ****    __builtin_avr_delay_cycles() is not backward compatible with older
+ 156:/usr/lib/avr/include/util/delay.h ****    implementations.  In order to get functionality backward compatible
+ 157:/usr/lib/avr/include/util/delay.h ****    with previous versions, the macro \c "__DELAY_BACKWARD_COMPATIBLE__"
+ 158:/usr/lib/avr/include/util/delay.h ****    must be defined before including this header file. Also, the
+ 159:/usr/lib/avr/include/util/delay.h ****    backward compatible algorithm will be chosen if the code is
+ 160:/usr/lib/avr/include/util/delay.h ****    compiled in a <em>freestanding environment</em> (GCC option
+ 161:/usr/lib/avr/include/util/delay.h ****    \c -ffreestanding), as the math functions required for rounding are
+ 162:/usr/lib/avr/include/util/delay.h ****    not available to the compiler then.
+ 163:/usr/lib/avr/include/util/delay.h **** 
+ 164:/usr/lib/avr/include/util/delay.h ****  */
+ 165:/usr/lib/avr/include/util/delay.h **** void
+ 166:/usr/lib/avr/include/util/delay.h **** _delay_ms(double __ms)
+ 167:/usr/lib/avr/include/util/delay.h **** {
+ 168:/usr/lib/avr/include/util/delay.h **** 	double __tmp ;
+ 169:/usr/lib/avr/include/util/delay.h **** #if __HAS_DELAY_CYCLES && defined(__OPTIMIZE__) && \
+ 170:/usr/lib/avr/include/util/delay.h ****   !defined(__DELAY_BACKWARD_COMPATIBLE__) &&	   \
+ 171:/usr/lib/avr/include/util/delay.h ****   __STDC_HOSTED__
+ 172:/usr/lib/avr/include/util/delay.h **** 	uint32_t __ticks_dc;
+ 173:/usr/lib/avr/include/util/delay.h **** 	extern void __builtin_avr_delay_cycles(unsigned long);
+ 174:/usr/lib/avr/include/util/delay.h **** 	__tmp = ((F_CPU) / 1e3) * __ms;
+ 175:/usr/lib/avr/include/util/delay.h **** 
+ 176:/usr/lib/avr/include/util/delay.h **** 	#if defined(__DELAY_ROUND_DOWN__)
+ 177:/usr/lib/avr/include/util/delay.h **** 		__ticks_dc = (uint32_t)fabs(__tmp);
+ 178:/usr/lib/avr/include/util/delay.h **** 
+ 179:/usr/lib/avr/include/util/delay.h **** 	#elif defined(__DELAY_ROUND_CLOSEST__)
+ 180:/usr/lib/avr/include/util/delay.h **** 		__ticks_dc = (uint32_t)(fabs(__tmp)+0.5);
+ 181:/usr/lib/avr/include/util/delay.h **** 
+ 182:/usr/lib/avr/include/util/delay.h **** 	#else
+ 183:/usr/lib/avr/include/util/delay.h **** 		//round up by default
+ 184:/usr/lib/avr/include/util/delay.h **** 		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+ 185:/usr/lib/avr/include/util/delay.h **** 	#endif
+ 186:/usr/lib/avr/include/util/delay.h **** 
+ 187:/usr/lib/avr/include/util/delay.h **** 	__builtin_avr_delay_cycles(__ticks_dc);
+ 408               		.stabn	68,0,187,.LM26-.LFBB4
+ 409               	.LM26:
+ 410 00f0 2FEF      		ldi r18,lo8(479999)
+ 411 00f2 82E5      		ldi r24,hi8(479999)
+ 412 00f4 97E0      		ldi r25,hlo8(479999)
+ 413 00f6 2150      	1:	subi r18,1
+ 414 00f8 8040      		sbci r24,0
+ 415 00fa 9040      		sbci r25,0
+GAS LISTING /tmp/ccyIUKZe.s 			page 18
+
+
+ 416 00fc 01F4      		brne 1b
+ 417 00fe 00C0      		rjmp .
+ 418 0100 0000      		nop
+ 419               	.LBE32:
+ 420               	.LBE31:
+ 421               		.stabs	"Main.cpp",132,0,0,.Ltext2
+ 422               	.Ltext2:
+ 368:Main.cpp      **** 			_delay_ms(DIFF_DELAY); // Differential Delay
+ 369:Main.cpp      **** 			//wdt_reset(); // Reset the watchdog timer
+ 370:Main.cpp      **** 			doorPinWrite(&dr2, true); // Door 2 Active
+ 423               		.stabn	68,0,370,.LM27-.LFBB4
+ 424               	.LM27:
+ 425 0102 61E0      		ldi r22,lo8(1)
+ 426 0104 80E0      		ldi r24,lo8(dr2)
+ 427 0106 90E0      		ldi r25,hi8(dr2)
+ 428 0108 00D0      		rcall doorPinWrite
+ 371:Main.cpp      **** 			dr2.toggled = true;
+ 429               		.stabn	68,0,371,.LM28-.LFBB4
+ 430               	.LM28:
+ 431 010a C093 0000 		sts dr2+1,r28
+ 432               	.LBB33:
+ 433               	.LBB34:
+ 434               		.stabs	"/usr/lib/avr/include/util/delay.h",132,0,0,.Ltext3
+ 435               	.Ltext3:
+ 436               		.stabn	68,0,187,.LM29-.LFBB4
+ 437               	.LM29:
+ 438 010e 2FEF      		ldi r18,lo8(159999)
+ 439 0110 80E7      		ldi r24,hi8(159999)
+ 440 0112 92E0      		ldi r25,hlo8(159999)
+ 441 0114 2150      	1:	subi r18,1
+ 442 0116 8040      		sbci r24,0
+ 443 0118 9040      		sbci r25,0
+ 444 011a 01F4      		brne 1b
+ 445 011c 00C0      		rjmp .
+ 446 011e 0000      		nop
+ 447               	.LBE34:
+ 448               	.LBE33:
+ 449               		.stabs	"Main.cpp",132,0,0,.Ltext4
+ 450               	.Ltext4:
+ 372:Main.cpp      **** 			_delay_ms(SIG_DELAY);	// Door Signal Delay
+ 373:Main.cpp      **** 			sbi(RELAY_PORT, RELAY1_PIN);	// Turn on relays now
+ 451               		.stabn	68,0,373,.LM30-.LFBB4
+ 452               	.LM30:
+ 453 0120 709A      		sbi 0xe,0
+ 374:Main.cpp      **** 			sbi(RELAY_PORT, RELAY2_PIN);
+ 454               		.stabn	68,0,374,.LM31-.LFBB4
+ 455               	.LM31:
+ 456 0122 719A      		sbi 0xe,1
+ 457               	.L16:
+ 375:Main.cpp      **** 		}
+ 376:Main.cpp      **** 
+ 377:Main.cpp      **** 		// Maintain while buttons are held
+ 378:Main.cpp      **** 		while(bit_is_clear(INPUT_PIN_PORT, DR1_BUTTON) || bit_is_clear(INPUT_PIN_PORT, DR2_BUTTON))
+ 458               		.stabn	68,0,378,.LM32-.LFBB4
+ 459               	.LM32:
+ 460 0124 4A9B      		sbis 0x9,2
+ 461 0126 00C0      		rjmp .L18
+GAS LISTING /tmp/ccyIUKZe.s 			page 19
+
+
+ 462               		.stabn	68,0,378,.LM33-.LFBB4
+ 463               	.LM33:
+ 464 0128 4B9B      		sbis 0x9,3
+ 465 012a 00C0      		rjmp .L18
+ 466 012c 00C0      		rjmp .L13
+ 467               	.L14:
+ 468               	.LBB35:
+ 379:Main.cpp      **** 		{
+ 380:Main.cpp      **** 			wdt_reset();
+ 381:Main.cpp      **** 		}
+ 382:Main.cpp      **** 	} else /** Not in Toggle Mode **/ {
+ 383:Main.cpp      **** 		dip_switch.retracting = true;
+ 469               		.stabn	68,0,383,.LM34-.LFBB4
+ 470               	.LM34:
+ 471 012e 81E0      		ldi r24,lo8(1)
+ 472 0130 8093 0000 		sts dip_switch+2,r24
+ 384:Main.cpp      **** 
+ 385:Main.cpp      **** 		#if (!EExER)
+ 386:Main.cpp      **** 		doorPinWrite(&dr1, true); // Door 1 Active
+ 387:Main.cpp      **** 		_delay_ms(DIFF_DELAY); // Differential Delay
+ 388:Main.cpp      **** 		doorPinWrite(&dr2, true); // Door 2 Active
+ 389:Main.cpp      **** 		_delay_ms(SIG_DELAY);	// Door Signal Delay
+ 390:Main.cpp      **** 		sbi(RELAY_PORT, RELAY1_PIN);	// Activate door signal outputs
+ 391:Main.cpp      **** 		sbi(RELAY_PORT, RELAY2_PIN);
+ 392:Main.cpp      **** 		#else
+ 393:Main.cpp      **** 		sbi(RELAY_PORT, RELAY1_PIN);	// Activate door signal outputs
+ 473               		.stabn	68,0,393,.LM35-.LFBB4
+ 474               	.LM35:
+ 475 0134 709A      		sbi 0xe,0
+ 476               	.LBB36:
+ 477               	.LBB37:
+ 478               		.stabs	"/usr/lib/avr/include/util/delay.h",132,0,0,.Ltext5
+ 479               	.Ltext5:
+ 480               		.stabn	68,0,187,.LM36-.LFBB4
+ 481               	.LM36:
+ 482 0136 2FEF      		ldi r18,lo8(799999)
+ 483 0138 84E3      		ldi r24,hi8(799999)
+ 484 013a 9CE0      		ldi r25,hlo8(799999)
+ 485 013c 2150      	1:	subi r18,1
+ 486 013e 8040      		sbci r24,0
+ 487 0140 9040      		sbci r25,0
+ 488 0142 01F4      		brne 1b
+ 489 0144 00C0      		rjmp .
+ 490 0146 0000      		nop
+ 491               	.LBE37:
+ 492               	.LBE36:
+ 493               		.stabs	"Main.cpp",132,0,0,.Ltext6
+ 494               	.Ltext6:
+ 394:Main.cpp      **** 		_delay_ms(EExER_DELAY);
+ 395:Main.cpp      **** 		doorPinWrite(&dr1, true); // Door 1 Active
+ 495               		.stabn	68,0,395,.LM37-.LFBB4
+ 496               	.LM37:
+ 497 0148 61E0      		ldi r22,lo8(1)
+ 498 014a 80E0      		ldi r24,lo8(dr1)
+ 499 014c 90E0      		ldi r25,hi8(dr1)
+ 500 014e 00D0      		rcall doorPinWrite
+ 501               	.LBB38:
+GAS LISTING /tmp/ccyIUKZe.s 			page 20
+
+
+ 502               	.LBB39:
+ 503               		.stabs	"/usr/lib/avr/include/util/delay.h",132,0,0,.Ltext7
+ 504               	.Ltext7:
+ 505               		.stabn	68,0,187,.LM38-.LFBB4
+ 506               	.LM38:
+ 507 0150 2FEF      		ldi r18,lo8(479999)
+ 508 0152 82E5      		ldi r24,hi8(479999)
+ 509 0154 97E0      		ldi r25,hlo8(479999)
+ 510 0156 2150      	1:	subi r18,1
+ 511 0158 8040      		sbci r24,0
+ 512 015a 9040      		sbci r25,0
+ 513 015c 01F4      		brne 1b
+ 514 015e 00C0      		rjmp .
+ 515 0160 0000      		nop
+ 516               	.LBE39:
+ 517               	.LBE38:
+ 518               		.stabs	"Main.cpp",132,0,0,.Ltext8
+ 519               	.Ltext8:
+ 396:Main.cpp      **** 		_delay_ms(DIFF_DELAY); // Differential Delay
+ 397:Main.cpp      **** 		doorPinWrite(&dr2, true); // Door 2 Active
+ 520               		.stabn	68,0,397,.LM39-.LFBB4
+ 521               	.LM39:
+ 522 0162 61E0      		ldi r22,lo8(1)
+ 523 0164 80E0      		ldi r24,lo8(dr2)
+ 524 0166 90E0      		ldi r25,hi8(dr2)
+ 525 0168 00D0      		rcall doorPinWrite
+ 526               	.LBB40:
+ 527               	.LBB41:
+ 528               		.stabs	"/usr/lib/avr/include/util/delay.h",132,0,0,.Ltext9
+ 529               	.Ltext9:
+ 530               		.stabn	68,0,187,.LM40-.LFBB4
+ 531               	.LM40:
+ 532 016a 2FEF      		ldi r18,lo8(159999)
+ 533 016c 80E7      		ldi r24,hi8(159999)
+ 534 016e 92E0      		ldi r25,hlo8(159999)
+ 535 0170 2150      	1:	subi r18,1
+ 536 0172 8040      		sbci r24,0
+ 537 0174 9040      		sbci r25,0
+ 538 0176 01F4      		brne 1b
+ 539 0178 00C0      		rjmp .
+ 540 017a 0000      		nop
+ 541               	.LBE41:
+ 542               	.LBE40:
+ 543               		.stabs	"Main.cpp",132,0,0,.Ltext10
+ 544               	.Ltext10:
+ 398:Main.cpp      **** 		_delay_ms(SIG_DELAY);	// Door Signal Delay
+ 399:Main.cpp      **** 		sbi(RELAY_PORT, RELAY2_PIN);
+ 545               		.stabn	68,0,399,.LM41-.LFBB4
+ 546               	.LM41:
+ 547 017c 719A      		sbi 0xe,1
+ 400:Main.cpp      **** 		#endif
+ 401:Main.cpp      **** 		door_timer(true); // Reset the Door timer
+ 548               		.stabn	68,0,401,.LM42-.LFBB4
+ 549               	.LM42:
+ 550 017e 81E0      		ldi r24,lo8(1)
+ 551 0180 00D0      		rcall door_timer
+ 552               	.L23:
+GAS LISTING /tmp/ccyIUKZe.s 			page 21
+
+
+ 402:Main.cpp      **** 		unsigned long t;
+ 403:Main.cpp      **** 		while( door_timer(false) <= ((t=getTime(DR1_OUT))*1000) ) // Hold Time Delay, value set from DS1
+ 553               		.stabn	68,0,403,.LM43-.LFBB4
+ 554               	.LM43:
+ 555 0182 80E0      		ldi r24,0
+ 556 0184 00D0      		rcall door_timer
+ 557 0186 6B01      		movw r12,r22
+ 558 0188 7C01      		movw r14,r24
+ 559 018a 80E0      		ldi r24,0
+ 560 018c 00D0      		rcall getTime
+ 561 018e 28EE      		ldi r18,lo8(-24)
+ 562 0190 33E0      		ldi r19,lo8(3)
+ 563 0192 40E0      		ldi r20,0
+ 564 0194 50E0      		ldi r21,0
+ 565 0196 00D0      		rcall __mulsi3
+ 566 0198 6C15      		cp r22,r12
+ 567 019a 7D05      		cpc r23,r13
+ 568 019c 8E05      		cpc r24,r14
+ 569 019e 9F05      		cpc r25,r15
+ 570 01a0 00F4      		brsh .L20
+ 571               	.L21:
+ 404:Main.cpp      **** 		{
+ 405:Main.cpp      **** 			wdt_reset(); // Reset the watchdog timer
+ 406:Main.cpp      **** 			if( dr1.toggle_mode==true )
+ 407:Main.cpp      **** 				break;
+ 408:Main.cpp      **** 			if( bit_is_clear(INPUT_PIN_PORT, DR1_BUTTON) || bit_is_clear(INPUT_PIN_PORT, DR2_BUTTON) )	// Ma
+ 409:Main.cpp      **** 				door_timer(true); // reset the door timer
+ 410:Main.cpp      **** 			if(dip_switch.mode==INDEPENDENT || dr1.toggle_mode==true) /* If output or toggle mode changed, b
+ 411:Main.cpp      **** 				break;
+ 412:Main.cpp      **** 		}
+ 413:Main.cpp      **** 		doorPinWrite(&dr1, false); // Door outputs off
+ 572               		.stabn	68,0,413,.LM44-.LFBB4
+ 573               	.LM44:
+ 574 01a2 60E0      		ldi r22,0
+ 575 01a4 80E0      		ldi r24,lo8(dr1)
+ 576 01a6 90E0      		ldi r25,hi8(dr1)
+ 577 01a8 00D0      		rcall doorPinWrite
+ 414:Main.cpp      **** 		doorPinWrite(&dr2, false);
+ 578               		.stabn	68,0,414,.LM45-.LFBB4
+ 579               	.LM45:
+ 580 01aa 60E0      		ldi r22,0
+ 581 01ac 80E0      		ldi r24,lo8(dr2)
+ 582 01ae 90E0      		ldi r25,hi8(dr2)
+ 583 01b0 00D0      		rcall doorPinWrite
+ 415:Main.cpp      **** 		cbi(RELAY_PORT, RELAY1_PIN);	// Deactivate door signal outputs
+ 584               		.stabn	68,0,415,.LM46-.LFBB4
+ 585               	.LM46:
+ 586 01b2 7098      		cbi 0xe,0
+ 416:Main.cpp      **** 		cbi(RELAY_PORT, RELAY2_PIN);
+ 587               		.stabn	68,0,416,.LM47-.LFBB4
+ 588               	.LM47:
+ 589 01b4 7198      		cbi 0xe,1
+ 417:Main.cpp      **** 		dip_switch.retracting = false;
+ 590               		.stabn	68,0,417,.LM48-.LFBB4
+ 591               	.LM48:
+ 592 01b6 1092 0000 		sts dip_switch+2,__zero_reg__
+ 593 01ba 00C0      		rjmp .L13
+GAS LISTING /tmp/ccyIUKZe.s 			page 22
+
+
+ 594               	.L20:
+ 405:Main.cpp      **** 			if( dr1.toggle_mode==true )
+ 595               		.stabn	68,0,405,.LM49-.LFBB4
+ 596               	.LM49:
+ 597               	/* #APP */
+ 598               	 ;  405 "Main.cpp" 1
+ 599 01bc A895      		wdr
+ 600               	 ;  0 "" 2
+ 406:Main.cpp      **** 				break;
+ 601               		.stabn	68,0,406,.LM50-.LFBB4
+ 602               	.LM50:
+ 603               	/* #NOAPP */
+ 604 01be 8091 0000 		lds r24,dr1
+ 605 01c2 8111      		cpse r24,__zero_reg__
+ 606 01c4 00C0      		rjmp .L21
+ 408:Main.cpp      **** 				door_timer(true); // reset the door timer
+ 607               		.stabn	68,0,408,.LM51-.LFBB4
+ 608               	.LM51:
+ 609 01c6 4A9B      		sbis 0x9,2
+ 610 01c8 00C0      		rjmp .L22
+ 408:Main.cpp      **** 				door_timer(true); // reset the door timer
+ 611               		.stabn	68,0,408,.LM52-.LFBB4
+ 612               	.LM52:
+ 613 01ca 4B9B      		sbis 0x9,3
+ 614 01cc 00C0      		rjmp .L22
+ 615               	.L24:
+ 410:Main.cpp      **** 				break;
+ 616               		.stabn	68,0,410,.LM53-.LFBB4
+ 617               	.LM53:
+ 618 01ce 8091 0000 		lds r24,dip_switch
+ 619 01d2 8823      		tst r24
+ 620 01d4 01F0      		breq .L21
+ 410:Main.cpp      **** 				break;
+ 621               		.stabn	68,0,410,.LM54-.LFBB4
+ 622               	.LM54:
+ 623 01d6 8091 0000 		lds r24,dr1
+ 624 01da 8823      		tst r24
+ 625 01dc 01F0      		breq .L23
+ 626 01de 00C0      		rjmp .L21
+ 627               	.L18:
+ 628               	.LBE35:
+ 380:Main.cpp      **** 		}
+ 629               		.stabn	68,0,380,.LM55-.LFBB4
+ 630               	.LM55:
+ 631               	/* #APP */
+ 632               	 ;  380 "Main.cpp" 1
+ 633 01e0 A895      		wdr
+ 634               	 ;  0 "" 2
+ 378:Main.cpp      **** 		{
+ 635               		.stabn	68,0,378,.LM56-.LFBB4
+ 636               	.LM56:
+ 637               	/* #NOAPP */
+ 638 01e2 00C0      		rjmp .L16
+ 639               	.L22:
+ 640               	.LBB42:
+ 409:Main.cpp      **** 			if(dip_switch.mode==INDEPENDENT || dr1.toggle_mode==true) /* If output or toggle mode changed, b
+ 641               		.stabn	68,0,409,.LM57-.LFBB4
+GAS LISTING /tmp/ccyIUKZe.s 			page 23
+
+
+ 642               	.LM57:
+ 643 01e4 81E0      		ldi r24,lo8(1)
+ 644 01e6 00D0      		rcall door_timer
+ 645 01e8 00C0      		rjmp .L24
+ 646               	.L13:
+ 647               	/* epilogue start */
+ 648               	.LBE42:
+ 649               	.LBE30:
+ 418:Main.cpp      **** 	}
+ 419:Main.cpp      **** }
+ 650               		.stabn	68,0,419,.LM58-.LFBB4
+ 651               	.LM58:
+ 652 01ea CF91      		pop r28
+ 653 01ec FF90      		pop r15
+ 654 01ee EF90      		pop r14
+ 655 01f0 DF90      		pop r13
+ 656 01f2 CF90      		pop r12
+ 657 01f4 0895      		ret
+ 658               		.size	dependentRetract, .-dependentRetract
+ 659               		.stabs	"t:r(0,11)",64,0,402,22
+ 660               		.stabn	192,0,0,.LBB35-.LFBB4
+ 661               		.stabn	224,0,0,.LBE35-.LFBB4
+ 662               		.stabs	"t:r(0,11)",64,0,402,22
+ 663               		.stabn	192,0,0,.LBB42-.LFBB4
+ 664               		.stabn	224,0,0,.LBE42-.LFBB4
+ 665               	.Lscope4:
+ 666               		.stabs	"",36,0,0,.Lscope4-.LFBB4
+ 667               		.stabd	78,0,0
+ 668               		.stabs	"buttonPressed:F(0,58)",36,0,433,buttonPressed
+ 669               		.stabs	"PIN:P(0,267)=*(0,102)",64,0,433,24
+ 670               		.stabs	"BUTTON_BIT:P(0,98)",64,0,433,22
+ 671               	.global	buttonPressed
+ 672               		.type	buttonPressed, @function
+ 673               	buttonPressed:
+ 674               		.stabd	46,0,0
+ 420:Main.cpp      **** 
+ 421:Main.cpp      **** /*
+ 422:Main.cpp      ****  * Name         : buttonPressed
+ 423:Main.cpp      ****  *
+ 424:Main.cpp      ****  * Synopsis     : bool buttonPressed(volatile ui8 *PIN, ui8 BUTTON_BIT)
+ 425:Main.cpp      ****  *
+ 426:Main.cpp      ****  * Arguments    : volatile  ui8 : The pin to check. Input pins are pullup enabled.
+ 427:Main.cpp      ****  *                ui8  BUTTON_BIT : A port mask to isolate the pin to be checked.
+ 428:Main.cpp      ****  *
+ 429:Main.cpp      ****  * Description  : Checks and debounces the door input buttons.
+ 430:Main.cpp      ****  * 
+ 431:Main.cpp      ****  * Returns      : bool 
+ 432:Main.cpp      ****  */
+ 433:Main.cpp      **** bool buttonPressed(volatile ui8 *PIN, ui8 BUTTON_BIT)
+ 434:Main.cpp      **** {
+ 675               		.stabn	68,0,434,.LM59-.LFBB5
+ 676               	.LM59:
+ 677               	.LFBB5:
+ 678               	/* prologue: function */
+ 679               	/* frame size = 0 */
+ 680               	/* stack size = 0 */
+ 681               	.L__stack_usage = 0
+GAS LISTING /tmp/ccyIUKZe.s 			page 24
+
+
+ 435:Main.cpp      **** 	if ( bit_is_clear(*PIN, BUTTON_BIT) )
+ 682               		.stabn	68,0,435,.LM60-.LFBB5
+ 683               	.LM60:
+ 684 01f6 FC01      		movw r30,r24
+ 685 01f8 2081      		ld r18,Z
+ 686 01fa 30E0      		ldi r19,0
+ 687 01fc 062E      		mov r0,r22
+ 688 01fe 00C0      		rjmp 2f
+ 689               		1:
+ 690 0200 3595      		asr r19
+ 691 0202 2795      		ror r18
+ 692               		2:
+ 693 0204 0A94      		dec r0
+ 694 0206 02F4      		brpl 1b
+ 695 0208 20FD      		sbrc r18,0
+ 696 020a 00C0      		rjmp .L42
+ 697               	.LBB43:
+ 698               	.LBB44:
+ 699               		.stabs	"/usr/lib/avr/include/util/delay.h",132,0,0,.Ltext11
+ 700               	.Ltext11:
+ 701               		.stabn	68,0,187,.LM61-.LFBB5
+ 702               	.LM61:
+ 703 020c FFE7      		ldi r31,lo8(79999)
+ 704 020e 28E3      		ldi r18,hi8(79999)
+ 705 0210 31E0      		ldi r19,hlo8(79999)
+ 706 0212 F150      	1:	subi r31,1
+ 707 0214 2040      		sbci r18,0
+ 708 0216 3040      		sbci r19,0
+ 709 0218 01F4      		brne 1b
+ 710 021a 00C0      		rjmp .
+ 711 021c 0000      		nop
+ 712               	.LBE44:
+ 713               	.LBE43:
+ 714               		.stabs	"Main.cpp",132,0,0,.Ltext12
+ 715               	.Ltext12:
+ 436:Main.cpp      **** 	{
+ 437:Main.cpp      **** 		_delay_ms(DEBOUNCE_TIME);
+ 438:Main.cpp      **** 		if (bit_is_clear(*PIN, BUTTON_BIT) ) return true;
+ 716               		.stabn	68,0,438,.LM62-.LFBB5
+ 717               	.LM62:
+ 718 021e FC01      		movw r30,r24
+ 719 0220 8081      		ld r24,Z
+ 720 0222 90E0      		ldi r25,0
+ 721 0224 00C0      		rjmp 2f
+ 722               		1:
+ 723 0226 9595      		asr r25
+ 724 0228 8795      		ror r24
+ 725               		2:
+ 726 022a 6A95      		dec r22
+ 727 022c 02F4      		brpl 1b
+ 728 022e 8170      		andi r24,1
+ 729 0230 9927      		clr r25
+ 730 0232 F1E0      		ldi r31,1
+ 731 0234 8F27      		eor r24,r31
+ 732 0236 8170      		andi r24,lo8(1)
+ 733 0238 0895      		ret
+ 734               	.L42:
+GAS LISTING /tmp/ccyIUKZe.s 			page 25
+
+
+ 439:Main.cpp      **** 	}
+ 440:Main.cpp      **** 	return false;
+ 735               		.stabn	68,0,440,.LM63-.LFBB5
+ 736               	.LM63:
+ 737 023a 80E0      		ldi r24,0
+ 441:Main.cpp      **** }
+ 738               		.stabn	68,0,441,.LM64-.LFBB5
+ 739               	.LM64:
+ 740 023c 0895      		ret
+ 741               		.size	buttonPressed, .-buttonPressed
+ 742               	.Lscope5:
+ 743               		.stabs	"",36,0,0,.Lscope5-.LFBB5
+ 744               		.stabd	78,0,0
+ 745               		.section	.text.startup,"ax",@progbits
+ 746               		.stabs	"main:F(0,9)",36,0,54,main
+ 747               	.global	main
+ 748               		.type	main, @function
+ 749               	main:
+ 750               		.stabd	46,0,0
+  55:Main.cpp      **** 	avr_init();
+ 751               		.stabn	68,0,55,.LM65-.LFBB6
+ 752               	.LM65:
+ 753               	.LFBB6:
+ 754               	/* prologue: function */
+ 755               	/* frame size = 0 */
+ 756               	/* stack size = 0 */
+ 757               	.L__stack_usage = 0
+ 758               	.LBB49:
+ 759               	.LBB50:
+ 144:Main.cpp      ****  	RELAY_DDR |= BIT(RELAY1_PIN) | BIT(RELAY2_PIN);
+ 760               		.stabn	68,0,144,.LM66-.LFBB6
+ 761               	.LM66:
+ 762 0000 93E0      		ldi r25,lo8(3)
+ 763 0002 94B9      		out 0x4,r25
+ 145:Main.cpp      ****  	DS_DDR = ( BIT(DS1_PIN) | BIT(DS2_PIN) );	// PC0 & PC1 set as outputs for DS switches
+ 764               		.stabn	68,0,145,.LM67-.LFBB6
+ 765               	.LM67:
+ 766 0004 8DB1      		in r24,0xd
+ 767 0006 8360      		ori r24,lo8(3)
+ 768 0008 8DB9      		out 0xd,r24
+ 146:Main.cpp      **** 
+ 769               		.stabn	68,0,146,.LM68-.LFBB6
+ 770               	.LM68:
+ 771 000a 97B9      		out 0x7,r25
+ 148:Main.cpp      ****  	wdt_enable(WDTO_2S); // Enable Watchdog Timer @ 2 second time-out
+ 772               		.stabn	68,0,148,.LM69-.LFBB6
+ 773               	.LM69:
+ 774               	/* #APP */
+ 775               	 ;  148 "Main.cpp" 1
+ 776 000c A895      		wdr
+ 777               	 ;  0 "" 2
+ 778               	/* #NOAPP */
+ 779               	.LBB51:
+ 780               	.LBB52:
+ 781               		.stabs	"/usr/lib/avr/include/avr/wdt.h",132,0,0,.Ltext13
+ 782               	.Ltext13:
+   1:/usr/lib/avr/include/avr/wdt.h **** /* Copyright (c) 2002, 2004 Marek Michalkiewicz
+GAS LISTING /tmp/ccyIUKZe.s 			page 26
+
+
+   2:/usr/lib/avr/include/avr/wdt.h ****    Copyright (c) 2005, 2006, 2007 Eric B. Weddington
+   3:/usr/lib/avr/include/avr/wdt.h ****    All rights reserved.
+   4:/usr/lib/avr/include/avr/wdt.h **** 
+   5:/usr/lib/avr/include/avr/wdt.h ****    Redistribution and use in source and binary forms, with or without
+   6:/usr/lib/avr/include/avr/wdt.h ****    modification, are permitted provided that the following conditions are met:
+   7:/usr/lib/avr/include/avr/wdt.h **** 
+   8:/usr/lib/avr/include/avr/wdt.h ****    * Redistributions of source code must retain the above copyright
+   9:/usr/lib/avr/include/avr/wdt.h ****      notice, this list of conditions and the following disclaimer.
+  10:/usr/lib/avr/include/avr/wdt.h **** 
+  11:/usr/lib/avr/include/avr/wdt.h ****    * Redistributions in binary form must reproduce the above copyright
+  12:/usr/lib/avr/include/avr/wdt.h ****      notice, this list of conditions and the following disclaimer in
+  13:/usr/lib/avr/include/avr/wdt.h ****      the documentation and/or other materials provided with the
+  14:/usr/lib/avr/include/avr/wdt.h ****      distribution.
+  15:/usr/lib/avr/include/avr/wdt.h **** 
+  16:/usr/lib/avr/include/avr/wdt.h ****    * Neither the name of the copyright holders nor the names of
+  17:/usr/lib/avr/include/avr/wdt.h ****      contributors may be used to endorse or promote products derived
+  18:/usr/lib/avr/include/avr/wdt.h ****      from this software without specific prior written permission.
+  19:/usr/lib/avr/include/avr/wdt.h **** 
+  20:/usr/lib/avr/include/avr/wdt.h ****   THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+  21:/usr/lib/avr/include/avr/wdt.h ****   AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+  22:/usr/lib/avr/include/avr/wdt.h ****   IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+  23:/usr/lib/avr/include/avr/wdt.h ****   ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
+  24:/usr/lib/avr/include/avr/wdt.h ****   LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+  25:/usr/lib/avr/include/avr/wdt.h ****   CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+  26:/usr/lib/avr/include/avr/wdt.h ****   SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+  27:/usr/lib/avr/include/avr/wdt.h ****   INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+  28:/usr/lib/avr/include/avr/wdt.h ****   CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+  29:/usr/lib/avr/include/avr/wdt.h ****   ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+  30:/usr/lib/avr/include/avr/wdt.h ****   POSSIBILITY OF SUCH DAMAGE. */
+  31:/usr/lib/avr/include/avr/wdt.h **** 
+  32:/usr/lib/avr/include/avr/wdt.h **** /* $Id$ */
+  33:/usr/lib/avr/include/avr/wdt.h **** 
+  34:/usr/lib/avr/include/avr/wdt.h **** /*
+  35:/usr/lib/avr/include/avr/wdt.h ****    avr/wdt.h - macros for AVR watchdog timer
+  36:/usr/lib/avr/include/avr/wdt.h ****  */
+  37:/usr/lib/avr/include/avr/wdt.h **** 
+  38:/usr/lib/avr/include/avr/wdt.h **** #ifndef _AVR_WDT_H_
+  39:/usr/lib/avr/include/avr/wdt.h **** #define _AVR_WDT_H_
+  40:/usr/lib/avr/include/avr/wdt.h **** 
+  41:/usr/lib/avr/include/avr/wdt.h **** #include <avr/io.h>
+  42:/usr/lib/avr/include/avr/wdt.h **** #include <stdint.h>
+  43:/usr/lib/avr/include/avr/wdt.h **** 
+  44:/usr/lib/avr/include/avr/wdt.h **** /** \file */
+  45:/usr/lib/avr/include/avr/wdt.h **** /** \defgroup avr_watchdog <avr/wdt.h>: Watchdog timer handling
+  46:/usr/lib/avr/include/avr/wdt.h ****     \code #include <avr/wdt.h> \endcode
+  47:/usr/lib/avr/include/avr/wdt.h **** 
+  48:/usr/lib/avr/include/avr/wdt.h ****     This header file declares the interface to some inline macros
+  49:/usr/lib/avr/include/avr/wdt.h ****     handling the watchdog timer present in many AVR devices.  In order
+  50:/usr/lib/avr/include/avr/wdt.h ****     to prevent the watchdog timer configuration from being
+  51:/usr/lib/avr/include/avr/wdt.h ****     accidentally altered by a crashing application, a special timed
+  52:/usr/lib/avr/include/avr/wdt.h ****     sequence is required in order to change it.  The macros within
+  53:/usr/lib/avr/include/avr/wdt.h ****     this header file handle the required sequence automatically
+  54:/usr/lib/avr/include/avr/wdt.h ****     before changing any value.  Interrupts will be disabled during
+  55:/usr/lib/avr/include/avr/wdt.h ****     the manipulation.
+  56:/usr/lib/avr/include/avr/wdt.h **** 
+  57:/usr/lib/avr/include/avr/wdt.h ****     \note Depending on the fuse configuration of the particular
+  58:/usr/lib/avr/include/avr/wdt.h ****     device, further restrictions might apply, in particular it might
+GAS LISTING /tmp/ccyIUKZe.s 			page 27
+
+
+  59:/usr/lib/avr/include/avr/wdt.h ****     be disallowed to turn off the watchdog timer.
+  60:/usr/lib/avr/include/avr/wdt.h **** 
+  61:/usr/lib/avr/include/avr/wdt.h ****     Note that for newer devices (ATmega88 and newer, effectively any
+  62:/usr/lib/avr/include/avr/wdt.h ****     AVR that has the option to also generate interrupts), the watchdog
+  63:/usr/lib/avr/include/avr/wdt.h ****     timer remains active even after a system reset (except a power-on
+  64:/usr/lib/avr/include/avr/wdt.h ****     condition), using the fastest prescaler value (approximately 15
+  65:/usr/lib/avr/include/avr/wdt.h ****     ms).  It is therefore required to turn off the watchdog early
+  66:/usr/lib/avr/include/avr/wdt.h ****     during program startup, the datasheet recommends a sequence like
+  67:/usr/lib/avr/include/avr/wdt.h ****     the following:
+  68:/usr/lib/avr/include/avr/wdt.h **** 
+  69:/usr/lib/avr/include/avr/wdt.h ****     \code
+  70:/usr/lib/avr/include/avr/wdt.h ****     #include <stdint.h>
+  71:/usr/lib/avr/include/avr/wdt.h ****     #include <avr/wdt.h>
+  72:/usr/lib/avr/include/avr/wdt.h **** 
+  73:/usr/lib/avr/include/avr/wdt.h ****     uint8_t mcusr_mirror __attribute__ ((section (".noinit")));
+  74:/usr/lib/avr/include/avr/wdt.h **** 
+  75:/usr/lib/avr/include/avr/wdt.h ****     void get_mcusr(void) \
+  76:/usr/lib/avr/include/avr/wdt.h ****       __attribute__((naked)) \
+  77:/usr/lib/avr/include/avr/wdt.h ****       __attribute__((section(".init3")));
+  78:/usr/lib/avr/include/avr/wdt.h ****     void get_mcusr(void)
+  79:/usr/lib/avr/include/avr/wdt.h ****     {
+  80:/usr/lib/avr/include/avr/wdt.h ****       mcusr_mirror = MCUSR;
+  81:/usr/lib/avr/include/avr/wdt.h ****       MCUSR = 0;
+  82:/usr/lib/avr/include/avr/wdt.h ****       wdt_disable();
+  83:/usr/lib/avr/include/avr/wdt.h ****     }
+  84:/usr/lib/avr/include/avr/wdt.h ****     \endcode
+  85:/usr/lib/avr/include/avr/wdt.h **** 
+  86:/usr/lib/avr/include/avr/wdt.h ****     Saving the value of MCUSR in \c mcusr_mirror is only needed if the
+  87:/usr/lib/avr/include/avr/wdt.h ****     application later wants to examine the reset source, but in particular, 
+  88:/usr/lib/avr/include/avr/wdt.h ****     clearing the watchdog reset flag before disabling the
+  89:/usr/lib/avr/include/avr/wdt.h ****     watchdog is required, according to the datasheet.
+  90:/usr/lib/avr/include/avr/wdt.h **** */
+  91:/usr/lib/avr/include/avr/wdt.h **** 
+  92:/usr/lib/avr/include/avr/wdt.h **** /**
+  93:/usr/lib/avr/include/avr/wdt.h ****    \ingroup avr_watchdog
+  94:/usr/lib/avr/include/avr/wdt.h ****    Reset the watchdog timer.  When the watchdog timer is enabled,
+  95:/usr/lib/avr/include/avr/wdt.h ****    a call to this instruction is required before the timer expires,
+  96:/usr/lib/avr/include/avr/wdt.h ****    otherwise a watchdog-initiated device reset will occur. 
+  97:/usr/lib/avr/include/avr/wdt.h **** */
+  98:/usr/lib/avr/include/avr/wdt.h **** 
+  99:/usr/lib/avr/include/avr/wdt.h **** #define wdt_reset() __asm__ __volatile__ ("wdr")
+ 100:/usr/lib/avr/include/avr/wdt.h **** 
+ 101:/usr/lib/avr/include/avr/wdt.h **** #ifndef __DOXYGEN__
+ 102:/usr/lib/avr/include/avr/wdt.h **** 
+ 103:/usr/lib/avr/include/avr/wdt.h **** #if defined(WDP3)
+ 104:/usr/lib/avr/include/avr/wdt.h **** # define _WD_PS3_MASK       _BV(WDP3)
+ 105:/usr/lib/avr/include/avr/wdt.h **** #else
+ 106:/usr/lib/avr/include/avr/wdt.h **** # define _WD_PS3_MASK       0x00
+ 107:/usr/lib/avr/include/avr/wdt.h **** #endif
+ 108:/usr/lib/avr/include/avr/wdt.h **** 
+ 109:/usr/lib/avr/include/avr/wdt.h **** #if defined(WDTCSR)
+ 110:/usr/lib/avr/include/avr/wdt.h **** #  define _WD_CONTROL_REG     WDTCSR
+ 111:/usr/lib/avr/include/avr/wdt.h **** #elif defined(WDTCR)
+ 112:/usr/lib/avr/include/avr/wdt.h **** #  define _WD_CONTROL_REG     WDTCR
+ 113:/usr/lib/avr/include/avr/wdt.h **** #else
+ 114:/usr/lib/avr/include/avr/wdt.h **** #  define _WD_CONTROL_REG     WDT
+ 115:/usr/lib/avr/include/avr/wdt.h **** #endif
+GAS LISTING /tmp/ccyIUKZe.s 			page 28
+
+
+ 116:/usr/lib/avr/include/avr/wdt.h **** 
+ 117:/usr/lib/avr/include/avr/wdt.h **** #if defined(WDTOE)
+ 118:/usr/lib/avr/include/avr/wdt.h **** #define _WD_CHANGE_BIT      WDTOE
+ 119:/usr/lib/avr/include/avr/wdt.h **** #else
+ 120:/usr/lib/avr/include/avr/wdt.h **** #define _WD_CHANGE_BIT      WDCE
+ 121:/usr/lib/avr/include/avr/wdt.h **** #endif
+ 122:/usr/lib/avr/include/avr/wdt.h **** 
+ 123:/usr/lib/avr/include/avr/wdt.h **** #endif	/* !__DOXYGEN__ */
+ 124:/usr/lib/avr/include/avr/wdt.h **** 
+ 125:/usr/lib/avr/include/avr/wdt.h **** 
+ 126:/usr/lib/avr/include/avr/wdt.h **** /**
+ 127:/usr/lib/avr/include/avr/wdt.h ****    \ingroup avr_watchdog
+ 128:/usr/lib/avr/include/avr/wdt.h ****    Enable the watchdog timer, configuring it for expiry after
+ 129:/usr/lib/avr/include/avr/wdt.h ****    \c timeout (which is a combination of the \c WDP0 through
+ 130:/usr/lib/avr/include/avr/wdt.h ****    \c WDP2 bits to write into the \c WDTCR register; For those devices 
+ 131:/usr/lib/avr/include/avr/wdt.h ****    that have a \c WDTCSR register, it uses the combination of the \c WDP0 
+ 132:/usr/lib/avr/include/avr/wdt.h ****    through \c WDP3 bits).
+ 133:/usr/lib/avr/include/avr/wdt.h **** 
+ 134:/usr/lib/avr/include/avr/wdt.h ****    See also the symbolic constants \c WDTO_15MS et al.
+ 135:/usr/lib/avr/include/avr/wdt.h **** */
+ 136:/usr/lib/avr/include/avr/wdt.h **** 
+ 137:/usr/lib/avr/include/avr/wdt.h **** 
+ 138:/usr/lib/avr/include/avr/wdt.h **** #if defined(__AVR_XMEGA__)
+ 139:/usr/lib/avr/include/avr/wdt.h **** 
+ 140:/usr/lib/avr/include/avr/wdt.h **** #if defined (WDT_CTRLA) && !defined(RAMPD)
+ 141:/usr/lib/avr/include/avr/wdt.h **** 
+ 142:/usr/lib/avr/include/avr/wdt.h **** #define wdt_enable(timeout) \
+ 143:/usr/lib/avr/include/avr/wdt.h **** do { \
+ 144:/usr/lib/avr/include/avr/wdt.h **** uint8_t temp; \
+ 145:/usr/lib/avr/include/avr/wdt.h **** __asm__ __volatile__ ( \
+ 146:/usr/lib/avr/include/avr/wdt.h **** 	"wdr"									"\n\t" \
+ 147:/usr/lib/avr/include/avr/wdt.h **** 	"out %[ccp_reg], %[ioreg_cen_mask]"		"\n\t" \
+ 148:/usr/lib/avr/include/avr/wdt.h **** 	"lds %[tmp], %[wdt_reg]"				"\n\t" \
+ 149:/usr/lib/avr/include/avr/wdt.h **** 	"sbr %[tmp], %[wdt_enable_timeout]"		"\n\t" \
+ 150:/usr/lib/avr/include/avr/wdt.h **** 	"sts %[wdt_reg], %[tmp]"				"\n\t" \
+ 151:/usr/lib/avr/include/avr/wdt.h **** 	"1:lds %[tmp], %[wdt_status_reg]"		"\n\t" \
+ 152:/usr/lib/avr/include/avr/wdt.h **** 	"sbrc %[tmp], %[wdt_syncbusy_bit]"		"\n\t" \
+ 153:/usr/lib/avr/include/avr/wdt.h **** 	"rjmp 1b"								"\n\t" \
+ 154:/usr/lib/avr/include/avr/wdt.h **** 	: [tmp]					"=r" (temp) \
+ 155:/usr/lib/avr/include/avr/wdt.h **** 	: [ccp_reg]				"I"  (_SFR_IO_ADDR(CCP)), \
+ 156:/usr/lib/avr/include/avr/wdt.h **** 	  [ioreg_cen_mask]		"r"  ((uint8_t)CCP_IOREG_gc), \
+ 157:/usr/lib/avr/include/avr/wdt.h **** 	  [wdt_reg]				"n"  (_SFR_MEM_ADDR(WDT_CTRLA)), \
+ 158:/usr/lib/avr/include/avr/wdt.h **** 	  [wdt_enable_timeout]	"M"  (timeout), \
+ 159:/usr/lib/avr/include/avr/wdt.h **** 	  [wdt_status_reg]		"n"  (_SFR_MEM_ADDR(WDT_STATUS)), \
+ 160:/usr/lib/avr/include/avr/wdt.h **** 	  [wdt_syncbusy_bit]	"I"  (WDT_SYNCBUSY_bm) \
+ 161:/usr/lib/avr/include/avr/wdt.h **** ); \
+ 162:/usr/lib/avr/include/avr/wdt.h **** } while(0)
+ 163:/usr/lib/avr/include/avr/wdt.h **** 
+ 164:/usr/lib/avr/include/avr/wdt.h **** #define wdt_disable() \
+ 165:/usr/lib/avr/include/avr/wdt.h **** do { \
+ 166:/usr/lib/avr/include/avr/wdt.h **** uint8_t temp; \
+ 167:/usr/lib/avr/include/avr/wdt.h **** __asm__ __volatile__ (  \
+ 168:/usr/lib/avr/include/avr/wdt.h **** 	"wdr"								"\n\t" \
+ 169:/usr/lib/avr/include/avr/wdt.h **** 	"out %[ccp_reg], %[ioreg_cen_mask]" "\n\t" \
+ 170:/usr/lib/avr/include/avr/wdt.h **** 	"lds %[tmp], %[wdt_reg]"			"\n\t" \
+ 171:/usr/lib/avr/include/avr/wdt.h **** 	"cbr %[tmp], %[timeout_mask]"       "\n\t" \
+ 172:/usr/lib/avr/include/avr/wdt.h **** 	"sts %[wdt_reg], %[tmp]"			"\n\t" \
+GAS LISTING /tmp/ccyIUKZe.s 			page 29
+
+
+ 173:/usr/lib/avr/include/avr/wdt.h ****     : [tmp]            "=r" (temp) \
+ 174:/usr/lib/avr/include/avr/wdt.h ****     : [ccp_reg]        "I" (_SFR_IO_ADDR(CCP)),       \
+ 175:/usr/lib/avr/include/avr/wdt.h ****       [ioreg_cen_mask] "r" ((uint8_t)CCP_IOREG_gc),   \
+ 176:/usr/lib/avr/include/avr/wdt.h ****       [wdt_reg]        "n" (_SFR_MEM_ADDR(WDT_CTRLA)),\
+ 177:/usr/lib/avr/include/avr/wdt.h ****       [timeout_mask]   "I" (WDT_PERIOD_gm) \
+ 178:/usr/lib/avr/include/avr/wdt.h **** ); \
+ 179:/usr/lib/avr/include/avr/wdt.h **** } while(0)
+ 180:/usr/lib/avr/include/avr/wdt.h **** 
+ 181:/usr/lib/avr/include/avr/wdt.h **** #else // defined (WDT_CTRLA) && !defined(RAMPD)
+ 182:/usr/lib/avr/include/avr/wdt.h **** 
+ 183:/usr/lib/avr/include/avr/wdt.h **** /*
+ 184:/usr/lib/avr/include/avr/wdt.h ****    wdt_enable(timeout) for xmega devices
+ 185:/usr/lib/avr/include/avr/wdt.h **** ** write signature (CCP_IOREG_gc) that enables change of protected I/O
+ 186:/usr/lib/avr/include/avr/wdt.h ****    registers to the CCP register
+ 187:/usr/lib/avr/include/avr/wdt.h **** ** At the same time,
+ 188:/usr/lib/avr/include/avr/wdt.h ****    1) set WDT change enable (WDT_CEN_bm)
+ 189:/usr/lib/avr/include/avr/wdt.h ****    2) enable WDT (WDT_ENABLE_bm)
+ 190:/usr/lib/avr/include/avr/wdt.h ****    3) set timeout (timeout)
+ 191:/usr/lib/avr/include/avr/wdt.h **** ** Synchronization starts when ENABLE bit of WDT is set. So, wait till it
+ 192:/usr/lib/avr/include/avr/wdt.h ****    finishes (SYNCBUSY of STATUS register is automatically cleared after the
+ 193:/usr/lib/avr/include/avr/wdt.h ****    sync is finished).
+ 194:/usr/lib/avr/include/avr/wdt.h **** */
+ 195:/usr/lib/avr/include/avr/wdt.h **** #define wdt_enable(timeout) \
+ 196:/usr/lib/avr/include/avr/wdt.h **** do { \
+ 197:/usr/lib/avr/include/avr/wdt.h **** uint8_t temp; \
+ 198:/usr/lib/avr/include/avr/wdt.h **** __asm__ __volatile__ (         \
+ 199:/usr/lib/avr/include/avr/wdt.h ****     "in __tmp_reg__, %[rampd]"              "\n\t" \
+ 200:/usr/lib/avr/include/avr/wdt.h ****     "out %[rampd], __zero_reg__"            "\n\t" \
+ 201:/usr/lib/avr/include/avr/wdt.h ****     "out %[ccp_reg], %[ioreg_cen_mask]"     "\n\t" \
+ 202:/usr/lib/avr/include/avr/wdt.h ****     "sts %[wdt_reg], %[wdt_enable_timeout]" "\n\t" \
+ 203:/usr/lib/avr/include/avr/wdt.h ****     "1:lds %[tmp], %[wdt_status_reg]"       "\n\t" \
+ 204:/usr/lib/avr/include/avr/wdt.h ****     "sbrc %[tmp], %[wdt_syncbusy_bit]"      "\n\t" \
+ 205:/usr/lib/avr/include/avr/wdt.h ****     "rjmp 1b"                               "\n\t" \
+ 206:/usr/lib/avr/include/avr/wdt.h ****     "out %[rampd], __tmp_reg__"             "\n\t" \
+ 207:/usr/lib/avr/include/avr/wdt.h ****     : [tmp]                "=r" (temp) \
+ 208:/usr/lib/avr/include/avr/wdt.h ****     : [rampd]              "I" (_SFR_IO_ADDR(RAMPD)),      \
+ 209:/usr/lib/avr/include/avr/wdt.h ****       [ccp_reg]            "I" (_SFR_IO_ADDR(CCP)),        \
+ 210:/usr/lib/avr/include/avr/wdt.h ****       [ioreg_cen_mask]     "r" ((uint8_t)CCP_IOREG_gc),     \
+ 211:/usr/lib/avr/include/avr/wdt.h ****       [wdt_reg]            "n" (_SFR_MEM_ADDR(WDT_CTRL)),   \
+ 212:/usr/lib/avr/include/avr/wdt.h ****       [wdt_enable_timeout] "r" ((uint8_t)(WDT_CEN_bm | WDT_ENABLE_bm | timeout)), \
+ 213:/usr/lib/avr/include/avr/wdt.h ****       [wdt_status_reg]     "n" (_SFR_MEM_ADDR(WDT_STATUS)), \
+ 214:/usr/lib/avr/include/avr/wdt.h ****       [wdt_syncbusy_bit]   "I" (WDT_SYNCBUSY_bm)            \
+ 215:/usr/lib/avr/include/avr/wdt.h ****     : "r0" \
+ 216:/usr/lib/avr/include/avr/wdt.h **** ); \
+ 217:/usr/lib/avr/include/avr/wdt.h **** } while(0)
+ 218:/usr/lib/avr/include/avr/wdt.h **** 
+ 219:/usr/lib/avr/include/avr/wdt.h **** #define wdt_disable() \
+ 220:/usr/lib/avr/include/avr/wdt.h **** __asm__ __volatile__ (  \
+ 221:/usr/lib/avr/include/avr/wdt.h ****     "in __tmp_reg__, %[rampd]"          "\n\t" \
+ 222:/usr/lib/avr/include/avr/wdt.h ****     "out %[rampd], __zero_reg__"        "\n\t" \
+ 223:/usr/lib/avr/include/avr/wdt.h ****     "out %[ccp_reg], %[ioreg_cen_mask]" "\n\t" \
+ 224:/usr/lib/avr/include/avr/wdt.h ****     "sts %[wdt_reg], %[disable_mask]"   "\n\t" \
+ 225:/usr/lib/avr/include/avr/wdt.h ****     "out %[rampd], __tmp_reg__"         "\n\t" \
+ 226:/usr/lib/avr/include/avr/wdt.h ****     : \
+ 227:/usr/lib/avr/include/avr/wdt.h ****     : [rampd]             "I" (_SFR_IO_ADDR(RAMPD)),    \
+ 228:/usr/lib/avr/include/avr/wdt.h ****       [ccp_reg]           "I" (_SFR_IO_ADDR(CCP)),      \
+ 229:/usr/lib/avr/include/avr/wdt.h ****       [ioreg_cen_mask]    "r" ((uint8_t)CCP_IOREG_gc),   \
+GAS LISTING /tmp/ccyIUKZe.s 			page 30
+
+
+ 230:/usr/lib/avr/include/avr/wdt.h ****       [wdt_reg]           "n" (_SFR_MEM_ADDR(WDT_CTRL)), \
+ 231:/usr/lib/avr/include/avr/wdt.h ****       [disable_mask]      "r" ((uint8_t)((~WDT_ENABLE_bm) | WDT_CEN_bm)) \
+ 232:/usr/lib/avr/include/avr/wdt.h ****     : "r0" \
+ 233:/usr/lib/avr/include/avr/wdt.h **** );
+ 234:/usr/lib/avr/include/avr/wdt.h **** 
+ 235:/usr/lib/avr/include/avr/wdt.h **** #endif // defined (WDT_CTRLA) && !defined(RAMPD)
+ 236:/usr/lib/avr/include/avr/wdt.h **** 
+ 237:/usr/lib/avr/include/avr/wdt.h **** #elif defined(__AVR_TINY__)
+ 238:/usr/lib/avr/include/avr/wdt.h **** 
+ 239:/usr/lib/avr/include/avr/wdt.h **** #define wdt_enable(value) \
+ 240:/usr/lib/avr/include/avr/wdt.h **** __asm__ __volatile__ ( \
+ 241:/usr/lib/avr/include/avr/wdt.h ****     "in __tmp_reg__,__SREG__" "\n\t"  \
+ 242:/usr/lib/avr/include/avr/wdt.h ****     "cli" "\n\t"  \
+ 243:/usr/lib/avr/include/avr/wdt.h ****     "wdr" "\n\t"  \
+ 244:/usr/lib/avr/include/avr/wdt.h ****     "out %[CCPADDRESS],%[SIGNATURE]" "\n\t"  \
+ 245:/usr/lib/avr/include/avr/wdt.h ****     "out %[WDTREG],%[WDVALUE]" "\n\t"  \
+ 246:/usr/lib/avr/include/avr/wdt.h ****     "out __SREG__,__tmp_reg__" "\n\t"  \
+ 247:/usr/lib/avr/include/avr/wdt.h ****     : /* no outputs */  \
+ 248:/usr/lib/avr/include/avr/wdt.h ****     : [CCPADDRESS] "I" (_SFR_IO_ADDR(CCP)),  \
+ 249:/usr/lib/avr/include/avr/wdt.h ****       [SIGNATURE] "r" ((uint8_t)0xD8), \
+ 250:/usr/lib/avr/include/avr/wdt.h ****       [WDTREG] "I" (_SFR_IO_ADDR(_WD_CONTROL_REG)), \
+ 251:/usr/lib/avr/include/avr/wdt.h ****       [WDVALUE] "r" ((uint8_t)((value & 0x08 ? _WD_PS3_MASK : 0x00) \
+ 252:/usr/lib/avr/include/avr/wdt.h ****       | _BV(WDE) | (value & 0x07) )) \
+ 253:/usr/lib/avr/include/avr/wdt.h ****     : "r16" \
+ 254:/usr/lib/avr/include/avr/wdt.h **** )
+ 255:/usr/lib/avr/include/avr/wdt.h **** 
+ 256:/usr/lib/avr/include/avr/wdt.h **** #define wdt_disable() \
+ 257:/usr/lib/avr/include/avr/wdt.h **** do { \
+ 258:/usr/lib/avr/include/avr/wdt.h **** uint8_t temp_wd; \
+ 259:/usr/lib/avr/include/avr/wdt.h **** __asm__ __volatile__ ( \
+ 260:/usr/lib/avr/include/avr/wdt.h ****     "in __tmp_reg__,__SREG__" "\n\t"  \
+ 261:/usr/lib/avr/include/avr/wdt.h ****     "cli" "\n\t"  \
+ 262:/usr/lib/avr/include/avr/wdt.h ****     "wdr" "\n\t"  \
+ 263:/usr/lib/avr/include/avr/wdt.h ****     "out %[CCPADDRESS],%[SIGNATURE]" "\n\t"  \
+ 264:/usr/lib/avr/include/avr/wdt.h ****     "in  %[TEMP_WD],%[WDTREG]" "\n\t" \
+ 265:/usr/lib/avr/include/avr/wdt.h ****     "cbr %[TEMP_WD],%[WDVALUE]" "\n\t" \
+ 266:/usr/lib/avr/include/avr/wdt.h ****     "out %[WDTREG],%[TEMP_WD]" "\n\t" \
+ 267:/usr/lib/avr/include/avr/wdt.h ****     "out __SREG__,__tmp_reg__" "\n\t" \
+ 268:/usr/lib/avr/include/avr/wdt.h ****     : /*no output */ \
+ 269:/usr/lib/avr/include/avr/wdt.h ****     : [CCPADDRESS] "I" (_SFR_IO_ADDR(CCP)), \
+ 270:/usr/lib/avr/include/avr/wdt.h ****       [SIGNATURE] "r" ((uint8_t)0xD8), \
+ 271:/usr/lib/avr/include/avr/wdt.h ****       [WDTREG] "I" (_SFR_IO_ADDR(_WD_CONTROL_REG)), \
+ 272:/usr/lib/avr/include/avr/wdt.h ****       [TEMP_WD] "d" (temp_wd), \
+ 273:/usr/lib/avr/include/avr/wdt.h ****       [WDVALUE] "n" (1 << WDE) \
+ 274:/usr/lib/avr/include/avr/wdt.h ****     : "r16" \
+ 275:/usr/lib/avr/include/avr/wdt.h **** ); \
+ 276:/usr/lib/avr/include/avr/wdt.h **** }while(0)
+ 277:/usr/lib/avr/include/avr/wdt.h **** 
+ 278:/usr/lib/avr/include/avr/wdt.h **** #elif defined(CCP)
+ 279:/usr/lib/avr/include/avr/wdt.h **** 
+ 280:/usr/lib/avr/include/avr/wdt.h **** static __inline__
+ 281:/usr/lib/avr/include/avr/wdt.h **** __attribute__ ((__always_inline__))
+ 282:/usr/lib/avr/include/avr/wdt.h **** void wdt_enable (const uint8_t value)
+ 283:/usr/lib/avr/include/avr/wdt.h **** {
+ 284:/usr/lib/avr/include/avr/wdt.h **** 	if (!_SFR_IO_REG_P (CCP) && !_SFR_IO_REG_P (_WD_CONTROL_REG))
+ 285:/usr/lib/avr/include/avr/wdt.h **** 	{
+ 286:/usr/lib/avr/include/avr/wdt.h **** 		__asm__ __volatile__ (
+GAS LISTING /tmp/ccyIUKZe.s 			page 31
+
+
+ 287:/usr/lib/avr/include/avr/wdt.h **** 			"in __tmp_reg__,__SREG__" "\n\t"
+ 288:/usr/lib/avr/include/avr/wdt.h **** 			"cli" "\n\t"
+ 289:/usr/lib/avr/include/avr/wdt.h **** 			"wdr" "\n\t"
+ 290:/usr/lib/avr/include/avr/wdt.h **** 			"sts %[CCPADDRESS],%[SIGNATURE]" "\n\t"
+ 291:/usr/lib/avr/include/avr/wdt.h **** 			"sts %[WDTREG],%[WDVALUE]" "\n\t"
+ 292:/usr/lib/avr/include/avr/wdt.h **** 			"out __SREG__,__tmp_reg__" "\n\t"
+ 293:/usr/lib/avr/include/avr/wdt.h **** 			: /* no outputs */
+ 294:/usr/lib/avr/include/avr/wdt.h **** 			: [CCPADDRESS] "n" (_SFR_MEM_ADDR(CCP)),
+ 295:/usr/lib/avr/include/avr/wdt.h **** 			[SIGNATURE] "r" ((uint8_t)0xD8),
+ 296:/usr/lib/avr/include/avr/wdt.h **** 			[WDTREG] "n" (_SFR_MEM_ADDR(_WD_CONTROL_REG)),
+ 297:/usr/lib/avr/include/avr/wdt.h **** 			[WDVALUE] "r" ((uint8_t)((value & 0x08 ? _WD_PS3_MASK : 0x00)
+ 298:/usr/lib/avr/include/avr/wdt.h **** 				| _BV(WDE) | (value & 0x07) ))
+ 299:/usr/lib/avr/include/avr/wdt.h **** 			: "r0"
+ 300:/usr/lib/avr/include/avr/wdt.h **** 			);
+ 301:/usr/lib/avr/include/avr/wdt.h **** 	}
+ 302:/usr/lib/avr/include/avr/wdt.h **** 	else if (!_SFR_IO_REG_P (CCP) && _SFR_IO_REG_P (_WD_CONTROL_REG))
+ 303:/usr/lib/avr/include/avr/wdt.h **** 	{
+ 304:/usr/lib/avr/include/avr/wdt.h **** 		__asm__ __volatile__ (
+ 305:/usr/lib/avr/include/avr/wdt.h **** 			"in __tmp_reg__,__SREG__" "\n\t"
+ 306:/usr/lib/avr/include/avr/wdt.h **** 			"cli" "\n\t"
+ 307:/usr/lib/avr/include/avr/wdt.h **** 			"wdr" "\n\t"
+ 308:/usr/lib/avr/include/avr/wdt.h **** 			"sts %[CCPADDRESS],%[SIGNATURE]" "\n\t"
+ 309:/usr/lib/avr/include/avr/wdt.h **** 			"out %[WDTREG],%[WDVALUE]" "\n\t"
+ 310:/usr/lib/avr/include/avr/wdt.h **** 			"out __SREG__,__tmp_reg__" "\n\t"
+ 311:/usr/lib/avr/include/avr/wdt.h **** 			: /* no outputs */
+ 312:/usr/lib/avr/include/avr/wdt.h **** 			: [CCPADDRESS] "n" (_SFR_MEM_ADDR(CCP)),
+ 313:/usr/lib/avr/include/avr/wdt.h **** 			[SIGNATURE] "r" ((uint8_t)0xD8),
+ 314:/usr/lib/avr/include/avr/wdt.h **** 			[WDTREG] "I" (_SFR_IO_ADDR(_WD_CONTROL_REG)),
+ 315:/usr/lib/avr/include/avr/wdt.h **** 			[WDVALUE] "r" ((uint8_t)((value & 0x08 ? _WD_PS3_MASK : 0x00)
+ 316:/usr/lib/avr/include/avr/wdt.h **** 				| _BV(WDE) | (value & 0x07) ))
+ 317:/usr/lib/avr/include/avr/wdt.h **** 			: "r0"
+ 318:/usr/lib/avr/include/avr/wdt.h **** 			);
+ 319:/usr/lib/avr/include/avr/wdt.h **** 	}
+ 320:/usr/lib/avr/include/avr/wdt.h **** 	else if (_SFR_IO_REG_P (CCP) && !_SFR_IO_REG_P (_WD_CONTROL_REG))
+ 321:/usr/lib/avr/include/avr/wdt.h **** 	{
+ 322:/usr/lib/avr/include/avr/wdt.h **** 		__asm__ __volatile__ (
+ 323:/usr/lib/avr/include/avr/wdt.h **** 			"in __tmp_reg__,__SREG__" "\n\t"
+ 324:/usr/lib/avr/include/avr/wdt.h **** 			"cli" "\n\t"
+ 325:/usr/lib/avr/include/avr/wdt.h **** 			"wdr" "\n\t"
+ 326:/usr/lib/avr/include/avr/wdt.h **** 			"out %[CCPADDRESS],%[SIGNATURE]" "\n\t"
+ 327:/usr/lib/avr/include/avr/wdt.h **** 			"sts %[WDTREG],%[WDVALUE]" "\n\t"
+ 328:/usr/lib/avr/include/avr/wdt.h **** 			"out __SREG__,__tmp_reg__" "\n\t"
+ 329:/usr/lib/avr/include/avr/wdt.h **** 			: /* no outputs */
+ 330:/usr/lib/avr/include/avr/wdt.h **** 			: [CCPADDRESS] "I" (_SFR_IO_ADDR(CCP)),
+ 331:/usr/lib/avr/include/avr/wdt.h **** 			[SIGNATURE] "r" ((uint8_t)0xD8),
+ 332:/usr/lib/avr/include/avr/wdt.h **** 			[WDTREG] "n" (_SFR_MEM_ADDR(_WD_CONTROL_REG)),
+ 333:/usr/lib/avr/include/avr/wdt.h **** 			[WDVALUE] "r" ((uint8_t)((value & 0x08 ? _WD_PS3_MASK : 0x00)
+ 334:/usr/lib/avr/include/avr/wdt.h **** 				| _BV(WDE) | (value & 0x07) ))
+ 335:/usr/lib/avr/include/avr/wdt.h **** 			: "r0"
+ 336:/usr/lib/avr/include/avr/wdt.h **** 			);
+ 337:/usr/lib/avr/include/avr/wdt.h **** 	}
+ 338:/usr/lib/avr/include/avr/wdt.h **** 	else
+ 339:/usr/lib/avr/include/avr/wdt.h ****  	{
+ 340:/usr/lib/avr/include/avr/wdt.h **** 		__asm__ __volatile__ (
+ 341:/usr/lib/avr/include/avr/wdt.h **** 			"in __tmp_reg__,__SREG__" "\n\t"
+ 342:/usr/lib/avr/include/avr/wdt.h **** 			"cli" "\n\t"
+ 343:/usr/lib/avr/include/avr/wdt.h **** 			"wdr" "\n\t"
+GAS LISTING /tmp/ccyIUKZe.s 			page 32
+
+
+ 344:/usr/lib/avr/include/avr/wdt.h **** 			"out %[CCPADDRESS],%[SIGNATURE]" "\n\t"
+ 345:/usr/lib/avr/include/avr/wdt.h **** 			"out %[WDTREG],%[WDVALUE]" "\n\t"
+ 346:/usr/lib/avr/include/avr/wdt.h **** 			"out __SREG__,__tmp_reg__" "\n\t"
+ 347:/usr/lib/avr/include/avr/wdt.h **** 			: /* no outputs */
+ 348:/usr/lib/avr/include/avr/wdt.h **** 			: [CCPADDRESS] "I" (_SFR_IO_ADDR(CCP)),
+ 349:/usr/lib/avr/include/avr/wdt.h **** 			[SIGNATURE] "r" ((uint8_t)0xD8),
+ 350:/usr/lib/avr/include/avr/wdt.h **** 			[WDTREG] "I" (_SFR_IO_ADDR(_WD_CONTROL_REG)),
+ 351:/usr/lib/avr/include/avr/wdt.h **** 			[WDVALUE] "r" ((uint8_t)((value & 0x08 ? _WD_PS3_MASK : 0x00)
+ 352:/usr/lib/avr/include/avr/wdt.h **** 				| _BV(WDE) | (value & 0x07) ))
+ 353:/usr/lib/avr/include/avr/wdt.h **** 			: "r0"
+ 354:/usr/lib/avr/include/avr/wdt.h **** 			);
+ 355:/usr/lib/avr/include/avr/wdt.h **** 	}
+ 356:/usr/lib/avr/include/avr/wdt.h **** }
+ 357:/usr/lib/avr/include/avr/wdt.h **** 
+ 358:/usr/lib/avr/include/avr/wdt.h **** static __inline__
+ 359:/usr/lib/avr/include/avr/wdt.h **** __attribute__ ((__always_inline__))
+ 360:/usr/lib/avr/include/avr/wdt.h **** void wdt_disable (void)
+ 361:/usr/lib/avr/include/avr/wdt.h **** {
+ 362:/usr/lib/avr/include/avr/wdt.h **** 	if (!_SFR_IO_REG_P (CCP) && !_SFR_IO_REG_P(_WD_CONTROL_REG))
+ 363:/usr/lib/avr/include/avr/wdt.h **** 	{
+ 364:/usr/lib/avr/include/avr/wdt.h ****         uint8_t temp_wd;
+ 365:/usr/lib/avr/include/avr/wdt.h ****         __asm__ __volatile__ (
+ 366:/usr/lib/avr/include/avr/wdt.h **** 				"in __tmp_reg__,__SREG__" "\n\t"
+ 367:/usr/lib/avr/include/avr/wdt.h **** 				"cli" "\n\t"
+ 368:/usr/lib/avr/include/avr/wdt.h **** 				"wdr" "\n\t"
+ 369:/usr/lib/avr/include/avr/wdt.h **** 				"sts %[CCPADDRESS],%[SIGNATURE]" "\n\t"
+ 370:/usr/lib/avr/include/avr/wdt.h **** 				"lds %[TEMP_WD],%[WDTREG]" "\n\t"
+ 371:/usr/lib/avr/include/avr/wdt.h **** 				"cbr %[TEMP_WD],%[WDVALUE]" "\n\t"
+ 372:/usr/lib/avr/include/avr/wdt.h **** 				"sts %[WDTREG],%[TEMP_WD]" "\n\t"
+ 373:/usr/lib/avr/include/avr/wdt.h **** 				"out __SREG__,__tmp_reg__" "\n\t"
+ 374:/usr/lib/avr/include/avr/wdt.h **** 				: /*no output */
+ 375:/usr/lib/avr/include/avr/wdt.h **** 				: [CCPADDRESS] "n" (_SFR_MEM_ADDR(CCP)),
+ 376:/usr/lib/avr/include/avr/wdt.h **** 				[SIGNATURE] "r" ((uint8_t)0xD8),
+ 377:/usr/lib/avr/include/avr/wdt.h **** 				[WDTREG] "n" (_SFR_MEM_ADDR(_WD_CONTROL_REG)),
+ 378:/usr/lib/avr/include/avr/wdt.h **** 				[TEMP_WD] "d" (temp_wd),
+ 379:/usr/lib/avr/include/avr/wdt.h **** 				[WDVALUE] "n" (1 << WDE)
+ 380:/usr/lib/avr/include/avr/wdt.h **** 				: "r0"
+ 381:/usr/lib/avr/include/avr/wdt.h **** 				);
+ 382:/usr/lib/avr/include/avr/wdt.h **** 	}
+ 383:/usr/lib/avr/include/avr/wdt.h **** 	else if (!_SFR_IO_REG_P (CCP) && _SFR_IO_REG_P(_WD_CONTROL_REG))
+ 384:/usr/lib/avr/include/avr/wdt.h **** 	{
+ 385:/usr/lib/avr/include/avr/wdt.h ****         uint8_t temp_wd;
+ 386:/usr/lib/avr/include/avr/wdt.h ****         __asm__ __volatile__ (
+ 387:/usr/lib/avr/include/avr/wdt.h **** 				"in __tmp_reg__,__SREG__" "\n\t"
+ 388:/usr/lib/avr/include/avr/wdt.h **** 				"cli" "\n\t"
+ 389:/usr/lib/avr/include/avr/wdt.h **** 				"wdr" "\n\t"
+ 390:/usr/lib/avr/include/avr/wdt.h **** 				"sts %[CCPADDRESS],%[SIGNATURE]" "\n\t"
+ 391:/usr/lib/avr/include/avr/wdt.h **** 				"in %[TEMP_WD],%[WDTREG]" "\n\t"
+ 392:/usr/lib/avr/include/avr/wdt.h **** 				"cbr %[TEMP_WD],%[WDVALUE]" "\n\t"
+ 393:/usr/lib/avr/include/avr/wdt.h **** 				"out %[WDTREG],%[TEMP_WD]" "\n\t"
+ 394:/usr/lib/avr/include/avr/wdt.h **** 				"out __SREG__,__tmp_reg__" "\n\t"
+ 395:/usr/lib/avr/include/avr/wdt.h **** 				: /*no output */
+ 396:/usr/lib/avr/include/avr/wdt.h **** 				: [CCPADDRESS] "n" (_SFR_MEM_ADDR(CCP)),
+ 397:/usr/lib/avr/include/avr/wdt.h **** 				[SIGNATURE] "r" ((uint8_t)0xD8),
+ 398:/usr/lib/avr/include/avr/wdt.h **** 				[WDTREG] "I" (_SFR_IO_ADDR(_WD_CONTROL_REG)),
+ 399:/usr/lib/avr/include/avr/wdt.h **** 				[TEMP_WD] "d" (temp_wd),
+ 400:/usr/lib/avr/include/avr/wdt.h **** 				[WDVALUE] "n" (1 << WDE)
+GAS LISTING /tmp/ccyIUKZe.s 			page 33
+
+
+ 401:/usr/lib/avr/include/avr/wdt.h **** 				: "r0"
+ 402:/usr/lib/avr/include/avr/wdt.h **** 				);
+ 403:/usr/lib/avr/include/avr/wdt.h **** 	}
+ 404:/usr/lib/avr/include/avr/wdt.h **** 	else if (_SFR_IO_REG_P (CCP) && !_SFR_IO_REG_P(_WD_CONTROL_REG))
+ 405:/usr/lib/avr/include/avr/wdt.h **** 	{
+ 406:/usr/lib/avr/include/avr/wdt.h ****         uint8_t temp_wd;
+ 407:/usr/lib/avr/include/avr/wdt.h ****         __asm__ __volatile__ (
+ 408:/usr/lib/avr/include/avr/wdt.h **** 				"in __tmp_reg__,__SREG__" "\n\t"
+ 409:/usr/lib/avr/include/avr/wdt.h **** 				"cli" "\n\t"
+ 410:/usr/lib/avr/include/avr/wdt.h **** 				"wdr" "\n\t"
+ 411:/usr/lib/avr/include/avr/wdt.h **** 				"out %[CCPADDRESS],%[SIGNATURE]" "\n\t"
+ 412:/usr/lib/avr/include/avr/wdt.h **** 				"lds %[TEMP_WD],%[WDTREG]" "\n\t"
+ 413:/usr/lib/avr/include/avr/wdt.h **** 				"cbr %[TEMP_WD],%[WDVALUE]" "\n\t"
+ 414:/usr/lib/avr/include/avr/wdt.h **** 				"sts %[WDTREG],%[TEMP_WD]" "\n\t"
+ 415:/usr/lib/avr/include/avr/wdt.h **** 				"out __SREG__,__tmp_reg__" "\n\t"
+ 416:/usr/lib/avr/include/avr/wdt.h **** 				: /*no output */
+ 417:/usr/lib/avr/include/avr/wdt.h **** 				: [CCPADDRESS] "I" (_SFR_IO_ADDR(CCP)),
+ 418:/usr/lib/avr/include/avr/wdt.h **** 				[SIGNATURE] "r" ((uint8_t)0xD8),
+ 419:/usr/lib/avr/include/avr/wdt.h **** 				[WDTREG] "n" (_SFR_MEM_ADDR(_WD_CONTROL_REG)),
+ 420:/usr/lib/avr/include/avr/wdt.h **** 				[TEMP_WD] "d" (temp_wd),
+ 421:/usr/lib/avr/include/avr/wdt.h **** 				[WDVALUE] "n" (1 << WDE)
+ 422:/usr/lib/avr/include/avr/wdt.h **** 				: "r0"
+ 423:/usr/lib/avr/include/avr/wdt.h **** 				);
+ 424:/usr/lib/avr/include/avr/wdt.h **** 	}
+ 425:/usr/lib/avr/include/avr/wdt.h **** 	else
+ 426:/usr/lib/avr/include/avr/wdt.h **** 	{
+ 427:/usr/lib/avr/include/avr/wdt.h ****         uint8_t temp_wd;
+ 428:/usr/lib/avr/include/avr/wdt.h ****         __asm__ __volatile__ (
+ 429:/usr/lib/avr/include/avr/wdt.h **** 				"in __tmp_reg__,__SREG__" "\n\t"
+ 430:/usr/lib/avr/include/avr/wdt.h **** 				"cli" "\n\t"
+ 431:/usr/lib/avr/include/avr/wdt.h **** 				"wdr" "\n\t"
+ 432:/usr/lib/avr/include/avr/wdt.h **** 				"out %[CCPADDRESS],%[SIGNATURE]" "\n\t"
+ 433:/usr/lib/avr/include/avr/wdt.h **** 				"in %[TEMP_WD],%[WDTREG]" "\n\t"
+ 434:/usr/lib/avr/include/avr/wdt.h **** 				"cbr %[TEMP_WD],%[WDVALUE]" "\n\t"
+ 435:/usr/lib/avr/include/avr/wdt.h **** 				"out %[WDTREG],%[TEMP_WD]" "\n\t"
+ 436:/usr/lib/avr/include/avr/wdt.h **** 				"out __SREG__,__tmp_reg__" "\n\t"
+ 437:/usr/lib/avr/include/avr/wdt.h **** 				: /*no output */
+ 438:/usr/lib/avr/include/avr/wdt.h **** 				: [CCPADDRESS] "I" (_SFR_IO_ADDR(CCP)),
+ 439:/usr/lib/avr/include/avr/wdt.h **** 				[SIGNATURE] "r" ((uint8_t)0xD8),
+ 440:/usr/lib/avr/include/avr/wdt.h **** 				[WDTREG] "I" (_SFR_IO_ADDR(_WD_CONTROL_REG)),
+ 441:/usr/lib/avr/include/avr/wdt.h **** 				[TEMP_WD] "d" (temp_wd),
+ 442:/usr/lib/avr/include/avr/wdt.h **** 				[WDVALUE] "n" (1 << WDE)
+ 443:/usr/lib/avr/include/avr/wdt.h **** 				: "r0"
+ 444:/usr/lib/avr/include/avr/wdt.h **** 				);
+ 445:/usr/lib/avr/include/avr/wdt.h **** 	}
+ 446:/usr/lib/avr/include/avr/wdt.h **** }
+ 447:/usr/lib/avr/include/avr/wdt.h **** 
+ 448:/usr/lib/avr/include/avr/wdt.h **** #else
+ 449:/usr/lib/avr/include/avr/wdt.h **** 
+ 450:/usr/lib/avr/include/avr/wdt.h **** static __inline__
+ 451:/usr/lib/avr/include/avr/wdt.h **** __attribute__ ((__always_inline__))
+ 452:/usr/lib/avr/include/avr/wdt.h **** void wdt_enable (const uint8_t value)
+ 453:/usr/lib/avr/include/avr/wdt.h **** {
+ 454:/usr/lib/avr/include/avr/wdt.h **** 	if (_SFR_IO_REG_P (_WD_CONTROL_REG))
+ 455:/usr/lib/avr/include/avr/wdt.h **** 	{
+ 456:/usr/lib/avr/include/avr/wdt.h **** 		__asm__ __volatile__ (
+ 457:/usr/lib/avr/include/avr/wdt.h **** 				"in __tmp_reg__,__SREG__" "\n\t"
+GAS LISTING /tmp/ccyIUKZe.s 			page 34
+
+
+ 458:/usr/lib/avr/include/avr/wdt.h **** 				"cli" "\n\t"
+ 459:/usr/lib/avr/include/avr/wdt.h **** 				"wdr" "\n\t"
+ 460:/usr/lib/avr/include/avr/wdt.h **** 				"out %0, %1" "\n\t"
+ 461:/usr/lib/avr/include/avr/wdt.h **** 				"out __SREG__,__tmp_reg__" "\n\t"
+ 462:/usr/lib/avr/include/avr/wdt.h **** 				"out %0, %2" "\n \t"
+ 463:/usr/lib/avr/include/avr/wdt.h **** 				: /* no outputs */
+ 464:/usr/lib/avr/include/avr/wdt.h **** 				: "I" (_SFR_IO_ADDR(_WD_CONTROL_REG)),
+ 465:/usr/lib/avr/include/avr/wdt.h **** 				"r" ((uint8_t)(_BV(_WD_CHANGE_BIT) | _BV(WDE))),
+ 466:/usr/lib/avr/include/avr/wdt.h **** 				"r" ((uint8_t) ((value & 0x08 ? _WD_PS3_MASK : 0x00) |
+ 467:/usr/lib/avr/include/avr/wdt.h **** 						_BV(WDE) | (value & 0x07)) )
+ 468:/usr/lib/avr/include/avr/wdt.h **** 				: "r0"
+ 469:/usr/lib/avr/include/avr/wdt.h **** 		);
+ 470:/usr/lib/avr/include/avr/wdt.h **** 	}
+ 471:/usr/lib/avr/include/avr/wdt.h **** 	else
+ 472:/usr/lib/avr/include/avr/wdt.h **** 	{
+ 473:/usr/lib/avr/include/avr/wdt.h **** 		__asm__ __volatile__ (
+ 474:/usr/lib/avr/include/avr/wdt.h **** 				"in __tmp_reg__,__SREG__" "\n\t"
+ 475:/usr/lib/avr/include/avr/wdt.h **** 				"cli" "\n\t"
+ 476:/usr/lib/avr/include/avr/wdt.h **** 				"wdr" "\n\t"
+ 477:/usr/lib/avr/include/avr/wdt.h **** 				"sts %0, %1" "\n\t"
+ 478:/usr/lib/avr/include/avr/wdt.h **** 				"out __SREG__,__tmp_reg__" "\n\t"
+ 479:/usr/lib/avr/include/avr/wdt.h **** 				"sts %0, %2" "\n \t"
+ 480:/usr/lib/avr/include/avr/wdt.h **** 				: /* no outputs */
+ 481:/usr/lib/avr/include/avr/wdt.h **** 				: "n" (_SFR_MEM_ADDR(_WD_CONTROL_REG)),
+ 482:/usr/lib/avr/include/avr/wdt.h **** 				"r" ((uint8_t)(_BV(_WD_CHANGE_BIT) | _BV(WDE))),
+ 483:/usr/lib/avr/include/avr/wdt.h **** 				"r" ((uint8_t) ((value & 0x08 ? _WD_PS3_MASK : 0x00) |
+ 484:/usr/lib/avr/include/avr/wdt.h **** 						_BV(WDE) | (value & 0x07)) )
+ 485:/usr/lib/avr/include/avr/wdt.h **** 				: "r0"
+ 486:/usr/lib/avr/include/avr/wdt.h **** 		);
+ 783               		.stabn	68,0,486,.LM70-.LFBB6
+ 784               	.LM70:
+ 785 000e 9FE0      		ldi r25,lo8(15)
+ 786 0010 88E1      		ldi r24,lo8(24)
+ 787               	/* #APP */
+ 788               	 ;  486 "/usr/lib/avr/include/avr/wdt.h" 1
+ 789 0012 0FB6      		in __tmp_reg__,__SREG__
+ 790 0014 F894      		cli
+ 791 0016 A895      		wdr
+ 792 0018 8093 6000 		sts 96, r24
+ 793 001c 0FBE      		out __SREG__,__tmp_reg__
+ 794 001e 9093 6000 		sts 96, r25
+ 795               	 	
+ 796               	 ;  0 "" 2
+ 797               	/* #NOAPP */
+ 798               	.LBE52:
+ 799               	.LBE51:
+ 800               		.stabs	"Main.cpp",132,0,0,.Ltext14
+ 801               	.Ltext14:
+ 151:Main.cpp      ****  	PCMSK2 = BIT(PCINT16)|BIT(PCINT17)|BIT(PCINT20)|BIT(PCINT23)|BIT(PCINT22);
+ 802               		.stabn	68,0,151,.LM71-.LFBB6
+ 803               	.LM71:
+ 804 0022 8091 6800 		lds r24,104
+ 805 0026 8460      		ori r24,lo8(4)
+ 806 0028 8093 6800 		sts 104,r24
+ 152:Main.cpp      **** 
+ 807               		.stabn	68,0,152,.LM72-.LFBB6
+ 808               	.LM72:
+GAS LISTING /tmp/ccyIUKZe.s 			page 35
+
+
+ 809 002c 83ED      		ldi r24,lo8(-45)
+ 810 002e 8093 6D00 		sts 109,r24
+ 154:Main.cpp      ****  	sbi(TIMSK0, TOIE0); 	// enable timer 0 overflow interrupt
+ 811               		.stabn	68,0,154,.LM73-.LFBB6
+ 812               	.LM73:
+ 813 0032 85B5      		in r24,0x25
+ 814 0034 8360      		ori r24,lo8(3)
+ 815 0036 85BD      		out 0x25,r24
+ 155:Main.cpp      **** 
+ 816               		.stabn	68,0,155,.LM74-.LFBB6
+ 817               	.LM74:
+ 818 0038 8091 6E00 		lds r24,110
+ 819 003c 8160      		ori r24,lo8(1)
+ 820 003e 8093 6E00 		sts 110,r24
+ 157:Main.cpp      ****  	TIMSK1 |= BIT(OCIE1A); // Enable Output Compare Interrupt Channel A
+ 821               		.stabn	68,0,157,.LM75-.LFBB6
+ 822               	.LM75:
+ 823 0042 8091 8100 		lds r24,129
+ 824 0046 8860      		ori r24,lo8(8)
+ 825 0048 8093 8100 		sts 129,r24
+ 158:Main.cpp      **** 
+ 826               		.stabn	68,0,158,.LM76-.LFBB6
+ 827               	.LM76:
+ 828 004c 8091 6F00 		lds r24,111
+ 829 0050 8260      		ori r24,lo8(2)
+ 830 0052 8093 6F00 		sts 111,r24
+ 160:Main.cpp      **** 
+ 831               		.stabn	68,0,160,.LM77-.LFBB6
+ 832               	.LM77:
+ 833               	/* #APP */
+ 834               	 ;  160 "Main.cpp" 1
+ 835 0056 7894      		sei
+ 836               	 ;  0 "" 2
+ 162:Main.cpp      ****  	TCCR1B |= ((1 << CS10 ) | (1 << CS11 )); // Start timer at Fcpu /64
+ 837               		.stabn	68,0,162,.LM78-.LFBB6
+ 838               	.LM78:
+ 839               	/* #NOAPP */
+ 840 0058 8AE1      		ldi r24,lo8(26)
+ 841 005a 96E0      		ldi r25,lo8(6)
+ 842 005c 9093 8900 		sts 136+1,r25
+ 843 0060 8093 8800 		sts 136,r24
+ 163:Main.cpp      **** 
+ 844               		.stabn	68,0,163,.LM79-.LFBB6
+ 845               	.LM79:
+ 846 0064 8091 8100 		lds r24,129
+ 847 0068 8360      		ori r24,lo8(3)
+ 848 006a 8093 8100 		sts 129,r24
+ 168:Main.cpp      **** 	init_door(&dr2);
+ 849               		.stabn	68,0,168,.LM80-.LFBB6
+ 850               	.LM80:
+ 851 006e 6091 0000 		lds r22,dr1+4
+ 852 0072 8091 0000 		lds r24,dr1+3
+ 853 0076 00D0      		rcall _ZL9init_doorPK4Door.isra.0
+ 169:Main.cpp      **** }
+ 854               		.stabn	68,0,169,.LM81-.LFBB6
+ 855               	.LM81:
+ 856 0078 6091 0000 		lds r22,dr2+4
+GAS LISTING /tmp/ccyIUKZe.s 			page 36
+
+
+ 857 007c 8091 0000 		lds r24,dr2+3
+ 858 0080 00D0      		rcall _ZL9init_doorPK4Door.isra.0
+ 859               	.L45:
+ 860               	.LBE50:
+ 861               	.LBE49:
+  69:Main.cpp      **** 	#else /* ER */
+ 862               		.stabn	68,0,69,.LM82-.LFBB6
+ 863               	.LM82:
+ 864 0082 63E0      		ldi r22,lo8(3)
+ 865 0084 89E2      		ldi r24,lo8(41)
+ 866 0086 90E0      		ldi r25,0
+ 867 0088 00D0      		rcall buttonPressed
+ 868 008a 8111      		cpse r24,__zero_reg__
+ 869 008c 00C0      		rjmp .L44
+  69:Main.cpp      **** 	#else /* ER */
+ 870               		.stabn	68,0,69,.LM83-.LFBB6
+ 871               	.LM83:
+ 872 008e 62E0      		ldi r22,lo8(2)
+ 873 0090 89E2      		ldi r24,lo8(41)
+ 874 0092 90E0      		ldi r25,0
+ 875 0094 00D0      		rcall buttonPressed
+ 876 0096 8111      		cpse r24,__zero_reg__
+ 877 0098 00C0      		rjmp .L44
+ 878               	.L46:
+ 123:Main.cpp      **** 	}
+ 879               		.stabn	68,0,123,.LM84-.LFBB6
+ 880               	.LM84:
+ 881               	/* #APP */
+ 882               	 ;  123 "Main.cpp" 1
+ 883 009a A895      		wdr
+ 884               	 ;  0 "" 2
+  65:Main.cpp      **** 	{
+ 885               		.stabn	68,0,65,.LM85-.LFBB6
+ 886               	.LM85:
+ 887               	/* #NOAPP */
+ 888 009c 00C0      		rjmp .L45
+ 889               	.L44:
+  69:Main.cpp      **** 	#else /* ER */
+ 890               		.stabn	68,0,69,.LM86-.LFBB6
+ 891               	.LM86:
+ 892 009e 00D0      		rcall dependentRetract
+ 893 00a0 00C0      		rjmp .L46
+ 894               		.size	main, .-main
+ 895               	.Lscope6:
+ 896               		.stabs	"",36,0,0,.Lscope6-.LFBB6
+ 897               		.stabd	78,0,0
+ 898               		.text
+ 899               		.stabs	"doorActive:F(0,58)",36,0,454,doorActive
+ 900               		.stabs	"door:P(0,265)",64,0,454,30
+ 901               	.global	doorActive
+ 902               		.type	doorActive, @function
+ 903               	doorActive:
+ 904               		.stabd	46,0,0
+ 442:Main.cpp      **** 
+ 443:Main.cpp      **** /*
+ 444:Main.cpp      ****  * Name         : doorActive
+ 445:Main.cpp      ****  *
+GAS LISTING /tmp/ccyIUKZe.s 			page 37
+
+
+ 446:Main.cpp      ****  * Synopsis     : bool doorActive(const Door *door)
+ 447:Main.cpp      ****  *
+ 448:Main.cpp      ****  * Arguments    : const Door  *door : A pointer to a Door object.
+ 449:Main.cpp      ****  *
+ 450:Main.cpp      ****  * Description  : Reads a door port value and compares it with the door output mode.
+ 451:Main.cpp      ****  * 
+ 452:Main.cpp      ****  * Returns      : bool 
+ 453:Main.cpp      ****  */
+ 454:Main.cpp      **** bool doorActive(const Door *door)
+ 455:Main.cpp      **** {
+ 905               		.stabn	68,0,455,.LM87-.LFBB7
+ 906               	.LM87:
+ 907               	.LFBB7:
+ 908               	/* prologue: function */
+ 909               	/* frame size = 0 */
+ 910               	/* stack size = 0 */
+ 911               	.L__stack_usage = 0
+ 912 023e FC01      		movw r30,r24
+ 456:Main.cpp      **** 	// Read the port
+ 457:Main.cpp      **** 	uint8_t portValue = 0x01 & ( DOOR_PIN_PORT >> (*door).pin ); /* Read the state of output pin */
+ 913               		.stabn	68,0,457,.LM88-.LFBB7
+ 914               	.LM88:
+ 915 0240 23B1      		in r18,0x3
+ 458:Main.cpp      **** 	// uint8_t value = digitalRead(B, (*door).pin); 
+ 459:Main.cpp      **** 	// uint8_t active = (*door).active_high;
+ 460:Main.cpp      **** 	// return (value == (*door).active_high);
+ 461:Main.cpp      **** 	return (portValue == (*door).active_high);
+ 916               		.stabn	68,0,461,.LM89-.LFBB7
+ 917               	.LM89:
+ 918 0242 30E0      		ldi r19,0
+ 919 0244 0480      		ldd r0,Z+4
+ 920 0246 00C0      		rjmp 2f
+ 921               		1:
+ 922 0248 3595      		asr r19
+ 923 024a 2795      		ror r18
+ 924               		2:
+ 925 024c 0A94      		dec r0
+ 926 024e 02F4      		brpl 1b
+ 927 0250 2170      		andi r18,lo8(1)
+ 928 0252 81E0      		ldi r24,lo8(1)
+ 929 0254 9381      		ldd r25,Z+3
+ 930 0256 2913      		cpse r18,r25
+ 931 0258 80E0      		ldi r24,0
+ 932               	.L48:
+ 462:Main.cpp      **** }
+ 933               		.stabn	68,0,462,.LM90-.LFBB7
+ 934               	.LM90:
+ 935 025a 0895      		ret
+ 936               		.size	doorActive, .-doorActive
+ 937               	.Lscope7:
+ 938               		.stabs	"",36,0,0,.Lscope7-.LFBB7
+ 939               		.stabd	78,0,0
+ 940               		.stabs	"activateDoor1:F(0,4)",36,0,240,activateDoor1
+ 941               		.stabs	"activate:P(0,58)",64,0,240,24
+ 942               	.global	activateDoor1
+ 943               		.type	activateDoor1, @function
+ 944               	activateDoor1:
+GAS LISTING /tmp/ccyIUKZe.s 			page 38
+
+
+ 945               		.stabd	46,0,0
+ 241:Main.cpp      **** 	if(!activate) /* Turn door 1 output OFF */
+ 946               		.stabn	68,0,241,.LM91-.LFBB8
+ 947               	.LM91:
+ 948               	.LFBB8:
+ 949 025c 1F93      		push r17
+ 950 025e CF93      		push r28
+ 951 0260 DF93      		push r29
+ 952               	/* prologue: function */
+ 953               	/* frame size = 0 */
+ 954               	/* stack size = 3 */
+ 955               	.L__stack_usage = 3
+ 956               	.LBB53:
+ 242:Main.cpp      **** 	{
+ 957               		.stabn	68,0,242,.LM92-.LFBB8
+ 958               	.LM92:
+ 959 0262 8111      		cpse r24,__zero_reg__
+ 960 0264 00C0      		rjmp .L50
+ 244:Main.cpp      **** 		cbi(RELAY_PORT, RELAY1_PIN);
+ 961               		.stabn	68,0,244,.LM93-.LFBB8
+ 962               	.LM93:
+ 963 0266 60E0      		ldi r22,0
+ 964 0268 80E0      		ldi r24,lo8(dr1)
+ 965 026a 90E0      		ldi r25,hi8(dr1)
+ 966 026c 00D0      		rcall doorPinWrite
+ 245:Main.cpp      **** 	} else /* Turn door 1 output ON */
+ 967               		.stabn	68,0,245,.LM94-.LFBB8
+ 968               	.LM94:
+ 969 026e 7098      		cbi 0xe,0
+ 970 0270 00C0      		rjmp .L51
+ 971               	.L50:
+ 972               	.LBB54:
+ 248:Main.cpp      **** 		bool dr2BtnPressed = false;
+ 973               		.stabn	68,0,248,.LM95-.LFBB8
+ 974               	.LM95:
+ 975 0272 61E0      		ldi r22,lo8(1)
+ 976 0274 80E0      		ldi r24,lo8(dr1)
+ 977 0276 90E0      		ldi r25,hi8(dr1)
+ 978 0278 00D0      		rcall doorPinWrite
+ 250:Main.cpp      **** 
+ 979               		.stabn	68,0,250,.LM96-.LFBB8
+ 980               	.LM96:
+ 981 027a D9B1      		in r29,0x9
+ 252:Main.cpp      **** 
+ 982               		.stabn	68,0,252,.LM97-.LFBB8
+ 983               	.LM97:
+ 984 027c 81E0      		ldi r24,lo8(1)
+ 985 027e 00D0      		rcall door_timer
+ 249:Main.cpp      **** 		bool btn_toggled = bit_is_clear(INPUT_PIN_PORT, DR2_BUTTON); /* This variable is used to avoid to
+ 986               		.stabn	68,0,249,.LM98-.LFBB8
+ 987               	.LM98:
+ 988 0280 C0E0      		ldi r28,0
+ 257:Main.cpp      **** 				dr2BtnPressed = true;
+ 989               		.stabn	68,0,257,.LM99-.LFBB8
+ 990               	.LM99:
+ 991 0282 11E0      		ldi r17,lo8(1)
+ 992               	.L54:
+GAS LISTING /tmp/ccyIUKZe.s 			page 39
+
+
+ 255:Main.cpp      **** 		{
+ 993               		.stabn	68,0,255,.LM100-.LFBB8
+ 994               	.LM100:
+ 995 0284 80E0      		ldi r24,0
+ 996 0286 00D0      		rcall door_timer
+ 997 0288 6536      		cpi r22,101
+ 998 028a 7105      		cpc r23,__zero_reg__
+ 999 028c 8105      		cpc r24,__zero_reg__
+ 1000 028e 9105      		cpc r25,__zero_reg__
+ 1001 0290 00F4      		brsh .L52
+ 257:Main.cpp      **** 				dr2BtnPressed = true;
+ 1002               		.stabn	68,0,257,.LM101-.LFBB8
+ 1003               	.LM101:
+ 1004 0292 8091 0000 		lds r24,dr2+2
+ 1005 0296 8111      		cpse r24,__zero_reg__
+ 1006 0298 00C0      		rjmp .L53
+ 257:Main.cpp      **** 				dr2BtnPressed = true;
+ 1007               		.stabn	68,0,257,.LM102-.LFBB8
+ 1008               	.LM102:
+ 1009 029a C111      		cpse r28,__zero_reg__
+ 1010 029c 00C0      		rjmp .L53
+ 257:Main.cpp      **** 				dr2BtnPressed = true;
+ 1011               		.stabn	68,0,257,.LM103-.LFBB8
+ 1012               	.LM103:
+ 1013 029e C9B1      		in r28,0x9
+ 1014 02a0 C3FB      		bst r28,3
+ 1015 02a2 CC27      		clr r28
+ 1016 02a4 C0F9      		bld r28,0
+ 1017 02a6 C127      		eor r28,r17
+ 1018               	.L53:
+ 259:Main.cpp      **** 		}
+ 1019               		.stabn	68,0,259,.LM104-.LFBB8
+ 1020               	.LM104:
+ 1021               	/* #APP */
+ 1022               	 ;  259 "Main.cpp" 1
+ 1023 02a8 A895      		wdr
+ 1024               	 ;  0 "" 2
+ 255:Main.cpp      **** 		{
+ 1025               		.stabn	68,0,255,.LM105-.LFBB8
+ 1026               	.LM105:
+ 1027               	/* #NOAPP */
+ 1028 02aa 00C0      		rjmp .L54
+ 1029               	.L52:
+ 262:Main.cpp      **** 
+ 1030               		.stabn	68,0,262,.LM106-.LFBB8
+ 1031               	.LM106:
+ 1032 02ac 709A      		sbi 0xe,0
+ 1033               	.LBB55:
+ 264:Main.cpp      **** 		{
+ 1034               		.stabn	68,0,264,.LM107-.LFBB8
+ 1035               	.LM107:
+ 1036 02ae CC23      		tst r28
+ 1037 02b0 01F0      		breq .L51
+ 264:Main.cpp      **** 		{
+ 1038               		.stabn	68,0,264,.LM108-.LFBB8
+ 1039               	.LM108:
+ 1040 02b2 D3FF      		sbrs r29,3
+GAS LISTING /tmp/ccyIUKZe.s 			page 40
+
+
+ 1041 02b4 00C0      		rjmp .L51
+ 1042               	.LBB56:
+ 266:Main.cpp      **** 				bool b = !doorActive(&dr2); /* Read the pin state */
+ 1043               		.stabn	68,0,266,.LM109-.LFBB8
+ 1044               	.LM109:
+ 1045 02b6 8091 0000 		lds r24,dr2
+ 1046 02ba 8823      		tst r24
+ 1047 02bc 01F0      		breq .L55
+ 266:Main.cpp      **** 				bool b = !doorActive(&dr2); /* Read the pin state */
+ 1048               		.stabn	68,0,266,.LM110-.LFBB8
+ 1049               	.LM110:
+ 1050 02be 8091 0000 		lds r24,dr2+1
+ 1051 02c2 8111      		cpse r24,__zero_reg__
+ 1052 02c4 00C0      		rjmp .L51
+ 1053               	.LBB57:
+ 267:Main.cpp      **** 				activateDoor2(b);
+ 1054               		.stabn	68,0,267,.LM111-.LFBB8
+ 1055               	.LM111:
+ 1056 02c6 80E0      		ldi r24,lo8(dr2)
+ 1057 02c8 90E0      		ldi r25,hi8(dr2)
+ 1058 02ca 00D0      		rcall doorActive
+ 1059 02cc C1E0      		ldi r28,lo8(1)
+ 1060 02ce C827      		eor r28,r24
+ 268:Main.cpp      **** 				dr2.toggled = b;
+ 1061               		.stabn	68,0,268,.LM112-.LFBB8
+ 1062               	.LM112:
+ 1063 02d0 8C2F      		mov r24,r28
+ 1064 02d2 00D0      		rcall activateDoor2
+ 269:Main.cpp      **** 			} else if(!dr2.toggle_mode) {
+ 1065               		.stabn	68,0,269,.LM113-.LFBB8
+ 1066               	.LM113:
+ 1067 02d4 C093 0000 		sts dr2+1,r28
+ 1068               	.LBE57:
+ 1069 02d8 00C0      		rjmp .L51
+ 1070               	.L55:
+ 1071               	.LBB58:
+ 272:Main.cpp      **** 					activateDoor2(dr2.is_active);
+ 1072               		.stabn	68,0,272,.LM114-.LFBB8
+ 1073               	.LM114:
+ 1074 02da 8091 0000 		lds r24,dr2+2
+ 1075 02de 8111      		cpse r24,__zero_reg__
+ 1076 02e0 00C0      		rjmp .L51
+ 273:Main.cpp      **** 			}
+ 1077               		.stabn	68,0,273,.LM115-.LFBB8
+ 1078               	.LM115:
+ 1079 02e2 00D0      		rcall activateDoor2
+ 1080               	.L51:
+ 1081               	.LBE58:
+ 1082               	.LBE56:
+ 1083               	.LBE55:
+ 1084               	.LBE54:
+ 1085               	.LBE53:
+ 277:Main.cpp      **** }
+ 1086               		.stabn	68,0,277,.LM116-.LFBB8
+ 1087               	.LM116:
+ 1088               	/* #APP */
+ 1089               	 ;  277 "Main.cpp" 1
+GAS LISTING /tmp/ccyIUKZe.s 			page 41
+
+
+ 1090 02e4 A895      		wdr
+ 1091               	 ;  0 "" 2
+ 1092               	/* epilogue start */
+ 278:Main.cpp      **** 
+ 1093               		.stabn	68,0,278,.LM117-.LFBB8
+ 1094               	.LM117:
+ 1095               	/* #NOAPP */
+ 1096 02e6 DF91      		pop r29
+ 1097 02e8 CF91      		pop r28
+ 1098 02ea 1F91      		pop r17
+ 1099 02ec 0895      		ret
+ 1100               		.size	activateDoor1, .-activateDoor1
+ 1101               		.stabs	"dr2BtnPressed:r(0,58)",64,0,249,28
+ 1102               		.stabn	192,0,0,.LBB54-.LFBB8
+ 1103               		.stabs	"b:r(0,58)",64,0,267,28
+ 1104               		.stabn	192,0,0,.LBB57-.LFBB8
+ 1105               		.stabn	224,0,0,.LBE57-.LFBB8
+ 1106               		.stabn	224,0,0,.LBE54-.LFBB8
+ 1107               	.Lscope8:
+ 1108               		.stabs	"",36,0,0,.Lscope8-.LFBB8
+ 1109               		.stabd	78,0,0
+ 1110               		.stabs	"activateDoor2:F(0,4)",36,0,293,activateDoor2
+ 1111               		.stabs	"activate:P(0,58)",64,0,293,24
+ 1112               	.global	activateDoor2
+ 1113               		.type	activateDoor2, @function
+ 1114               	activateDoor2:
+ 1115               		.stabd	46,0,0
+ 294:Main.cpp      **** 	/* Turn OFF door 2 output */
+ 1116               		.stabn	68,0,294,.LM118-.LFBB9
+ 1117               	.LM118:
+ 1118               	.LFBB9:
+ 1119 02ee CF93      		push r28
+ 1120 02f0 DF93      		push r29
+ 1121               	/* prologue: function */
+ 1122               	/* frame size = 0 */
+ 1123               	/* stack size = 2 */
+ 1124               	.L__stack_usage = 2
+ 1125               	.LBB59:
+ 296:Main.cpp      **** 		doorPinWrite(&dr2, false);
+ 1126               		.stabn	68,0,296,.LM119-.LFBB9
+ 1127               	.LM119:
+ 1128 02f2 8111      		cpse r24,__zero_reg__
+ 1129 02f4 00C0      		rjmp .L63
+ 297:Main.cpp      **** 		cbi(RELAY_PORT, RELAY2_PIN);
+ 1130               		.stabn	68,0,297,.LM120-.LFBB9
+ 1131               	.LM120:
+ 1132 02f6 60E0      		ldi r22,0
+ 1133 02f8 80E0      		ldi r24,lo8(dr2)
+ 1134 02fa 90E0      		ldi r25,hi8(dr2)
+ 1135 02fc 00D0      		rcall doorPinWrite
+ 298:Main.cpp      **** 	}
+ 1136               		.stabn	68,0,298,.LM121-.LFBB9
+ 1137               	.LM121:
+ 1138 02fe 7198      		cbi 0xe,1
+ 1139 0300 00C0      		rjmp .L64
+ 1140               	.L63:
+ 1141               	.LBB60:
+GAS LISTING /tmp/ccyIUKZe.s 			page 42
+
+
+ 302:Main.cpp      **** 		bool btn_pressed = false;
+ 1142               		.stabn	68,0,302,.LM122-.LFBB9
+ 1143               	.LM122:
+ 1144 0302 61E0      		ldi r22,lo8(1)
+ 1145 0304 80E0      		ldi r24,lo8(dr2)
+ 1146 0306 90E0      		ldi r25,hi8(dr2)
+ 1147 0308 00D0      		rcall doorPinWrite
+ 306:Main.cpp      **** 
+ 1148               		.stabn	68,0,306,.LM123-.LFBB9
+ 1149               	.LM123:
+ 1150 030a D9B1      		in r29,0x9
+ 309:Main.cpp      **** 
+ 1151               		.stabn	68,0,309,.LM124-.LFBB9
+ 1152               	.LM124:
+ 1153 030c 81E0      		ldi r24,lo8(1)
+ 1154 030e 00D0      		rcall door_timer
+ 303:Main.cpp      **** 
+ 1155               		.stabn	68,0,303,.LM125-.LFBB9
+ 1156               	.LM125:
+ 1157 0310 C0E0      		ldi r28,0
+ 1158               	.L67:
+ 312:Main.cpp      **** 			if(bit_is_clear(INPUT_PIN_PORT, DR1_BUTTON) && !dr1.is_active && !btn_pressed) {
+ 1159               		.stabn	68,0,312,.LM126-.LFBB9
+ 1160               	.LM126:
+ 1161 0312 80E0      		ldi r24,0
+ 1162 0314 00D0      		rcall door_timer
+ 1163 0316 6536      		cpi r22,101
+ 1164 0318 7105      		cpc r23,__zero_reg__
+ 1165 031a 8105      		cpc r24,__zero_reg__
+ 1166 031c 9105      		cpc r25,__zero_reg__
+ 1167 031e 00F4      		brsh .L65
+ 313:Main.cpp      **** 				btn_pressed = true;
+ 1168               		.stabn	68,0,313,.LM127-.LFBB9
+ 1169               	.LM127:
+ 1170 0320 4A99      		sbic 0x9,2
+ 1171 0322 00C0      		rjmp .L66
+ 313:Main.cpp      **** 				btn_pressed = true;
+ 1172               		.stabn	68,0,313,.LM128-.LFBB9
+ 1173               	.LM128:
+ 1174 0324 8091 0000 		lds r24,dr1+2
+ 1175 0328 8111      		cpse r24,__zero_reg__
+ 1176 032a 00C0      		rjmp .L66
+ 313:Main.cpp      **** 				btn_pressed = true;
+ 1177               		.stabn	68,0,313,.LM129-.LFBB9
+ 1178               	.LM129:
+ 1179 032c C1E0      		ldi r28,lo8(1)
+ 1180               	.L66:
+ 316:Main.cpp      **** 		}
+ 1181               		.stabn	68,0,316,.LM130-.LFBB9
+ 1182               	.LM130:
+ 1183               	/* #APP */
+ 1184               	 ;  316 "Main.cpp" 1
+ 1185 032e A895      		wdr
+ 1186               	 ;  0 "" 2
+ 312:Main.cpp      **** 			if(bit_is_clear(INPUT_PIN_PORT, DR1_BUTTON) && !dr1.is_active && !btn_pressed) {
+ 1187               		.stabn	68,0,312,.LM131-.LFBB9
+ 1188               	.LM131:
+GAS LISTING /tmp/ccyIUKZe.s 			page 43
+
+
+ 1189               	/* #NOAPP */
+ 1190 0330 00C0      		rjmp .L67
+ 1191               	.L65:
+ 320:Main.cpp      **** 
+ 1192               		.stabn	68,0,320,.LM132-.LFBB9
+ 1193               	.LM132:
+ 1194 0332 719A      		sbi 0xe,1
+ 1195               	.LBB61:
+ 323:Main.cpp      **** 		{
+ 1196               		.stabn	68,0,323,.LM133-.LFBB9
+ 1197               	.LM133:
+ 1198 0334 CC23      		tst r28
+ 1199 0336 01F0      		breq .L64
+ 323:Main.cpp      **** 		{
+ 1200               		.stabn	68,0,323,.LM134-.LFBB9
+ 1201               	.LM134:
+ 1202 0338 D2FF      		sbrs r29,2
+ 1203 033a 00C0      		rjmp .L64
+ 1204               	.LBB62:
+ 325:Main.cpp      **** 			{
+ 1205               		.stabn	68,0,325,.LM135-.LFBB9
+ 1206               	.LM135:
+ 1207 033c 8091 0000 		lds r24,dr1
+ 1208 0340 8823      		tst r24
+ 1209 0342 01F0      		breq .L68
+ 325:Main.cpp      **** 			{
+ 1210               		.stabn	68,0,325,.LM136-.LFBB9
+ 1211               	.LM136:
+ 1212 0344 8091 0000 		lds r24,dr1+1
+ 1213 0348 8111      		cpse r24,__zero_reg__
+ 1214 034a 00C0      		rjmp .L64
+ 1215               	.LBB63:
+ 327:Main.cpp      **** 				activateDoor1(active);
+ 1216               		.stabn	68,0,327,.LM137-.LFBB9
+ 1217               	.LM137:
+ 1218 034c 80E0      		ldi r24,lo8(dr1)
+ 1219 034e 90E0      		ldi r25,hi8(dr1)
+ 1220 0350 00D0      		rcall doorActive
+ 1221 0352 C1E0      		ldi r28,lo8(1)
+ 1222 0354 C827      		eor r28,r24
+ 328:Main.cpp      **** 				dr1.toggled = active;
+ 1223               		.stabn	68,0,328,.LM138-.LFBB9
+ 1224               	.LM138:
+ 1225 0356 8C2F      		mov r24,r28
+ 1226 0358 00D0      		rcall activateDoor1
+ 329:Main.cpp      **** 			}
+ 1227               		.stabn	68,0,329,.LM139-.LFBB9
+ 1228               	.LM139:
+ 1229 035a C093 0000 		sts dr1+1,r28
+ 1230               	.LBE63:
+ 1231 035e 00C0      		rjmp .L64
+ 1232               	.L68:
+ 1233               	.LBB64:
+ 1234               	.LBB65:
+ 335:Main.cpp      **** 				dr1.is_active = active;
+ 1235               		.stabn	68,0,335,.LM140-.LFBB9
+ 1236               	.LM140:
+GAS LISTING /tmp/ccyIUKZe.s 			page 44
+
+
+ 1237 0360 9091 0000 		lds r25,dr1+2
+ 1238 0364 81E0      		ldi r24,lo8(1)
+ 1239 0366 8927      		eor r24,r25
+ 336:Main.cpp      **** 				activateDoor1(active);
+ 1240               		.stabn	68,0,336,.LM141-.LFBB9
+ 1241               	.LM141:
+ 1242 0368 8093 0000 		sts dr1+2,r24
+ 337:Main.cpp      **** 			}
+ 1243               		.stabn	68,0,337,.LM142-.LFBB9
+ 1244               	.LM142:
+ 1245 036c 00D0      		rcall activateDoor1
+ 1246               	.L64:
+ 1247               	.LBE65:
+ 1248               	.LBE64:
+ 1249               	.LBE62:
+ 1250               	.LBE61:
+ 1251               	.LBE60:
+ 1252               	.LBE59:
+ 341:Main.cpp      **** }
+ 1253               		.stabn	68,0,341,.LM143-.LFBB9
+ 1254               	.LM143:
+ 1255               	/* #APP */
+ 1256               	 ;  341 "Main.cpp" 1
+ 1257 036e A895      		wdr
+ 1258               	 ;  0 "" 2
+ 1259               	/* epilogue start */
+ 342:Main.cpp      **** 
+ 1260               		.stabn	68,0,342,.LM144-.LFBB9
+ 1261               	.LM144:
+ 1262               	/* #NOAPP */
+ 1263 0370 DF91      		pop r29
+ 1264 0372 CF91      		pop r28
+ 1265 0374 0895      		ret
+ 1266               		.size	activateDoor2, .-activateDoor2
+ 1267               		.stabs	"btn_pressed:r(0,58)",64,0,303,28
+ 1268               		.stabn	192,0,0,.LBB60-.LFBB9
+ 1269               		.stabs	"active:r(0,58)",64,0,327,28
+ 1270               		.stabn	192,0,0,.LBB63-.LFBB9
+ 1271               		.stabn	224,0,0,.LBE63-.LFBB9
+ 1272               		.stabs	"active:r(0,58)",64,0,335,24
+ 1273               		.stabn	192,0,0,.LBB65-.LFBB9
+ 1274               		.stabn	224,0,0,.LBE65-.LFBB9
+ 1275               		.stabn	224,0,0,.LBE60-.LFBB9
+ 1276               	.Lscope9:
+ 1277               		.stabs	"",36,0,0,.Lscope9-.LFBB9
+ 1278               		.stabd	78,0,0
+ 1279               	.global	dip_switch
+ 1280               		.data
+ 1281               		.type	dip_switch, @object
+ 1282               		.size	dip_switch, 3
+ 1283               	dip_switch:
+ 1284 0000 01        		.byte	1
+ 1285 0001 00        		.byte	0
+ 1286 0002 00        		.byte	0
+ 1287               	.global	dr2
+ 1288               		.type	dr2, @object
+ 1289               		.size	dr2, 7
+GAS LISTING /tmp/ccyIUKZe.s 			page 45
+
+
+ 1290               	dr2:
+ 1291 0003 00        		.byte	0
+ 1292 0004 00        		.byte	0
+ 1293 0005 00        		.byte	0
+ 1294 0006 01        		.byte	1
+ 1295 0007 01        		.byte	1
+ 1296 0008 2500      		.word	37
+ 1297               	.global	dr1
+ 1298               		.type	dr1, @object
+ 1299               		.size	dr1, 7
+ 1300               	dr1:
+ 1301 000a 00        		.byte	0
+ 1302 000b 00        		.byte	0
+ 1303 000c 00        		.byte	0
+ 1304 000d 01        		.byte	1
+ 1305 000e 00        		.byte	0
+ 1306 000f 2500      		.word	37
+ 1307               		.stabs	"dr1:G(0,94)",32,0,40,0
+ 1308               		.stabs	"dr2:G(0,94)",32,0,41,0
+ 1309               		.stabs	"dip_switch:G(0,100)",32,0,42,0
+ 1310               		.stabs	"SS:c=i10",128,0,0,0
+ 1311               		.stabs	"MOSI:c=i11",128,0,0,0
+ 1312               		.stabs	"MISO:c=i12",128,0,0,0
+ 1313               		.stabs	"SCK:c=i13",128,0,0,0
+ 1314               		.stabs	"SDA:c=i21",128,0,0,0
+ 1315               		.stabs	"SCL:c=i22",128,0,0,0
+ 1316               		.stabs	"LED_BUILTIN:c=i13",128,0,0,0
+ 1317               		.stabs	"A0:c=i128",128,0,0,0
+ 1318               		.stabs	"A1:c=i129",128,0,0,0
+ 1319               		.stabs	"A2:c=i130",128,0,0,0
+ 1320               		.stabs	"A3:c=i131",128,0,0,0
+ 1321               		.stabs	"A4:c=i132",128,0,0,0
+ 1322               		.stabs	"A5:c=i133",128,0,0,0
+ 1323               		.stabs	"A6:c=i134",128,0,0,0
+ 1324               		.stabs	"A7:c=i135",128,0,0,0
+ 1325               		.text
+ 1326               		.stabs	"",100,0,0,.Letext0
+ 1327               	.Letext0:
+ 1328               		.ident	"GCC: (GNU) 5.4.0"
+ 1329               	.global __do_copy_data
+GAS LISTING /tmp/ccyIUKZe.s 			page 46
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 Main.cpp
+     /tmp/ccyIUKZe.s:2      *ABS*:000000000000003e __SP_H__
+     /tmp/ccyIUKZe.s:3      *ABS*:000000000000003d __SP_L__
+     /tmp/ccyIUKZe.s:4      *ABS*:000000000000003f __SREG__
+     /tmp/ccyIUKZe.s:5      *ABS*:0000000000000000 __tmp_reg__
+     /tmp/ccyIUKZe.s:6      *ABS*:0000000000000001 __zero_reg__
+     /tmp/ccyIUKZe.s:150    .text:0000000000000000 _ZL9init_doorPK4Door.isra.0
+     /tmp/ccyIUKZe.s:205    .text:000000000000002a doorPinWrite
+     /tmp/ccyIUKZe.s:279    .text:0000000000000064 readDip
+     /tmp/ccyIUKZe.s:1283   .data:0000000000000000 dip_switch
+     /tmp/ccyIUKZe.s:1300   .data:000000000000000a dr1
+     /tmp/ccyIUKZe.s:1290   .data:0000000000000003 dr2
+     /tmp/ccyIUKZe.s:343    .text:00000000000000aa dependentRetract
+     /tmp/ccyIUKZe.s:673    .text:00000000000001f6 buttonPressed
+     /tmp/ccyIUKZe.s:749    .text.startup:0000000000000000 main
+     /tmp/ccyIUKZe.s:903    .text:000000000000023e doorActive
+     /tmp/ccyIUKZe.s:944    .text:000000000000025c activateDoor1
+     /tmp/ccyIUKZe.s:1114   .text:00000000000002ee activateDoor2
+
+UNDEFINED SYMBOLS
+__mulsi3
+door_timer
+getTime
+__do_copy_data

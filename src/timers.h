@@ -10,7 +10,7 @@
 #define TIMERS_H_
 
 #include <avr/interrupt.h>
-
+#include <stdbool.h>
 // Fetches a timing value from the timing values array
 #define getTimingValue(P) ( pgm_read_byte( timing_values_PGM + (P) ) )
 
@@ -34,9 +34,15 @@
 //#define bit(x) (BIT(x))
 #define bit_get(p,m1) ((p) & (BIT(m1)))
 
-volatile unsigned long timer0_millis;
-volatile uint8_t timer0_fract;
+#ifdef __cplusplus
+extern "C"{
+#endif
 
-unsigned long getTime(uint8_t pin);
+extern unsigned long getTime(uint8_t pin);
+extern unsigned long door_timer(bool reset);
+
+#ifdef __cplusplus
+} // extern "C"
+#endif
 
 #endif /* TIMERS_H_ */

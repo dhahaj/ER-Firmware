@@ -18,7 +18,9 @@
 #include "main.h"
 #include "timers.h"
 #include "interrupts.h"
-// #include "doors.h"
+// #include "digital.h"
+#include <Arduino.h>
+#include "door.h"
 /*
  *	Determine if EExER is defined to enable it by the preprocessor
  */
@@ -35,10 +37,12 @@
 static void avr_init(void);
 static void init_door(const Door *dr);
 
-Door dr1 = {false, false, false, ACTIVE_HIGH, DR1_OUT};
-Door dr2 = {false, false, false, ACTIVE_HIGH, DR2_OUT};
+Door dr1 = {false, false, false, ACTIVE_HIGH, DR1_OUT, &PORTB};
+Door dr2 = {false, false, false, ACTIVE_HIGH, DR2_OUT, &PORTB};
 Inputs dip_switch = {DEPENDENT, 0x00, false};
 
+// Settings  m_settings;
+// Delay     m_delay;
 //Doors doors;// = new Doors(1,2);
 
 /*
@@ -131,7 +135,13 @@ int main(void)
  */
 static void avr_init(void)
 {
- 	OUTPUT_DDR = (BIT(DR1_OUT)|BIT(DR2_OUT)); // Initialize output port
+	// pinMode(B, DR1_OUT, OUTPUT);
+	// pinMode(B, DR2_OUT, OUTPUT);
+ 	// pinMode(A, RELAY1_PIN, OUTPUT);
+ 	// pinMode(A, RELAY2_PIN, OUTPUT);
+ 	// pinMode(C, DS1_PIN, OUTPUT);
+ 	// pinMode(C, DS2_PIN, OUTPUT);
+	OUTPUT_DDR = (BIT(DR1_OUT)|BIT(DR2_OUT)); // Initialize output port
  	RELAY_DDR |= BIT(RELAY1_PIN) | BIT(RELAY2_PIN);
  	DS_DDR = ( BIT(DS1_PIN) | BIT(DS2_PIN) );	// PC0 & PC1 set as outputs for DS switches
 
@@ -172,6 +182,8 @@ static void avr_init(void)
 static void init_door(const Door *dr)
 {
 	bit_write(!(*dr).active_high, OUTPUT_PORT, BIT((*dr).pin));
+	// uint8_t pin = (*dr).pin;
+	// digitalWrite(B, pin, !(*dr).active_high);
 }
 
 /*
@@ -443,5 +455,8 @@ bool doorActive(const Door *door)
 {
 	// Read the port
 	uint8_t portValue = 0x01 & ( DOOR_PIN_PORT >> (*door).pin ); /* Read the state of output pin */
+	// uint8_t value = digitalRead(B, (*door).pin); 
+	// uint8_t active = (*door).active_high;
+	// return (value == (*door).active_high);
 	return (portValue == (*door).active_high);
 }
